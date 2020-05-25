@@ -21,7 +21,6 @@ const NavBar = () => {
                     <h3 className={styles.category}>Contact Me</h3>
                 </div>
                 <div className={styles.links}>
-                <h3 className={styles.category}>Resume</h3>
                 <h3 className={styles.category}>LinkedIn Logo</h3>
                 <h3 className={styles.category}>Github Logo</h3>
                 </div>
@@ -31,3 +30,7 @@ const NavBar = () => {
 }
 
 export default NavBar;
+
+// primary color: #02203c; will also use this color for white backgrounds
+// secondary color: rgb(104, 104, 209)
+//third-ary color:#15314b;
