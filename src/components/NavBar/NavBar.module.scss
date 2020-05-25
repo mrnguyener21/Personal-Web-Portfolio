@@ -1,17 +1,71 @@
+// primary color: #02203c; will also use this color for white backgrounds
+// secondary color: 
+
 .container {
     display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    border: 2px solid white;
+    justify-content: space-between;
+    // border: 2px solid black;
+    // background-color:rgb(114, 114, 228);
+    background-color: #02203c;
+    margin:0;
+    padding: 0;
 }
 
-.component {
-    margin: 0 2%;
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
+.name{
+    color:white;
+    margin-left: 1%;
+}
 
+.categoryContainer{
+    // border: 2px solid black;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-right: 1%;
+}
+
+.category{
+    // border: solid;
+    margin-right: 1%;
+    margin-left: 1%;
+    position: relative;
+    text-decoration: none;
+    color:white;
     &:hover {
-        color: rgb(74, 180, 79);
+        color: white;
     }
 }
+//The two .category below are for the underline animation
+.category::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .category:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+.sections{
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      margin-left: 3%;
+    //   border: 2px solid black;
+  }
+
+.links{
+    // border: 2px solid black;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+  
