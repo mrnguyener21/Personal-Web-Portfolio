@@ -5,11 +5,38 @@
 }
 
 .title{
+    // border: solid;
     display: flex;
     justify-content: center;
     color:#02203c;  
+    padding-top: 2%;
+    font-size: 50px;
+
+    &:hover {
+        color:#02203c;  
+        cursor: default;
+    }
 
 }
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    bottom: 27%;
+    // left: 0;
+    background-color: #02203c;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .title:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
 
 .contentContainer{
     display: flex;
