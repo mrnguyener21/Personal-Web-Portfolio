@@ -1,0 +1,84 @@
+.container{
+    color:#02203c;  
+    margin:0;
+    padding:0;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color:#02203c;  
+
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cardContainer{
+    // border: 2px solid black;
+    width: 25%;
+    margin-left: 10%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.MuiCardMedia-img{
+    border: solid;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    width: 80%;
+    height: 90%;
+    border-top: 10px solid #6868d1;
+
+}
+
+.picture{
+    border-radius: 90%;
+}
+
+.infoContainer{
+    // border: 2px dashed black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+
+.info{
+    text-align: center;
+    color:#02203c;  
+
+}
+
+.buttonContainer{
+    // border: 2px solid black; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    border:0;
+    background-color: #6868d1;
+    color: white;
+    width: 20%;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+button:hover {
+    cursor: pointer
+}

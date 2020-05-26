@@ -1,7 +1,7 @@
 import React from 'react';
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { About, Resume, Work, NavBar } from './components'
+import { About, Resume, Project, NavBar, Contact, Skill, Welcome } from './components'
 
 const App = () => {
     return (
@@ -11,8 +11,8 @@ const App = () => {
       //     <Route path="/resume">
       //       <Resume />
       //     </Route>
-      //     <Route path="/work">
-      //       <Work />
+      //     <Route path="/Project">
+      //       <Project />
       //     </Route>
       //     <Route path="/">
       //       <About />
@@ -21,10 +21,11 @@ const App = () => {
       // </Router>
       <div>
         <NavBar/>
-        
+        <Welcome/>
         <About/>
-        <Resume/>
-        <Work/>
+        <Skill/>
+        <Project/>
+        <Contact/>
       </div>
       
     );
