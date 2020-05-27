@@ -1,11 +1,19 @@
 .container{
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    // flex-direction: column;
+}
+
+.content{
+    // border: solid;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .project {
     position: relative;
-    width: 47%;
+    width: 90%;
 
     &:hover {
         cursor: pointer;
@@ -28,10 +36,10 @@
         border-radius: 25px;
         width: 100%;
     
-        &:hover {
+        // &:hover {
             // filter: brightness(20%);
             // cursor: pointer;
-        }
+        // }
     }
 
     .content {
@@ -45,4 +53,30 @@
         visibility: hidden;
         transition: visibility 0s, opacity 0.5s linear;
     }
+}
+
+.buttonContainer{
+    // border: solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button{
+    border:0;
+    background-color: #6868d1;
+    color: white;
+    width: 20%;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    border-radius: 25px;
+
+}
+
+button:hover {
+    cursor: pointer
 }

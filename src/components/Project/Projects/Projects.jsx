@@ -21,6 +21,7 @@ const Projects = () => {
         <div className={styles.container}>
             {projects.map(({ image, description, technologies }) => (
                 <>
+                <div className={styles.content}>
                     <div className={styles.project}>
                         <img className={styles.projectImage} src={image}/>
                         <div className={styles.content}>
@@ -28,9 +29,13 @@ const Projects = () => {
                             <h3 className={styles.description}>{technologies}</h3>
                         </div>
                     </div>
-                    <div>buttons</div>
+                        <div className={styles.buttonContainer}>
+                            <button className={styles.button}>● Source Code ●</button>
+                            <button className={styles.button}>● Live Demo ●</button>
+                        </div>
+                </div>
                 </>
-            ))}
+                ))}
         </div>
     )
 }
