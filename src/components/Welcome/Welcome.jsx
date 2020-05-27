@@ -13,7 +13,6 @@ const Welcome = () => {
                 </div>
             </div>
             <img className={styles.image} src={codeSnippet}/>
-
         </div>
     )
 }

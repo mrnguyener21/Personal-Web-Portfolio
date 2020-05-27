@@ -1,0 +1,47 @@
+.container{
+    background-color: #02203c;
+    color: white;
+    padding: 4% 15%;
+
+
+}
+
+.title{
+    // border:2px solid green;
+    display: flex;
+    justify-content: center;
+    // color:#02203c;  
+    // padding-top: 2%;
+    // padding-bottom: 5%;
+    margin: 0;
+    font-size: 55px;
+    &:hover {
+        color: white;
+        cursor: default;
+    }
+}
+// this is for the animated underline for title
+// .title::before {
+//     content: "";
+//     position: absolute;
+//     width: 8%;
+//     height: 3px;
+//     bottom: -75%;
+//     background-color: white;
+//     visibility: hidden;
+//     transform: scaleX(0);
+//     transition: all 0.3s ease-in-out 0s;
+//   }
+
+//   .title:hover::before {
+//     visibility: visible;
+//     transform: scaleX(1);
+//   }
+
+.intro{
+    font-size: 25px;
+    text-align: center;
+    // width: 75%;
+    // margin-left: 15%;
+}
+

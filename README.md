@@ -2,9 +2,12 @@ IDEAS FOR PORTFOLIO
 
 -NAV BAR, ABOUT, WORK(PROJECTS I GUESS), RESUME, MAYBE A SKILLS SECTION?, MAYBE A CONTACT ME SECTION?, HAVE A LINKED IN AND GITHUB BUTTON
 -THE LAYOUT WILL A ONE PAGER AND THE NAVBAR WILL LET YOU AUTO SCROLL TO THE SECTION YOU CLICK
+    -the auto scroll will be a circle button with an up arrow. the arrow will be white and the fill color will be the secondary color(the purple)
 -ADD IN A FEATURE FOR EACH SECTION TO SCROLL BACK TO THE TOP 
 -have cool transitions lol
 -EACH SECTION WILL ALTERNATIVE BETWEEN THE PRIMARY COLOR AND WHITE AS THE BACKGROUND
+-maybe add a dark and light them button?
+-save hovering for each title after layout complete
 
 COLOR SCHEME
     -primary color: #02203c; will also use this color for white backgrounds
@@ -36,8 +39,15 @@ COLOR SCHEME
 -SKILL SECTION (just make this as part of the about me section)
     -have cards that state the languages and frameworks that i know
     -alternate between secondary and third-ary color for the cards
+    -maybe have a radar graph dispplaying the symbols of each language and framework(if i can find the emoji to type) and if click on it it will show a bubble describing what it is 
+    -
     
 -PROJECT SECTION
+    - have a photo snippet of each project and then a button for the source code and a button for a live demo
+    -Below are some of the projects that I have worked on and created. You can hover over them for a description of wha t the project and if you're interested you can check out the source code or even see a live project itself out. 👇
+    -probably use grid to help with the layout
+    -when hovered
+        - a 0.5 transparent black background to mimic a fade out effect. In white text have the title of the project,  a description of the project and what was used to create it
 
 -CONTACT ME SECTION
 

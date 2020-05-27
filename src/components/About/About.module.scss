@@ -1,14 +1,14 @@
 .container{
-    color:#02203c;  
-    margin:0;
-    padding:0;
+    color:#15314b;  
+    padding-bottom: 10%;
+
 }
 
 .title{
     // border: solid;
     display: flex;
     justify-content: center;
-    color:#02203c;  
+    // color:#02203c;  
     padding-top: 2%;
     font-size: 50px;
 
@@ -19,23 +19,22 @@
 
 }
 
-.title::before {
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 3px;
-    bottom: 27%;
-    // left: 0;
-    background-color: #02203c;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
+// .title::before {
+//     content: "";
+//     position: absolute;
+//     width: 10%;
+//     height: 3px;
+//     bottom: 20%;
+//     background-color: #15314b;
+//     visibility: hidden;
+//     transform: scaleX(0);
+//     transition: all 0.3s ease-in-out 0s;
+//   }
 
-  .title:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
+//   .title:hover::before {
+//     visibility: visible;
+//     transform: scaleX(1);
+//   }
 
 
 .contentContainer{
@@ -52,9 +51,7 @@
     margin-top: 2%;
 }
 
-.MuiCardMedia-img{
-    border: solid;
-}
+
 .card{
     display: flex;
     justify-content: center;

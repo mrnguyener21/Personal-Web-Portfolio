@@ -1,7 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-import styles from './NavBar.module.scss'
+import styles from './NavBar.module.scss';
 
 const NavBar = () => {
     return (
@@ -10,15 +9,12 @@ const NavBar = () => {
                 <h3>Victor Nguyen</h3>
             </div>
             <div className={styles.categoryContainer}>
-                <div className={styles.sections}>
-                    <h3 className={styles.category}>About Me</h3>
-                    <h3 className={styles.category}>Projects</h3>
-                    <h3 className={styles.category}>Skills</h3>
-                    <h3 className={styles.category}>Contact Me</h3>
-                </div>
+                <h3 className={styles.category}>About Me</h3>
+                <h3 className={styles.category}>Projects</h3>
+                <h3 className={styles.category}>Contact Me</h3>
             </div>
         </div>
-    )
+    );
 }
 
 export default NavBar;
