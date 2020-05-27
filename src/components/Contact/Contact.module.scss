@@ -1,0 +1,52 @@
+.container{
+    color:#15314b;  
+    padding-bottom: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.title{
+    // border: solid;
+    display: flex;
+    justify-content: center;
+    // color:#02203c;  
+    // padding-top: 2%;
+    font-size: 50px;
+
+    &:hover {
+        color:#02203c;  
+        cursor: default;
+    }
+
+}
+
+.intro{
+    // border: 2px solid black;
+    margin:0;
+    font-size: 30px;
+}
+
+.phone{
+    // border: 2px solid black;
+    font-size: 30px;
+}
+
+.contactContainer{
+    // border: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 8%;
+}
+
+.contact{
+    font-size: 25px;
+    margin-right: 2%;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
