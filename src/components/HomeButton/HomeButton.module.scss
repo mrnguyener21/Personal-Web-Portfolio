@@ -17,6 +17,12 @@
     // font-size: 20px;
     border-radius: 65px;
     padding: .25% 1.25% .5% .25%;
+
+    &:hover {
+        background-color: #0b4174;
+        transition: all 0.2s ease-in-out 0s;
+        cursor: pointer
+    }
 }
 .arrow{
     border: solid white;

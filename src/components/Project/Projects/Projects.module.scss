@@ -1,14 +1,15 @@
 .container{
     display: flex;
     // border: 5px solid green;
-    width: 80%;
-    margin-left: 12%;
+    width: 95%;
+    margin-left: 3%;
     // justify-content: space-between;
     // flex-direction: column;
 }
 
 .content{
     // border: solid;
+    width: 100%;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -17,7 +18,7 @@
 
 .project {
     position: relative;
-    width: 90%;
+    width: 95%;
 
     &:hover {
         cursor: pointer;
@@ -27,7 +28,7 @@
             flex-direction: column;
             visibility: visible;
             opacity: 0.8; 
-            padding: 0 20%;
+            // padding: 0 20%;
             border-radius: 25px;
 
             .description {
@@ -60,9 +61,9 @@
 }
 
 .description{
-    // border: solid;
+    border: solid;
     font-size: 25px;
-    width: 150%;
+    width: 95%;
 }
 
 .buttonContainer{
@@ -89,5 +90,7 @@
 }
 
 button:hover {
+    background-color: #3b3b7a;
+    transition: all 0.2s ease-in-out 0s; 
     cursor: pointer
 }

@@ -1,7 +1,7 @@
 .container{
     color:#15314b;  
-    padding-bottom: 10%;
-    // border:2px solid black;
+    padding-bottom: 13%;
+    // border:solid black;
 
 }
 
@@ -24,9 +24,9 @@
 .title::before {
     content: "";
     position: absolute;
-    width: 10%;
+    width: 11%;
     height: 3px;
-    bottom: 18%;
+    bottom: -14%;
     background-color: #15314b;
     visibility: hidden;
     transform: scaleX(0);
@@ -41,7 +41,7 @@
 
 .contentContainer{
     // border:2px solid black;
-
+    width: 99%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,7 +100,7 @@
     border:0;
     background-color: #6868d1;
     color: white;
-    width: 20%;
+    width: 21%;
     margin-top: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -109,5 +109,7 @@
 }
 
 button:hover {
+    background-color: #3b3b7a;
+    transition: all 0.2s ease-in-out 0s;
     cursor: pointer
 }

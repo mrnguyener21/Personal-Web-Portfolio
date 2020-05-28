@@ -1,22 +1,15 @@
 .container{
     color:#15314b;  
-    padding-bottom: 1%;
-    // padding-top:0;
-    // display: flex;
-    // align-items: center;
-    // flex-direction: column;
-    // border:2px solid red;
-    // width: 100%;
+    // padding-bottom: 1%;
+
 
 }
 
 .title{
     // border: solid;
-    // width: 100%;
     display: flex;
+    margin:0;
     justify-content: center;
-    // color:#02203c;  
-    // padding-top: 2%;
     position: relative;
     text-decoration: none;
     font-size: 50px;
@@ -47,15 +40,6 @@
   }
 
 
-
-
-// .contentContainer{
-//     display: flex;
-    // justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-// }
-
 .intro{
     // border: 2px solid black;
     margin:0;
@@ -81,12 +65,13 @@
 .contact{
     font-size: 25px;
     margin-right: 2%;
+    margin-top: 0;
     // border: solid;
     position: relative;
     text-decoration: none;
     &:hover{
         color:#02203c;  
-        cursor: pointer;
+        cursor: default;
     }
 }
 
