@@ -16,28 +16,31 @@
     padding-bottom: 1%;
     margin: 0;
     font-size: 55px;
+    position: relative;
+    text-decoration: none;
     &:hover {
         color: white;
         cursor: default;
     }
 }
 // this is for the animated underline for title
-// .title::before {
-//     content: "";
-//     position: absolute;
-//     width: 8%;
-//     height: 3px;
-//     bottom: -75%;
-//     background-color: white;
-//     visibility: hidden;
-//     transform: scaleX(0);
-//     transition: all 0.3s ease-in-out 0s;
-//   }
+.title::before {
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 3px;
+    bottom: 20%;
+    left: 44.5%;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
 
-//   .title:hover::before {
-//     visibility: visible;
-//     transform: scaleX(1);
-//   }
+  .title:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
 
 .intro{
     font-size: 25px;

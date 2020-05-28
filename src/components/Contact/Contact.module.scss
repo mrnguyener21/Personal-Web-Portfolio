@@ -17,6 +17,8 @@
     justify-content: center;
     // color:#02203c;  
     // padding-top: 2%;
+    position: relative;
+    text-decoration: none;
     font-size: 50px;
 
     &:hover {
@@ -25,6 +27,27 @@
     }
 
 }
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 3px;
+    bottom: 0;
+    left: 44%;
+    background-color: #02203c;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .title:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+
+
 
 // .contentContainer{
 //     display: flex;
@@ -58,8 +81,29 @@
 .contact{
     font-size: 25px;
     margin-right: 2%;
-
+    // border: solid;
+    position: relative;
+    text-decoration: none;
     &:hover{
+        color:#02203c;  
         cursor: pointer;
     }
 }
+
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #02203c;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .contact:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }

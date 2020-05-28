@@ -21,22 +21,22 @@
 
 }
 
-// .title::before {
-//     content: "";
-//     position: absolute;
-//     width: 10%;
-//     height: 3px;
-//     bottom: 20%;
-//     background-color: #15314b;
-//     visibility: hidden;
-//     transform: scaleX(0);
-//     transition: all 0.3s ease-in-out 0s;
-//   }
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    bottom: 18%;
+    background-color: #15314b;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
 
-//   .title:hover::before {
-//     visibility: visible;
-//     transform: scaleX(1);
-//   }
+  .title:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
 
 
 .contentContainer{
