@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import { Portal } from '@material-ui/core';
 
 const Project = () => {
+
     return (
         <div className={styles.container}>
             <div className={styles.homeButtonContainer}>

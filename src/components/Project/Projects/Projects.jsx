@@ -9,6 +9,8 @@ const projects = [
         name: 'YUGIOH CARD GALLERY',
         description: 'A YuGiOh library for the kids that uses an API containining over 10,000 cards.',
         technologies: 'Created With:Javascript(ES6) | HTML5 | CSS 3| React|',
+        sourceCode:'https://github.com/mrnguyener21/yugioh-API',
+        liveDemo:'https://yugioh-api.netlify.app/https://yugioh-api.netlify.app/',
     },
     {
         image: yugioh,
@@ -23,6 +25,8 @@ const projects = [
         technologies: 'final web apps',
     }
 ]
+
+const btnClick = (value) => value === 0 ? window.open(projects[0].sourceCode) : window.open(projects[0].liveDemo) 
 
 const Projects = () => {
     return(
@@ -39,8 +43,8 @@ const Projects = () => {
                         </div>
                     </div>
                         <div className={styles.buttonContainer}>
-                            <button className={styles.button}>● Source Code ●</button>
-                            <button className={styles.button}>● Live Demo ●</button>
+                            <button className={styles.button} onClick={()=> btnClick(0)} >● Source Code ●</button>
+                            <button className={styles.button} onClick={()=> btnClick(1)} >● Live Demo ●</button>
                         </div>
                 </div>
                 </>
