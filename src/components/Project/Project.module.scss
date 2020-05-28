@@ -1,13 +1,14 @@
 .container{
     background-color: #02203c;
     color: white;
-    padding: 4% 15%;
+    padding-bottom: 2%;
+    // padding: 0 6% 2% 6%;
+
 
 
 }
 
 .title{
-    // border:2px solid green;
     display: flex;
     justify-content: center;
     // color:#02203c;  
@@ -42,7 +43,10 @@
     font-size: 25px;
     text-align: center;
     padding-bottom: 3%;
-    // width: 75%;
-    // margin-left: 15%;
+    width: 75%;
+    margin-left: 15%;
 }
 
+.projects{
+    border: solid;
+}

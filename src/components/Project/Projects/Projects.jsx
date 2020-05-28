@@ -12,9 +12,15 @@ const projects = [
     },
     {
         image: yugioh,
-        name: 'test',
-        description: 'Test',
-        technologies: 'Test',
+        name: 'testit',
+        description:'A YuGiOh library for the kids that uses an API containining over 10,000 cards.',
+        technologies: 'tictactoe',
+    },
+    {
+        image: yugioh,
+        name: 'test2',
+        description: 'A YuGiOh library for the kids that uses an API containining over 10,000 cards.',
+        technologies: 'final web apps',
     }
 ]
 

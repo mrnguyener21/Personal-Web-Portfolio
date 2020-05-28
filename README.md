@@ -13,7 +13,7 @@ COLOR SCHEME
     -primary color: #02203c; will also use this color for white backgrounds
     second primary color( alternating background colors):#f6f9fc
     -secondary color: #6868d1
-    -third-ary color:#15314b;
+    -third-ary color:#15314b; maybe #295e8f
 
 -NAVBAR
     -About me, projects, skills, resume, contact me, linkedin(direct to my linkedin when pressed), github(direct to my github when clicked), resume(download my resume when clicked...is this going to involve some back end to store the resume and update it over time?)

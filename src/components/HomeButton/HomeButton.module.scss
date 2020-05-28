@@ -1,0 +1,32 @@
+.container{
+    // border: 2px solid red;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1%;
+    // padding-right: 1%;
+    width: 99%;
+}
+
+.button{
+    outline:none;
+    border:0;
+    background-color: #295e8f;
+    color: white;
+    // width: 5%;
+    // font-size: 20px;
+    border-radius: 65px;
+    padding: 1% 1.25% 1% 1.25%;
+}
+.arrow{
+    border: solid white;
+    outline: none;
+    margin-right: 2%;
+    margin-top: 20%;
+    background-color: rgba(0,0,0,0);
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 15px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    
+}

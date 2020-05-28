@@ -1,15 +1,17 @@
 .container{
     color:#15314b;  
     padding-bottom: 10%;
+    // border:2px solid black;
 
 }
+
 
 .title{
     // border: solid;
     display: flex;
     justify-content: center;
     // color:#02203c;  
-    padding-top: 2%;
+    // padding-top: 2%;
     font-size: 50px;
 
     &:hover {
@@ -38,6 +40,8 @@
 
 
 .contentContainer{
+    // border:2px solid black;
+
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeButton from '../HomeButton/HomeButton'
 import profilePic from '../../image/profilePic.png'
 import styles from './About.module.scss';
 
@@ -10,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 const About = () => {
     return (
         <div className={styles.container}>
+            <HomeButton/>
             <div>
                 <h1 className={styles.title}>ABOUT ME</h1>
             </div>
