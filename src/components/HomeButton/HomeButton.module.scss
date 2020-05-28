@@ -5,6 +5,7 @@
     padding-top: 1%;
     // padding-right: 1%;
     width: 99%;
+    
 }
 
 .button{
@@ -15,17 +16,18 @@
     // width: 5%;
     // font-size: 20px;
     border-radius: 65px;
-    padding: 1% 1.25% 1% 1.25%;
+    padding: .25% 1.25% .5% .25%;
 }
 .arrow{
     border: solid white;
     outline: none;
-    margin-right: 2%;
-    margin-top: 20%;
+    // margin-right: 2%;
+    margin-top: 60%;
+    margin-left: 50%;
     background-color: rgba(0,0,0,0);
-    border-width: 0 10px 10px 0;
+    border-width: 0 5px 5px 0;
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     
