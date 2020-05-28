@@ -1,10 +1,10 @@
 .container{
     color:#15314b;  
     padding-bottom: 1%;
-    padding-top:0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    // padding-top:0;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
     // border:2px solid red;
     // width: 100%;
 
@@ -12,6 +12,7 @@
 
 .title{
     // border: solid;
+    // width: 100%;
     display: flex;
     justify-content: center;
     // color:#02203c;  
@@ -25,10 +26,19 @@
 
 }
 
+// .contentContainer{
+//     display: flex;
+    // justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+
 .intro{
     // border: 2px solid black;
     margin:0;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .phone{
@@ -42,7 +52,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-left: 8%;
+//     margin-left: 8%;
 }
 
 .contact{
