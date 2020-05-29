@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Skill from './Skill/Skill'
+
 import HomeButton from '../HomeButton/HomeButton'
 import profilePic from '../../image/profilePic.png'
+
 import styles from './About.module.scss';
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import Modal from '@material-ui/core/Modal';
+
 
 const About = () => {
+    const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
+    
     return (
         <div className={styles.container}>
             <HomeButton/>
@@ -41,7 +48,10 @@ const About = () => {
                         Now I want to give value to others with not only my logical knowledge and mindset from the accounting and financial field, but to also provide value by giving others one of the best tools someone can have in the modern day. I want to provide others with amazing websites that fits their needs and criteria. In doing so, the value that person can now give will have a greater reach and in turn give an even better experience as well. Below is a button you can click to see the tools I will be using to make what I say happen. 😄
                     </h3>
                     <div className={styles.buttonContainer}>
-                        <button className={styles.button}>● TECHNICAL SKILLS ●</button>
+                    <button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>● TECHNICAL SKILLS ●</button>
+                    <Modal className={styles.modal} open={isSkillModalOpen} onClose={() => setIsSkillModalOpen(false)}>
+                        <Skill handleClose={() => setIsSkillModalOpen(false)} />
+                    </Modal>
                     </div>
                 </div>
             </div>

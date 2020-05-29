@@ -5,7 +5,6 @@
 
 }
 
-
 .title{
     // border: solid;
     display: flex;
@@ -112,4 +111,11 @@ button:hover {
     background-color: #3b3b7a;
     transition: all 0.2s ease-in-out 0s;
     cursor: pointer
+}
+
+.modal{
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 90%;
+    outline: none !important; 
 }
