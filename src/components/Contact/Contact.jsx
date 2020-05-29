@@ -4,7 +4,6 @@ import styles from './Contact.module.scss'
 const Contact = () => {
     return (
         <div className={styles.container}>
-            <a name='contact'></a>
             <HomeButton/>   
             <h1 className={styles.title}>CONTACT ME</h1>
             <div className={styles.contentContainer}>

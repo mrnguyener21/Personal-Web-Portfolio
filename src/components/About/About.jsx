@@ -11,7 +11,6 @@ import Typography from '@material-ui/core/Typography';
 const About = () => {
     return (
         <div className={styles.container}>
-            <a name='about'></a>
             <HomeButton/>
             <div>
                 <h1 className={styles.title}>ABOUT ME</h1>

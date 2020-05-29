@@ -9,7 +9,6 @@ const Project = () => {
 
     return (
         <div className={styles.container}>
-            <a name='project'></a>
             <div className={styles.homeButtonContainer}>
                 <HomeButton className={styles.homeButton}/> 
             </div>

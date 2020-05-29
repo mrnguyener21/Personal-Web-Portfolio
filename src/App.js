@@ -6,11 +6,14 @@ const App = () => {
 
   return (
   <>
-      <a name='top'></a>
       <NavBar/>
+      <a name='top'></a>
       <Welcome />
+      <a name='about'></a>
       <About/>
+      <a name='project'></a>
       <Project/>
+      <a name='contact'></a>
       <Contact />
     </>
   );
@@ -18,5 +21,4 @@ const App = () => {
 }
 
   export default App;
-  
   
