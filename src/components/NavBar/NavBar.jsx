@@ -1,7 +1,6 @@
 import React from 'react';
-// import About from '../About/About';
-// import { render } from 'react-dom';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
+import { Link } from 'react-scroll'
 
 import styles from './NavBar.module.scss';
 

@@ -8,12 +8,12 @@
 }
 
 .title{
+    // border:solid;
     display: flex;
     justify-content: center;
     // color:#02203c;  
     padding-top: 2%;
-    padding-bottom: 1%;
-    margin: 0;
+    // padding-bottom: 1%;
     font-size: 55px;
     position: relative;
     text-decoration: none;
@@ -28,7 +28,7 @@
     position: absolute;
     width: 11%;
     height: 3px;
-    bottom: 20%;
+    bottom: 5%;
     left: 44.5%;
     background-color: white;
     visibility: hidden;
@@ -42,6 +42,7 @@
   }
 
 .intro{
+    // border:solid;
     font-size: 25px;
     text-align: center;
     padding-bottom: 3%;
