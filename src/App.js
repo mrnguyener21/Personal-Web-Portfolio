@@ -1,17 +1,19 @@
 import React from 'react';
 import { About, Project, NavBar, Contact, Welcome } from './components'
-import styles from './App.module.css'
 
+import styles from './App.module.scss';
 const App = () => {
     return (
       <>
-        <NavBar />
+        <a className = {styles.top} name='top'></a>
+        <NavBar/>
         <Welcome />
-        <About />
-        <Project />
+        <About/>
+        <Project/>
         <Contact />
       </>
     );
 }
 
 export default App;
+

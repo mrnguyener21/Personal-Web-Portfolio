@@ -1,20 +1,15 @@
 import React from 'react'
 import Projects from './Projects/Projects'
 import HomeButton from '../HomeButton/HomeButton'
-import yugioh from '../../image/yugioh.JPG'
 
 import styles from './Project.module.scss'
 
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
-import { Portal } from '@material-ui/core';
 
 const Project = () => {
 
     return (
         <div className={styles.container}>
+            <a name='project'></a>
             <div className={styles.homeButtonContainer}>
                 <HomeButton className={styles.homeButton}/> 
             </div>

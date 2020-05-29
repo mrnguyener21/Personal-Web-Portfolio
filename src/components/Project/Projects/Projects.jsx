@@ -1,5 +1,6 @@
 import React from 'react';
 import yugioh from  '../../../image/yugioh.JPG'
+import ticTacToe from  '../../../image/ticTacToe.JPG'
 
 import styles from './Projects.module.scss';
 
@@ -10,13 +11,15 @@ const projects = [
         description: 'A YuGiOh library for the kids that uses an API containining over 10,000 cards.',
         technologies: 'Created With:Javascript(ES6) | HTML5 | CSS 3| React|',
         sourceCode:'https://github.com/mrnguyener21/yugioh-API',
-        liveDemo:'https://yugioh-api.netlify.app/https://yugioh-api.netlify.app/',
+        liveDemo:'https://yugioh-api.netlify.app/',
     },
     {
-        image: yugioh,
-        name: 'testit',
-        description:'A YuGiOh library for the kids that uses an API containining over 10,000 cards.',
-        technologies: 'tictactoe',
+        image: ticTacToe,
+        name: 'Tic-Tac-Toe',
+        description:'The classic game of Tic Tac Toe Made will Vanilla Javascript. Comes with a Start Page, A game Page, A winner Screen and score keeping.',
+        technologies: 'HTML5 | CSS3 | JAVASCRIPT(ES6)',
+        sourceCode:'https://github.com/mrnguyener21/tic-tac-toe-game',
+        liveDemo:'https://classictictactoegame.netlify.app/',
     },
     {
         image: yugioh,
@@ -26,12 +29,10 @@ const projects = [
     }
 ]
 
-const btnClick = (value) => value === 0 ? window.open(projects[0].sourceCode) : window.open(projects[0].liveDemo) 
-
 const Projects = () => {
     return(
         <div className={styles.container}>
-            {projects.map(({ image, name, description, technologies }) => (
+            {projects.map(({ image, name, description, technologies, sourceCode, liveDemo }) => (
                 <>
                 <div className={styles.content}>
                     <div className={styles.project}>
@@ -43,8 +44,8 @@ const Projects = () => {
                         </div>
                     </div>
                         <div className={styles.buttonContainer}>
-                            <button className={styles.button} onClick={()=> btnClick(0)} >● Source Code ●</button>
-                            <button className={styles.button} onClick={()=> btnClick(1)} >● Live Demo ●</button>
+                            <button className={styles.button} onClick={()=> window.open(sourceCode)} >● Source Code ●</button>
+                            <button className={styles.button} onClick={()=>window.open(liveDemo)} >● Live Demo ●</button>
                         </div>
                 </div>
                 </>
