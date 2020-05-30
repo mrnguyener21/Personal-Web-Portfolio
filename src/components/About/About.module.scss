@@ -1,5 +1,6 @@
 .container{
     color:#15314b;  
+    padding-top: 5%;
     padding-bottom: 13%;
     // border:solid black;
 
@@ -25,7 +26,7 @@
     position: absolute;
     width: 11%;
     height: 3px;
-    bottom: -22%;
+    bottom: -42%;
     background-color: #15314b;
     visibility: hidden;
     transform: scaleX(0);
@@ -40,7 +41,7 @@
 
 .contentContainer{
     // border:2px solid black;
-    width: 99%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,8 +78,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 2%;
-    font-size: 20px;
+    padding-bottom: 3%;
+    font-size: 17px;
 }
 
 .info{
@@ -92,6 +93,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 2%;
 }
 
 .button{
@@ -99,12 +101,10 @@
     border:0;
     background-color: #6868d1;
     color: white;
-    width: 21%;
-    margin-top: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-    border-radius: 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin:1%;
+    padding: 1% 2% 1% 2%;
 }
 
 button:hover {

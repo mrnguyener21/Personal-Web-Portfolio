@@ -1,7 +1,12 @@
 .container{
+    // border: solid red;
     background-color: #02203c;
     color: white;
-    padding-bottom: 15%;
+    display: flex;
+    // padding-top: 2%;
+    padding-bottom: 18%;
+    flex-direction: column;
+    align-items: center;
     // border: solid red;
 
 
@@ -12,9 +17,10 @@
     display: flex;
     justify-content: center;
     // color:#02203c;  
-    padding-top: 2%;
+    // padding-top: 2%;
     // padding-bottom: 1%;
-    font-size: 55px;
+    padding: 5% 5% 0% 5%;
+    font-size: 50px;
     position: relative;
     text-decoration: none;
     &:hover {
@@ -26,10 +32,10 @@
 .title::before {
     content: "";
     position: absolute;
-    width: 11%;
+    width: 53%;
     height: 3px;
-    bottom: 5%;
-    left: 44.5%;
+    bottom: 3%;
+    // left: 44.5%;
     background-color: white;
     visibility: hidden;
     transform: scaleX(0);
@@ -43,11 +49,11 @@
 
 .intro{
     // border:solid;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 3%;
-    width: 75%;
-    margin-left: 15%;
+    width: 50%;
+    // margin-left: 15%;
 }
 
 .projects{

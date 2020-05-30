@@ -1,7 +1,7 @@
 .container{
     color:#15314b;  
-    // padding-bottom: 15%;
-    // margin-top: ;
+    padding: 3% 5% 5% 5%;
+
 }
 
 .title{
@@ -12,6 +12,7 @@
     position: relative;
     text-decoration: none;
     font-size: 50px;
+    padding-bottom: 2%;
 
     &:hover {
         color:#02203c;  
@@ -23,10 +24,10 @@
 .title::before {
     content: "";
     position: absolute;
-    width: 12%;
+    width: 15%;
     height: 3px;
-    bottom: 0;
-    left: 44%;
+    bottom: 37%;
+    // left: 44%;
     background-color: #02203c;
     visibility: hidden;
     transform: scaleX(0);
@@ -39,55 +40,67 @@
   }
 
 
-.intro{
-    // border: 2px solid black;
-    margin:0;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.phone{
-    // border: 2px solid black;
-    font-size: 30px;
-}
-
 .contactContainer{
-    // border: 2px solid black;
-    width: 100%;
     display: flex;
+    width: 50%;
+    margin-left: 25%;
     justify-content: center;
-    flex-direction: row;
-    margin-left: 5%;
+    flex-direction: column;
 }
 
-.contact{
-    font-size: 25px;
+
+.infoContainer{
+    // border: solid red;
+    display: flex;
+    // flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+    padding-left: 2%;
+}
+
+.info{
+    width: 25%;
     margin-right: 2%;
     margin-top: 0;
-    // border: solid;
+    width: 50%;
+    height: 50px;
     position: relative;
     text-decoration: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: initial;
+    border-bottom: solid #295e8f; 
+    outline: none;
     &:hover{
         color:#02203c;  
         cursor: default;
     }
 }
 
-.contact::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #02203c;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
+.message{
+    outline: none;
+    border-radius: 10px;
+    border: solid #295e8f;
+    padding-top: 10px;
+    padding-bottom: 200px;
+}
 
-  .contact:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
+.button{
+    outline: none;
+    border:none;
+    background-color: #6868d1;
+    color: white;
+    border-radius: 10px;
+    width: 25%;
+    font-size: 15px;
+    margin:1% 1% 1% 35%;
+    padding: 1% 2% 1% 2%;
+}
+
+button:hover {
+    background-color: #3b3b7a;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer
+}

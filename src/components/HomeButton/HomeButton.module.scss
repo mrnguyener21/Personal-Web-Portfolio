@@ -1,41 +1,27 @@
-.container{
-    // border: 2px solid red;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 1%;
-    // padding-right: 1%;
-    width: 99%;
-    // overflow: auto;
-    
-}
 
+.container{
+    // display: flex;
+    // justify-content: flex-end;
+    // padding-top: 1%;
+    // width: 99%;
+}
+  
 .button{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
     outline:none;
     border:0;
     background-color: #295e8f;
     color: white;
-    // width: 5%;
-    // font-size: 20px;
-    border-radius: 65px;
-    padding: .25% 1.25% .5% .25%;
-
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  
     &:hover {
         background-color: #0b4174;
         transition: all 0.2s ease-in-out 0s;
         cursor: pointer
     }
-}
-.arrow{
-    border: solid white;
-    outline: none;
-    // margin-right: 2%;
-    margin-top: 60%;
-    margin-left: 50%;
-    background-color: rgba(0,0,0,0);
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 10px;
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    
 }

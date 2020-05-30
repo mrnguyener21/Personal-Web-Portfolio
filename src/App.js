@@ -1,23 +1,20 @@
 import React from 'react';
-import { About, Project, NavBar, Contact, Welcome } from './components'
+import { About, Project, NavBar, Contact, Welcome, HomeButton } from './components'
 
+// import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import styles from './App.module.scss'
 const App = () => {
 
-
   return (
   <>
-      <NavBar/>
-      <a name='top'></a>
+    <div className={styles.container}>
+      <NavBar />
       <Welcome />
-      <a name='about'></a>
-      <div className={styles.buffer1}></div>
       <About/>
-      <a name='project'></a>
-      <div className={styles.buffer2}></div>
       <Project/>
-      <Contact />
-      <a name='contact'></a>
+      <Contact /> 
+      <HomeButton/>
+    </div>
     </>
   );
   

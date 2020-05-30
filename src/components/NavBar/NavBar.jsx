@@ -4,11 +4,10 @@ import { Link } from 'react-scroll'
 
 import styles from './NavBar.module.scss';
 
-
 const NavBar = () => {
 
     return (
-        <div id='container' className={styles.container}>
+        <div className={styles.container}>
             <div className={styles.name}>
                 <h3>Victor Nguyen</h3>
             </div>

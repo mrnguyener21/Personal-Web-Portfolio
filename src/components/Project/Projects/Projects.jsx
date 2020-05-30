@@ -44,8 +44,8 @@ const Projects = () => {
                         </div>
                     </div>
                         <div className={styles.buttonContainer}>
-                            <button className={styles.button} onClick={()=> window.open(sourceCode)} >● Source Code ●</button>
-                            <button className={styles.button} onClick={()=>window.open(liveDemo)} >● Live Demo ●</button>
+                            <button className={styles.button} onClick={()=> window.open(sourceCode)} >Source Code</button>
+                            <button className={styles.button} onClick={()=>window.open(liveDemo)} >Live Demo</button>
                         </div>
                 </div>
                 </>
