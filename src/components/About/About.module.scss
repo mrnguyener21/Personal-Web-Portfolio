@@ -114,8 +114,11 @@ button:hover {
 }
 
 .modal{
-    margin-top: 4%;
-    margin-left: 5%;
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 70%;
+    margin-left: 20%;
+
     outline: none !important; 
 }

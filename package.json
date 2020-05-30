@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.10.0",
     "cra-template": "1.0.3",
+    "devicon": "^2.2.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
