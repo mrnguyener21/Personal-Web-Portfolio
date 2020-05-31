@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Skill from './Skill/Skill'
+import Skills from './Skills/Skills'
 
 import profilePic from '../../image/profilePic.png'
 
@@ -46,7 +46,7 @@ const About = () => {
                     <div className={styles.buttonContainer}>
                     <button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>TECHNICAL SKILLS</button>
                     <Modal className={styles.modal} open={isSkillModalOpen} onClose={() => setIsSkillModalOpen(false)}>
-                        <Skill handleClose={() => setIsSkillModalOpen(false)} />
+                        <Skills handleClose={() => setIsSkillModalOpen(false)} />
                     </Modal>
                     </div>
                 </div>
