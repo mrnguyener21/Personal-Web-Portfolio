@@ -1,6 +1,11 @@
 import React from 'react'
 import styles from './Contact.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
+
+
 const Contact = () => {
+    const btnClick = (value) => value === 0 ? window.open("https://www.linkedin.com/in/victortnguyen/"):window.open("https://github.com/mrnguyener21")
     return (
         <div id='contact' className={styles.container}>
             <div className={styles.topContainer}>
@@ -15,10 +20,13 @@ const Contact = () => {
                 <input className={styles.message} placeholder='Message'></input>
                 <button className={styles.button}>Send Message</button>
                 <div className={styles.myInformationContainer}>
-                    <h1>Phone</h1>
-                    <h1>email</h1>
-                    <h1>linkedin</h1>
-                    <h1>Github</h1>
+                    <h3 className={styles.phone}> 📱:562-277-4337</h3>
+                    <button className={styles.link} onClick={()=> btnClick(0)}>
+                        <FontAwesomeIcon size='2x' icon={faLinkedinIn} color='white' className={styles.icon} />                    
+                    </button>
+                    <button className={styles.link} onClick={()=> btnClick(1)}>
+                        <FontAwesomeIcon size='2x' icon={faGithub} color='white' className={styles.icon} />                    
+                    </button>
                 </div>
                 </div>
         </div>
