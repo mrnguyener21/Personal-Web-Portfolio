@@ -1,3 +1,4 @@
+
 import React from 'react'; 
 import styles from './Skills.module.scss'
 
@@ -11,5 +12,4 @@ const Skills = () => {
         </div>    
     );
 };
-
 export default Skills;

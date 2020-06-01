@@ -1,3 +1,4 @@
+
 import bootStrap from '../../../image/bootStrap.png'
 import css from '../../../image/css.png'
 import git from '../../../image/git.png'
@@ -21,7 +22,4 @@ export default [
         {image:git , description:'GIT'},
         {image:gitHub , description:'GITHUB'},
     ]
-
-
-
 
