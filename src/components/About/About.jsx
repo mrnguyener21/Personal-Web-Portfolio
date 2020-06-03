@@ -11,7 +11,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 
-
 const About = () => {
     const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
     

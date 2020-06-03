@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Project, NavBar, Contact, Welcome, HomeButton } from './components'
+import { About, Projects, NavBar, Contact, Welcome, HomeButton } from './components'
 
 // import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import styles from './App.module.scss'
@@ -11,7 +11,7 @@ const App = () => {
       <NavBar />
       <Welcome />
       <About/>
-      <Project/>
+      <Projects/>
       <Contact /> 
       <HomeButton/>
     </div>
