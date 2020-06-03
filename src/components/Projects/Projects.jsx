@@ -1,7 +1,7 @@
 import React from 'react';
-import yugioh from  '../../../image/yugioh.JPG'
-import ticTacToe from  '../../../image/ticTacToe.JPG'
-import financialWebApp from '../../../image/financialWebApp.JPG'
+import yugioh from  '../../image/yugioh.JPG'
+import ticTacToe from  '../../image/ticTacToe.JPG'
+import financialWebApp from '../../image/financialWebApp.JPG'
 
 import styles from './Projects.module.scss';
 

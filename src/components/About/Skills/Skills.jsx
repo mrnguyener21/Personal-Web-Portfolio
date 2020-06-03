@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './Skills.module.scss'
 import {rowOne, rowTwo} from './data'
 
-import Skill from './Skill';
 
 const Skills = () =>  (
     <div className={styles.container}> 
