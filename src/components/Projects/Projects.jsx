@@ -28,7 +28,7 @@ const projects = [
         description: 'A website containing different tools to help people with their financial needs. A solution to what I seen how each tool would have their own site, but not a central hub for multiple tools.',
         technologies: 'HTML5 | CSS3 | JAVASCRIPT | REACT',
         sourceCode: 'https://github.com/mrnguyener21/FInancial_Tool_Web_App',
-        liveDemo: ''
+        liveDemo: 'https://vnfinancial.netlify.app/'
     }
 ]
 
