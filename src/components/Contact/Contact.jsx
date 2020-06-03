@@ -44,8 +44,7 @@ const Contact = () => {
                     
                 <input className={styles.message} name="user_message" placeholder='Message'></input>
                 {message}
-                <input type="submit" value="Send" />
-
+                <input className={styles.button} type="submit" value="Send" onClick={()=>alert('Email has been sent. Thank you')}/>
                 </form>
 
                 <div className={styles.myInformationContainer}>
