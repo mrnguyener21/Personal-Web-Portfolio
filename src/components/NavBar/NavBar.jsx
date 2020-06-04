@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../image/logo.png'
 
 import { Link } from 'react-scroll'
 
@@ -8,8 +9,8 @@ const NavBar = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.name}>
-                <h3>Victor Nguyen</h3>
+            <div className={styles.logoContainer}>
+                <img className={styles.logo} src={logo}/>
             </div>
             <div className={styles.categoryContainer}>
                 <Link activeClass="active" className={styles.category} to="about" spy={true} smooth={true} duration={500} >About Me</Link>  
@@ -22,6 +23,4 @@ const NavBar = () => {
 
 export default NavBar;
 
-// primary color: #02203c; will also use this color for white backgrounds
-// secondary color: rgb(104, 104, 209)
-//third-ary color:#15314b;
+
