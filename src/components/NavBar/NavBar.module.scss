@@ -99,14 +99,18 @@ width: 100%;
    }
 
    .category{
-     font-size: 22px;
-     margin: 0 2%;
+     font-size: 23px;
+     margin: 0 5%;
    }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
   .logoContainer{
    width: 0; 
+  }
+
+  .category{
+    font-size: 23px;
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
