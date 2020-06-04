@@ -37,7 +37,7 @@ const Projects = () => {
         <>
             <div name="project" className={styles.container}>
                 <h1 className={styles.title}>PROJECTS</h1>
-                    <h3 className={styles.intro}>Below are some of the projects that I have worked on and created. You can hover over them for a description of wha t the project and if you're interested you can check out the source code or even see a live project itself out. 👇</h3>
+                    {/* <h3 className={styles.intro}>Below are some of the projects that I have worked on and created. You can hover over them for a description of wha t the project and if you're interested you can check out the source code or even see a live project itself out. 👇</h3> */}
                 <div className={styles.projectContainer}>
                     {projects.map(({ image, name, description, technologies, sourceCode, liveDemo }) => (
                         <>
