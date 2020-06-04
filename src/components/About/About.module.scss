@@ -129,52 +129,146 @@ button:hover {
 }
 
 @media only screen and (max-width: 500px) {/*iphoneX*/
+    .container{
+        padding-top: 50%;
+        padding-bottom: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cardContainer{
+        // border: solid;
+        width: 100%;
+    }
 
+    .card{
+        padding: 7%;
+        width: 100%;
+        margin-left: 30%;
+    }
+
+    .cardButtonContainer{
+        // border: solid;
+        width: 90%;
+        padding: 2%;
+        margin: 10% 0 0 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{
+        padding: 6%;
+        margin-bottom: 10%;
+
+    }
+
+    .infoContainer{
+        display: none;
+    }
 }
   
 @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
+    .container{
+        padding-top: 50%;
+        padding-bottom: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cardContainer{
+        // border: solid;
+        width: 100%;
+    }
 
+    .card{
+        padding: 7%;
+        width: 100%;
+        margin-left: 30%;
+    }
+
+    .cardButtonContainer{
+        // border: solid;
+        width: 90%;
+        padding: 2%;
+        margin: 10% 0 0 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{
+        padding: 5%;
+        margin-bottom: 10%;
+
+    }
+
+    .infoContainer{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
+    .container{
+        padding-top: 18%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cardContainer{
+        width: 50%;
+    }
+
+    .card{
+        padding: 7%;
+    }
+
+    .cardButtonContainer{
+        // border: solid;
+        width: 90%;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{
+        padding: 2% 8%;
+        
+
+    }
+
+    .infoContainer{
+        display: none;
+    }
 
 }
 
 
 @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
     .container{
-        padding-top: 10%;
+        padding-top: 15%;
+        margin-bottom: 10%;
         display: flex;
-        // justify-content: center;
         align-items: center;
         flex-direction: column;
     }
     .cardContainer{
-        // margin-top: 10%;
-        // border: solid red;
-        // height: 100%;
         width: 50%;
     }
 
     .card{
         padding: 7%;
-        // border: solid;
-    }
-
-    .cardContentInfo{
-        // border: solid;
     }
 
     .cardButtonContainer{
-        // border: solid red;
         width: 90%;
-        padding: 2%;
+        padding: 5% 2% 2% 2%;
         display: flex;
         justify-content: center;
     }
 
     .button{
-        padding: 2% 5%;
+        padding: 3% 6%;
 
     }
 
