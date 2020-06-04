@@ -107,6 +107,10 @@
     padding: 1% 3% 1% 3%;
 }
 
+.cardButtonContainer{
+        display: none;
+}
+
 button:hover {
     background-color: #3b3b7a;
     transition: all 0.2s ease-in-out 0s;
@@ -138,6 +142,44 @@ button:hover {
 
 
 @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
+    .container{
+        padding-top: 10%;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cardContainer{
+        // margin-top: 10%;
+        // border: solid red;
+        // height: 100%;
+        width: 50%;
+    }
 
+    .card{
+        padding: 7%;
+        // border: solid;
+    }
+
+    .cardContentInfo{
+        // border: solid;
+    }
+
+    .cardButtonContainer{
+        // border: solid red;
+        width: 90%;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{
+        padding: 2% 5%;
+
+    }
+
+    .infoContainer{
+        display: none;
+    }
 
 }

@@ -1,0 +1,17 @@
+.container{
+    background-color: white;
+    color:#15314b;
+    // border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 0 0px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+
+
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Skills from './Skills/Skills'
+import AboutMeModal from './AboutMeModal/AboutMeModal'
 
 import profilePic from '../../image/profilePic.png'
 
@@ -13,6 +14,7 @@ import Modal from '@material-ui/core/Modal';
 
 const About = () => {
     const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
+    const [isAboutMeOpen, setIsAboutMeOpen] = useState(false);
     
     return (
         <div id='about' className={styles.container}>
@@ -28,11 +30,25 @@ const About = () => {
                         <Typography gutterBottom variant="h5" align='center'>
                             Victor Nguyen
                         </Typography>
-                        <Typography variant="body1" align='left'>
-                              📱:562-277-4337 |✉️: victortnguyen.workemail@gmail.com
+                        <Typography className={styles.cardContentInfo} variant="body1" align='center'>
+                              📱:562-277-4337 
+                        </Typography>
+                        <Typography className={styles.cardContentInfo} variant="body1" align='center'>
+                              ✉️: victortnguyen.workemail@gmail.com
                         </Typography>
                         </CardContent>
                     </Card>
+                    <div className={styles.cardButtonContainer}>
+                        <button type="button" onClick={() => setIsAboutMeOpen(true)} className={styles.button} id={styles.aboutMeButton}>ABOUT ME</button>
+                        <Modal className={styles.modal} open={isAboutMeOpen} onClose={() => setIsAboutMeOpen(false)}>
+                            <AboutMeModal handleClose={() => setIsAboutMeOpen(false)} />
+                        </Modal>
+
+                        <button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>TECHNICAL SKILLS</button>
+                        <Modal className={styles.modal} open={isSkillModalOpen} onClose={() => setIsSkillModalOpen(false)}>
+                            <Skills handleClose={() => setIsSkillModalOpen(false)} />
+                        </Modal>
+                    </div>
                 </div>
                 <div className={styles.infoContainer}>
                     <h1 className={styles.title}>ABOUT ME</h1>
@@ -43,10 +59,15 @@ const About = () => {
                         Now I want to give value to others with not only my logical knowledge and mindset from the accounting and financial field, but to also provide value by giving others one of the best tools someone can have in the modern day. I want to provide others with amazing websites that fits their needs and criteria. In doing so, the value that person can now give will have a greater reach and in turn give an even better experience as well. Below is a button you can click to see the tools I will be using to make what I say happen. 😄
                     </h3>
                     <div className={styles.buttonContainer}>
-                    <button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>TECHNICAL SKILLS</button>
-                    <Modal className={styles.modal} open={isSkillModalOpen} onClose={() => setIsSkillModalOpen(false)}>
-                        <Skills handleClose={() => setIsSkillModalOpen(false)} />
-                    </Modal>
+                        <button type="button" onClick={() => setIsAboutMeOpen(true)} className={styles.button}>ABOUT ME</button>
+                        <Modal className={styles.modal} open={isAboutMeOpen} onClose={() => setIsAboutMeOpen(false)}>
+                            <AboutMeModal handleClose={() => setIsAboutMeOpen(false)} />
+                        </Modal>
+
+                        <button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>TECHNICAL SKILLS</button>
+                        <Modal className={styles.modal} open={isSkillModalOpen} onClose={() => setIsSkillModalOpen(false)}>
+                            <Skills handleClose={() => setIsSkillModalOpen(false)} />
+                        </Modal>
                     </div>
                 </div>
             </div>
