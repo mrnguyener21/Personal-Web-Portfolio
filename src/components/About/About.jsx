@@ -12,12 +12,18 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+AOS.init();
+
 const About = () => {
     const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
     const [isAboutMeOpen, setIsAboutMeOpen] = useState(false);
     
+
     return (
-        <div id='about' className={styles.container}>
+        <div id='about' className={styles.container} data-aos="fade-up" data-aos-duration="1500">
             <div className={styles.contentContainer}>
                 <div className={styles.cardContainer}>
                     <Card className={styles.card}>

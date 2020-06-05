@@ -5,11 +5,10 @@ import {faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 import emailjs from 'emailjs-com';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
-
-
-
-// template ID: template_sDD63FtQ
+AOS.init();
 
 const Contact = () => {
     const btnClick = (value) => value === 0 ? window.open("https://www.linkedin.com/in/victortnguyen/"):window.open("https://github.com/mrnguyener21")
@@ -30,8 +29,8 @@ const Contact = () => {
       }
     
     return (
-        <div id='contact' className={styles.container}>
-            <div className={styles.topContainer}>
+        <div id='contact' className={styles.container} >
+            <div className={styles.topContainer} data-aos='fade' data-aos-duration="1500">
             <h1 className={styles.title}>CONTACT ME</h1>
             </div>
                 <div className={styles.contactContainer}>
@@ -47,7 +46,7 @@ const Contact = () => {
                 <input className={styles.button} type="submit" value="Send" onClick={()=>alert('Email has been sent. Thank you')}/>
                 </form>
 
-                <div className={styles.myInformationContainer}>
+                <div className={styles.myInformationContainer} data-aos='fade' data-aos-duration="1500">
                     <h3 className={styles.phone}> 📱:562-277-4337</h3>
                     <button className={styles.link} onClick={()=> btnClick(0)}>
                         <FontAwesomeIcon size='2x' icon={faLinkedinIn} color='white' className={styles.icon} />                    

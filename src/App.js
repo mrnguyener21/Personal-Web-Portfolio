@@ -1,7 +1,8 @@
 import React from 'react';
 import { About, Projects, NavBar, Contact, Welcome, HomeButton } from './components'
 
-// import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll';
+
 import styles from './App.module.scss'
 const App = () => {
 
@@ -10,7 +11,9 @@ const App = () => {
     <div className={styles.container}>
       <NavBar />
       <Welcome />
-      <About/>
+      {/* <ScrollAnimation animateIn='fadeIn'> */}
+        <About/>
+      {/* </ScrollAnimation> */}
       <Projects/>
       <Contact /> 
       <HomeButton/>
