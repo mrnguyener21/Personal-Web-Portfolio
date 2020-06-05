@@ -14,13 +14,37 @@
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    // margin-top: 10%;
+    
+    position: relative;
+    animation-name: introContainerAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    left: -1000px;
+    opacity: 0;
 }
 
+    @keyframes introContainerAnimation{
+        100%{
+            left:0;
+            opacity:1;
+        };
+    }
 
 .buttonContainer{
     width: 100%;
+    // animation-name: buttonContainerAnimation;
+    // animation-duration: 1s, 0.5s;
+    // animation-delay:3s;
+    // animation-fill-mode: forwards;
+    // opacity: 0;
 }
+
+// @keyframes buttonContainerAnimation{
+//     100%{
+//         width:100%;
+//         // opacity: 1;
+//     };
+// }
 
 .button{
     outline: none;
@@ -39,13 +63,69 @@ button:hover {
     cursor: pointer
 }
 
+#button1{
+    animation-name: button1Animation;
+    animation-duration: 1s, 0.5s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+@keyframes button1Animation {
+    100% {
+        transform: scale(1);
+    }
+}
+
+#button2{
+    animation-name: button2Animation;
+    animation-duration: 1s, 0.5s;
+    animation-delay:2.5s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+@keyframes button2Animation {
+    100% {
+        transform: scale(1);
+    }
+}
+
+#button3{
+    animation-name: button1Animation;
+    animation-duration: 1s, 0.5s;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+@keyframes button2Animation {
+    100% {
+        transform: scale(1);
+    }
+}
+
 .image{
     margin-top: 5%;
     width:50%;
     border-radius: 15px;
-    // border: solid;
     margin-left: 2%;
     margin-right: -5%;
+
+    position: relative;
+    animation-name: imageAnimation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    right: -1000px;
+    opacity: 0;
+}
+
+@keyframes imageAnimation{
+    100%{
+        right:0;
+        opacity:1;
+    };
 }
 
 @media only screen and (max-width: 500px) {/*iphoneX*/
@@ -68,6 +148,22 @@ button:hover {
     .button{
         padding: 2% 6%;
         font-size: 20px;
+    }
+    
+    #button1{
+        animation-delay: 1s;
+    }
+
+    #button2{
+        animation-delay: 1.5s;
+    }
+
+    #button3{
+        animation-delay: 2s;
+    }
+
+    .image{
+        display: none;
     }
     
     .image{
@@ -97,6 +193,22 @@ button:hover {
         font-size: 15px;
     }
     
+    #button1{
+        animation-delay: 1s;
+    }
+
+    #button2{
+        animation-delay: 1.5s;
+    }
+
+    #button3{
+        animation-delay: 2s;
+    }
+
+    .image{
+        display: none;
+    }
+
     .image{
         display: none;
     }
@@ -123,6 +235,23 @@ button:hover {
         padding: 2% 6%;
         font-size: 15px;
     }
+        
+    #button1{
+        animation-delay: 1s;
+    }
+
+    #button2{
+        animation-delay: 1.5s;
+    }
+
+    #button3{
+        animation-delay: 2s;
+    }
+
+    .image{
+        display: none;
+    }
+
     
     .image{
         display: none;
@@ -152,7 +281,21 @@ button:hover {
     font-size: 15px;
 }
 
+#button1{
+    animation-delay: 1s;
+}
+
+#button2{
+    animation-delay: 1.5s;
+}
+
+#button3{
+    animation-delay: 2s;
+}
+
 .image{
     display: none;
 }
+
+
 }

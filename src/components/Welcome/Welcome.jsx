@@ -9,9 +9,9 @@ const Welcome = () => {
             <div className={styles.introContainer}>
                 <h1 className={styles.intro}>Hi, I'm Victor, a Self-Taught Front-End Developer and the newest member of your team! Welcome to my portfolio and let me know if you see anything you like 👍</h1>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.button}>RESUME</button>
-                    <button className={styles.button} onClick={()=> btnClick(0)}>LINKEDIN</button>
-                    <button className={styles.button} onClick={()=> btnClick(1)}>GITHUB</button>
+                    <button className={styles.button} id={styles.button1}>RESUME</button>
+                    <button className={styles.button} id={styles.button2} onClick={()=> btnClick(0)}>LINKEDIN</button>
+                    <button className={styles.button} id={styles.button3} onClick={()=> btnClick(1)}>GITHUB</button>
                 </div>
             </div>
             <img className={styles.image} src={codeSnippet}/>
