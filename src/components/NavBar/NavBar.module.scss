@@ -3,15 +3,11 @@
     justify-content: space-between;
     background-color: #02203c;
     height: 100px;
-    // margin:0;
-    // padding-top: 1%;
-    // padding-bottom: 1%;
     font-size: 20px;
-    // border: solid red;
-    overflow: auto;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
     &:hover{
       cursor: default;
     }

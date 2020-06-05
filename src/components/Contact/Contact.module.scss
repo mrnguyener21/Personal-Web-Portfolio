@@ -20,23 +20,23 @@
 
 }
 
-.title::before {
-    content: "";
-    position: absolute;
-    width: 15%;
-    height: 3px;
-    bottom: 37%;
-    // left: 44%;
-    background-color: #02203c;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
+// .title::before {
+//     content: "";
+//     position: absolute;
+//     width: 15%;
+//     height: 3px;
+//     bottom: 37%;
+//     // left: 44%;
+//     background-color: #02203c;
+//     visibility: hidden;
+//     transform: scaleX(0);
+//     transition: all 0.3s ease-in-out 0s;
+//   }
 
-  .title:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
+//   .title:hover::before {
+//     visibility: visible;
+//     transform: scaleX(1);
+//   }
 
 
 .contactContainer{

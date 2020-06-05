@@ -16,7 +16,7 @@
     // border:solid;
     display: flex;
     justify-content: center;
-    margin: 0 0 5.5% 5%;
+    margin-left: 5%;
     padding-top:7%;
     font-size: 50px;
     position: relative;
@@ -27,27 +27,27 @@
     }
 }
 // this is for the animated underline for title
-.title::before {
-    content: "";
-    position: absolute;
-    width: 53%;
-    height: 3px;
-    bottom: 3%;
-    // left: 44.5%;
-    background-color: white;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
+// .title::before {
+//     content: "";
+//     position: absolute;
+//     width: 53%;
+//     height: 3px;
+//     bottom: 3%;
+//     // left: 44.5%;
+//     background-color: white;
+//     visibility: hidden;
+//     transform: scaleX(0);
+//     transition: all 0.3s ease-in-out 0s;
+//   }
 
-  .title:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
+//   .title:hover::before {
+//     visibility: visible;
+//     transform: scaleX(1);
+//   }
 
 .intro{
     // border:solid;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     padding-bottom: 3%;
     width: 50%;
@@ -160,7 +160,11 @@ button:hover {
     }
 
     .title{
-        margin-top: 10%;
+        margin-top: 10% 0 5.5% 0;
+    }
+
+    .intro{
+        display: none;
     }
 
     .projectContainer{
@@ -179,15 +183,26 @@ button:hover {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
+    .title{
+        margin-bottom: 5.5%;
+    }
+
+    .intro{
+        display: none;
+    }
+
     .button{
         width: 25%;
         padding: 2% 3%;
-
     }
 }
 @media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
     .title{
-        margin-top: 10%;
+        margin-top: 10% 0 0 5.5%;
+    }
+
+    .intro{
+        display: none;
     }
 
     .projectContainer{
@@ -207,7 +222,11 @@ button:hover {
 
 @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
     .title{
-        margin-top: 10%;
+        margin-top: 10% 0 0 5.5%;
+    }
+
+    .intro{
+        display: none;
     }
 
     .projectContainer{
