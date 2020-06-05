@@ -8,7 +8,16 @@
     width: 40%;
     border-radius: 15px;
     box-shadow: 0 0 0px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
+    
+    animation-name: containerAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    transform:scale(0);
 
+}
+
+@keyframes containerAnimation{
+    100%{transform:scale(1)}
 }
 
 .contentContainer{

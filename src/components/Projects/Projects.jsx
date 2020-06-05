@@ -8,6 +8,8 @@ import styles from './Projects.module.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
+AOS.init();
+
 const projects = [
     {
         image: yugioh,
@@ -35,7 +37,6 @@ const projects = [
     }
 ]
 
-    AOS.init();
 
 const Projects = () => {
     return(

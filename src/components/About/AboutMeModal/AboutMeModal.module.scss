@@ -12,6 +12,15 @@
     border-radius: 15px;
     box-shadow: 0 0 0px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
+
+    animation-name: containerAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    transform:scale(0);
+}
+
+@keyframes containerAnimation{
+    100%{transform:scale(1)}
 }
 
 @media only screen and (max-width: 500px) {/*iphoneX*/
