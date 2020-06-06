@@ -81,7 +81,7 @@
 
 .button{
     outline: none;
-    border:0;
+    border:none;
     background-color: #6868d1;
     color: white;
     border-radius: 10px;
@@ -110,7 +110,31 @@ button:hover {
     outline: none !important; 
 }
 
-@media only screen and (max-width: 500px) {/*iphoneX*/
+@media only screen and (max-width: 400px) {/*iphoneX*/
+    .container{
+        width:95vh;
+        height: 211vh;
+        border: solid;
+
+    }
+    
+    .cardContainer{
+        display: none;
+    }
+
+
+    .infoContainer{
+        width: 80%;
+        margin-top: 15%;
+        // padding: 0;
+        font-size: 20px;
+    }
+
+    .button{
+        width: 25%;
+        padding: 2% 0;
+    }
+
     // .container{
     //     padding-top: 50%;
     //     padding-bottom: 50%;
@@ -150,9 +174,10 @@ button:hover {
     // }
 }
   
-@media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
+@media only screen and (min-width: 401px) and (max-width: 750px) {/*plus size phone*/
     .container{
         width:95vh;
+        height: 173vh;
 
     }
     
@@ -160,11 +185,19 @@ button:hover {
         display: none;
     }
 
+
     .infoContainer{
-        width: 90%;
-        margin-top: 25%;
-        font-size: 15px;
+        width: 80%;
+        margin-top: 15%;
+        // padding: 0;
+        font-size: 18px;
     }
+
+    .button{
+        width: 25%;
+        padding: 2% 0;
+    }
+    
     // .cardContainer{
     //     display: none;
     // }
@@ -240,9 +273,10 @@ button:hover {
     //     justify-content: center;
     // }
 
-    // .button{
-    //     padding: 2% 8%;
-        
+    .button{
+        width: 25%;
+        padding: 2% 0;
+    }
 
     // }
 
