@@ -10,7 +10,6 @@
     justify-content: center;
     position: relative;
     text-decoration: none;
-    font-size: 50px;
     padding-bottom: 2%;
 
     &:hover {
@@ -65,7 +64,6 @@
     height: 50px;
     position: relative;
     text-align: center;
-    font-size: medium;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -94,9 +92,9 @@
     color: white;
     border-radius: 10px;
     width: 15%;
-    font-size: 17px;
     margin:1% 1% 1% 43%;
     padding: 1% 0.5%;
+    font-size: 18px;
 }
 
 .button:hover {

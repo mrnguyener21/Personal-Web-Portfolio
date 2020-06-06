@@ -42,11 +42,10 @@ const Projects = () => {
     return(
             <div name="project" className={styles.container}>
                 <h1 className={styles.title} data-aos='fade-up' data-aos-duration="1500" >PROJECTS</h1>
-                    <h3 className={styles.intro} data-aos='fade-up' data-aos-duration="1500">Below are some of the projects that I have worked on and created. You can hover over them for a description of wha t the project and if you're interested you can check out the source code or even see a live project itself out. 👇</h3>
+                    <h3 className={styles.intro} data-aos='fade-up' data-aos-duration="1500">Below are some of the projects that I have worked on and created. You can hover over them for a description of wha t the project and if you're interested you can check out the source code or even see a live project itself out. <span role='img' aria-label='pointing down'>👇</span></h3>
                 <div className={styles.projectContainer}>
                     {projects.map(({ image, name, description, technologies, sourceCode, liveDemo }) => (
-                        <>
-                        <div className={styles.content}>
+                        <div key={name} className={styles.content}>
                             <div className={styles.project} data-aos='fade-up' data-aos-duration="1500" >
                                 <img className={styles.projectImage} src={image}/>
                                 <div className={styles.content}>
@@ -60,7 +59,6 @@ const Projects = () => {
                                     <button className={styles.button} onClick={()=>window.open(liveDemo)} >Live Demo</button>
                                 </div>
                         </div>
-                        </>
                         ))}
                 </div>
             </div>

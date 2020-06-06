@@ -1,27 +1,18 @@
 import React from 'react';
 import { About, Projects, NavBar, Contact, Welcome, HomeButton } from './components'
 
-// import ScrollAnimation from 'react-animate-on-scroll';
+import styles from './App.module.scss';
 
-import styles from './App.module.scss'
-const App = () => {
-
-  return (
+const App = () => (
   <>
-    <div className={styles.container}>
-      <NavBar />
-      <Welcome />
-      {/* <ScrollAnimation animateIn='fadeIn'> */}
-        <About/>
-      {/* </ScrollAnimation> */}
-      <Projects/>
-      <Contact /> 
-      <HomeButton/>
-    </div>
-    </>
-  );
-  
-}
+    <NavBar />
+    <Welcome />
+    <About/>
+    <Projects/>
+    <Contact /> 
+    <HomeButton/>
+  </>
+);
 
-  export default App;
+export default App;
   

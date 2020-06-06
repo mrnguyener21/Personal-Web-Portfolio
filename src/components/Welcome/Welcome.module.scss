@@ -1,9 +1,13 @@
+
 .container{
+    // border: solid yellow;
     display: flex;
-    // justify-content: center;
+    justify-content: flex-start;
     background-color: #02203c;
     color: white;
-    padding: 5% 5% 25% 5%;
+    // padding: 5% 5% 25% 5%;
+    height: 100vh;
+    padding: 0 3%;
 }
 
 .introContainer{
@@ -11,9 +15,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
-    font-size: 20px;
+    width: 50%;
+    height: 50%;
     
     position: relative;
     animation-name: introContainerAnimation;
@@ -21,6 +26,11 @@
     animation-fill-mode: forwards;
     left: -1000px;
     opacity: 0;
+
+    .intro {
+        letter-spacing: 0.1em;
+        line-height: 1.4em;
+    }
 }
 
     @keyframes introContainerAnimation{
@@ -52,9 +62,8 @@
     background-color: #6868d1;
     color: white;
     border-radius: 10px;
-    font-size: 15px;
     margin:1%;
-    padding: 1% 2% 1% 2%;
+    padding: 1% 2%;
 }
 
 button:hover {
@@ -63,54 +72,56 @@ button:hover {
     cursor: pointer
 }
 
-#button1{
-    animation-name: button1Animation;
-    animation-duration: 1s, 0.5s;
-    animation-delay:2s;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+// #button1{
+//     animation-name: button1Animation;
+//     animation-duration: 1s, 0.5s;
+//     animation-delay:2s;
+//     animation-fill-mode: forwards;
+//     transform: scale(0);
+// }
 
-@keyframes button1Animation {
-    100% {
-        transform: scale(1);
-    }
-}
+// @keyframes button1Animation {
+//     100% {
+//         transform: scale(1);
+//     }
+// }
 
-#button2{
-    animation-name: button2Animation;
-    animation-duration: 1s, 0.5s;
-    animation-delay:2.5s;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+// #button2{
+//     animation-name: button2Animation;
+//     animation-duration: 1s, 0.5s;
+//     animation-delay:2.5s;
+//     animation-fill-mode: forwards;
+//     transform: scale(0);
+// }
 
-@keyframes button2Animation {
-    100% {
-        transform: scale(1);
-    }
-}
+// @keyframes button2Animation {
+//     100% {
+//         transform: scale(1);
+//     }
+// }
 
-#button3{
-    animation-name: button1Animation;
-    animation-duration: 1s, 0.5s;
-    animation-delay:3s;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+// #button3{
+//     animation-name: button1Animation;
+//     animation-duration: 1s, 0.5s;
+//     animation-delay:3s;
+//     animation-fill-mode: forwards;
+//     transform: scale(0);
+// }
 
-@keyframes button2Animation {
-    100% {
-        transform: scale(1);
-    }
-}
+// @keyframes button2Animation {
+//     100% {
+//         transform: scale(1);
+//     }
+// }
 
 .image{
-    margin-top: 5%;
-    width:50%;
+    // border: solid;
+    margin-top: 10%;
+    // width:50%;
+    height: 750px;
     border-radius: 15px;
-    margin-left: 2%;
-    margin-right: -5%;
+    // margin-left: 2%;
+    // margin-right: -5%;
 
     position: relative;
     animation-name: imageAnimation;
@@ -128,17 +139,24 @@ button:hover {
     };
 }
 
-@media only screen and (max-width: 500px) {/*iphoneX*/
+@media only screen and (max-width: 400px) {/*iphoneX*/
     .container{
-        margin-top: 9.75%;
-        padding-top: 20%;
-        width: 156%;
+        // border: solid red;
+        justify-content: center;
+        // align-items: center;
+        height: 200vh;
+        width:74vh;
+    
     }
     
     .introContainer{
         // border: solid;
-        padding: 0 10% 0% 10%;
+        padding: 0 10%;
+        // margin-top: -10%;
+        width: 100%;
+        justify-content: flex-end;
         font-size: 20px;
+        // align-items: center;
     }
     
     .buttonContainer{
@@ -147,41 +165,31 @@ button:hover {
     
     .button{
         padding: 2% 6%;
-        font-size: 20px;
     }
     
-    #button1{
-        animation-delay: 1s;
-    }
-
-    #button2{
-        animation-delay: 1.5s;
-    }
-
-    #button3{
-        animation-delay: 2s;
-    }
-
-    .image{
-        display: none;
-    }
     
     .image{
         display: none;
     }
 }
   
-@media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
+@media only screen and (min-width: 401px) and (max-width: 750px) {/*plus size phone*/
     .container{
-        margin-top: 9.75%;
-        padding-top: 25%;
+        // border: solid red;
+        justify-content: center;
+        // align-items: center;
+        // margin-top: 9.75%;
+        // padding-top: 25%;
+        height: 200vh;
+        width:92vh;
     
     }
     
     .introContainer{
         // border: solid;
-        padding: 0 10% 0% 10%;
-        font-size: 15px;
+        padding: 0 10%;
+        width: 100%;
+        justify-content: flex-end;
     }
     
     .buttonContainer{
@@ -190,24 +198,8 @@ button:hover {
     
     .button{
         padding: 2% 6%;
-        font-size: 15px;
     }
     
-    #button1{
-        animation-delay: 1s;
-    }
-
-    #button2{
-        animation-delay: 1.5s;
-    }
-
-    #button3{
-        animation-delay: 2s;
-    }
-
-    .image{
-        display: none;
-    }
 
     .image{
         display: none;
@@ -218,12 +210,15 @@ button:hover {
     .container{
         margin-top: 9.75%;
         padding-top: 10%;
+
     
     }
     
     .introContainer{
         // border: solid;
-        padding: 0 10% 0% 10%;
+        padding: 0 10%;
+        width: 100%;
+        justify-content: center;
         font-size: 15px;
     }
     
@@ -233,26 +228,8 @@ button:hover {
     
     .button{
         padding: 2% 6%;
-        font-size: 15px;
     }
         
-    #button1{
-        animation-delay: 1s;
-    }
-
-    #button2{
-        animation-delay: 1.5s;
-    }
-
-    #button3{
-        animation-delay: 2s;
-    }
-
-    .image{
-        display: none;
-    }
-
-    
     .image{
         display: none;
     }
@@ -268,8 +245,9 @@ button:hover {
 
 .introContainer{
     // border: solid;
-    padding: 0 10% 0% 10%;
-    font-size: 20px;
+    padding: 0 10%;
+    width: 100%;
+    justify-content: center;
 }
 
 .buttonContainer{
@@ -278,20 +256,8 @@ button:hover {
 
 .button{
     padding: 2% 6%;
-    font-size: 15px;
 }
 
-#button1{
-    animation-delay: 1s;
-}
-
-#button2{
-    animation-delay: 1.5s;
-}
-
-#button3{
-    animation-delay: 2s;
-}
 
 .image{
     display: none;

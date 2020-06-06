@@ -1,10 +1,8 @@
-import React from 'react'
-import styles from './HomeButton.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
-
-
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import React from 'react';
+import styles from './HomeButton.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll';
 
 const HomeButton = () => {
     return (

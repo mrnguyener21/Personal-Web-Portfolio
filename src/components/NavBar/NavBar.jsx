@@ -10,7 +10,7 @@ const NavBar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.logoContainer}>
-                <img className={styles.logo} src={logo}/>
+                <img className={styles.logo} src={logo}  alt="logo" />
             </div>
             <div className={styles.categoryContainer}>
                 <Link activeClass="active" className={styles.category} to="about" spy={true} smooth={true} duration={500} >About Me</Link>  
