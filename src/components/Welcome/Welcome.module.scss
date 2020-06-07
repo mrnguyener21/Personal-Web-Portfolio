@@ -1,12 +1,12 @@
 
 .container{
     // border: solid yellow;
+    margin-top: 4.2%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: #02203c;
     color: white;
-    // padding: 5% 5% 25% 5%;
-    height: 100vh;
+    height: 92vh;
     padding: 0 3%;
 }
 
@@ -14,11 +14,15 @@
     // border: solid;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    width: 50%;
-    height: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    // text-align: center;
+    width: 40vw;
+    height: 50vh;
+    padding: 5%;
+    // margin-right: 2%;
+    // z-index: 2;
+    // padding: 0 5%;
     
     position: relative;
     animation-name: introContainerAnimation;
@@ -27,9 +31,12 @@
     left: -1000px;
     opacity: 0;
 
+    #myName{
+        font-size: 70px;
+        margin-bottom: 0;
+    }
     .intro {
-        letter-spacing: 0.1em;
-        line-height: 1.4em;
+        font-size: 40px;
     }
 }
 
@@ -40,30 +47,30 @@
         };
     }
 
+
+.buttonAndImageContainer{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin-top: 2%;
+}
 .buttonContainer{
-    width: 100%;
-    // animation-name: buttonContainerAnimation;
-    // animation-duration: 1s, 0.5s;
-    // animation-delay:3s;
-    // animation-fill-mode: forwards;
-    // opacity: 0;
+
+    width: 18vw;
+
 }
 
-// @keyframes buttonContainerAnimation{
-//     100%{
-//         width:100%;
-//         // opacity: 1;
-//     };
-// }
 
 .button{
     outline: none;
     border:none;
     background-color: #6868d1;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     margin:1%;
-    padding: 1% 2%;
+    padding: 2% 3%;
+    width: 10vh;
+    font-size: 20px;
 }
 
 button:hover {
@@ -72,71 +79,30 @@ button:hover {
     cursor: pointer
 }
 
-// #button1{
-//     animation-name: button1Animation;
-//     animation-duration: 1s, 0.5s;
-//     animation-delay:2s;
-//     animation-fill-mode: forwards;
-//     transform: scale(0);
-// }
-
-// @keyframes button1Animation {
-//     100% {
-//         transform: scale(1);
-//     }
-// }
-
-// #button2{
-//     animation-name: button2Animation;
-//     animation-duration: 1s, 0.5s;
-//     animation-delay:2.5s;
-//     animation-fill-mode: forwards;
-//     transform: scale(0);
-// }
-
-// @keyframes button2Animation {
-//     100% {
-//         transform: scale(1);
-//     }
-// }
-
-// #button3{
-//     animation-name: button1Animation;
-//     animation-duration: 1s, 0.5s;
-//     animation-delay:3s;
-//     animation-fill-mode: forwards;
-//     transform: scale(0);
-// }
-
-// @keyframes button2Animation {
-//     100% {
-//         transform: scale(1);
-//     }
-// }
 
 .image{
-    // border: solid;
-    margin-top: 10%;
-    // width:50%;
-    height: 750px;
-    border-radius: 15px;
-    // margin-left: 2%;
-    // margin-right: -5%;
-
+    height: 35vh;
+    border-radius: 10px;
+    margin-top: -4%;
+    
     position: relative;
     animation-name: imageAnimation;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    right: -1000px;
     opacity: 0;
 }
 
 @keyframes imageAnimation{
-    100%{
-        right:0;
-        opacity:1;
-    };
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+
 }
 
 @media only screen and (max-width: 400px) {/*iphoneX*/

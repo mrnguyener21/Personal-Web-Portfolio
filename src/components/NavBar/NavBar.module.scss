@@ -1,13 +1,14 @@
 .container {
-    // border: solid;
+    // border: solid white;
     display: flex;
     justify-content: space-between;
     background-color: #02203c;
-    height: 130px;
+    height: 8vh;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
+    // padding-top: 2%;
     // margin: 0 4%;
     &:hover{
       cursor: default;
@@ -15,10 +16,10 @@
 }
 
 .logoContainer{
-
+  // border: solid white;
   margin-left: 3%;
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
   align-items: center;
 }
 
@@ -30,6 +31,7 @@
 
 
 .categoryContainer{
+  // border: solid white;
     display: flex;
     width:80%;
     justify-content: flex-end;
