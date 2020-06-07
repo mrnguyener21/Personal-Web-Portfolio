@@ -89,6 +89,7 @@
     padding: 5%;
     height: 20vh;
     font-size: 35px;
+    width: 94%;
   }
 
    .categoryContainer{
@@ -121,9 +122,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    // padding: 5%;
     height: 20vh;
     font-size: 30px;
+    width: 93%;
   }
 
    .categoryContainer{
@@ -154,10 +156,22 @@
   .logoContainer{
     width: 10%;
   }
+
+
+  .logoContainer{
+    width: 7%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .logo{
+  width: 100%;
+  }
 }
 
-
-@media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
+@media only screen and (min-width: 1000px) and (max-width: 1100px) { /*ipad pro*/
 
   .logoContainer{
     // border: solid white;
@@ -170,8 +184,44 @@
   
   .logo{
   width: 100%;
-  // margin-top: 1%;
-  // padding-left: 5%;
   }
   
+}
+
+//below are responsiveness for vertical
+@media only screen and (min-width: 500px) and (max-width: 600px) and (orientation: landscape) {
+  .container{
+    // border: solid red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding: 5%;
+    height: 20vh;
+    font-size: 30px;
+    width: 93%;
+  }
+
+   .categoryContainer{
+     width: 100%;
+     margin:0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+
+  .logoContainer{
+    // border: solid;
+    margin-bottom: 5%;
+    margin-right: 5% ;
+  }
+
+  .logo{
+    width: 130px;
+  }
+   .category{
+     margin: 0 5%;
+   }
+
+
 }
