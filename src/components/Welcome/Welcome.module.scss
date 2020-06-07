@@ -1,12 +1,12 @@
 
 .container{
     // border: solid yellow;
-    margin-top: 4.2%;
+    // margin-top: 4.2%;
     display: flex;
     justify-content: center;
     background-color: #02203c;
     color: white;
-    height: 92vh;
+    height: 100vh;
     padding: 0 3%;
 }
 
@@ -15,11 +15,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    // justify-content: flex-start;
     // text-align: center;
-    width: 40vw;
+    width: 50vw;
     height: 50vh;
-    padding: 5%;
+    padding: 6% 0 0 10%;
     // margin-right: 2%;
     // z-index: 2;
     // padding: 0 5%;
@@ -83,12 +83,12 @@ button:hover {
 .image{
     height: 35vh;
     border-radius: 10px;
-    margin-top: -4%;
-    
+    margin-top: -2vh;
+
     position: relative;
     animation-name: imageAnimation;
     animation-duration: 1s;
-    animation-delay: 1s;
+    animation-delay: 0.75s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -205,29 +205,43 @@ button:hover {
 @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
 .container{
     margin-top: 9.75%;
-    padding-top: 10%;
+    // padding-top: 10%;
+    padding-left: 0;
 
 }
 
 .introContainer{
     // border: solid;
-    padding: 0 10%;
+    // padding: 0 10%;
     width: 100%;
-    justify-content: center;
+    // justify-content: center;
+}
+
+.buttonAndImageContainer{
+    // border: solid;
+    width: 90vw;
+    justify-content: space-between;
 }
 
 .buttonContainer{
-    padding-top: 5%;
+    // border: solid yellow;
+    width: 50%;
 }
-
-.button{
-    padding: 2% 6%;
-}
-
 
 .image{
-    display: none;
+    height: 17vh;
+    margin-top: -5vh;
 }
+// .buttonContainer{
+//     padding-top: 5%;
+// }
+
+// .button{
+//     padding: 2% 6%;
+// }
+
+
+
 
 
 }
