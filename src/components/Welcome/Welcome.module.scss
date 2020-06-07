@@ -108,32 +108,33 @@ button:hover {
 @media only screen and (max-width: 400px) {/*iphoneX*/
     .container{
         // border: solid red;
-        justify-content: center;
-        // align-items: center;
+        align-items: center;
         height: 208vh;
-        width:93vh;
+        width: 208vw;
+        padding: 0;
     
     }
     
     .introContainer{
         // border: solid;
-        padding: 0 10%;
-        // margin-top: -10%;
+        margin-top: -50vh;
         width: 100%;
-        justify-content: flex-end;
-        font-size: 25px;
-        // align-items: center;
+    }
+    
+    .buttonAndImageContainer{
+        // border: solid;
+        width: 180vw;
+        justify-content: space-between;
     }
     
     .buttonContainer{
-        padding-top: 5%;
+        // border: solid;
+        width: 100%;
     }
     
     .button{
-        padding: 2% 6%;
+        width: 31%;
     }
-    
-    
     .image{
         display: none;
     }
@@ -142,31 +143,33 @@ button:hover {
 @media only screen and (min-width: 401px) and (max-width: 750px) {/*plus size phone*/
     .container{
         // border: solid red;
-        justify-content: center;
-        // align-items: center;
-        // margin-top: 9.75%;
-        // padding-top: 25%;
-        height: 200vh;
-        width:93vh;
+        align-items: center;
+        height: 171vh;
+        width: 171vw;
+        padding: 0;
     
     }
     
     .introContainer{
         // border: solid;
-        padding: 0 10%;
+        margin-top: -50vh;
         width: 100%;
-        justify-content: flex-end;
+    }
+    
+    .buttonAndImageContainer{
+        // border: solid;
+        width: 140vw;
+        justify-content: space-between;
     }
     
     .buttonContainer{
-        padding-top: 5%;
+        // border: solid;
+        width: 100%;
     }
     
     .button{
-        padding: 2% 6%;
+        width: 31%;
     }
-    
-
     .image{
         display: none;
     }
@@ -175,56 +178,48 @@ button:hover {
 @media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
     .container{
         margin-top: 9.75%;
-        padding-top: 10%;
-
+        padding-left: 0;
     
     }
     
     .introContainer{
-        // border: solid;
-        padding: 0 10%;
         width: 100%;
-        justify-content: center;
-        font-size: 15px;
+    }
+    
+    .buttonAndImageContainer{
+        width: 90vw;
+        justify-content: space-between;
     }
     
     .buttonContainer{
-        padding-top: 5%;
+        width: 50%;
     }
     
-    .button{
-        padding: 2% 6%;
-    }
-        
     .image{
-        display: none;
+        height: 17vh;
+        margin-top: -5vh;
     }
+    
 }
 
 
 @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
 .container{
     margin-top: 9.75%;
-    // padding-top: 10%;
     padding-left: 0;
 
 }
 
 .introContainer{
-    // border: solid;
-    // padding: 0 10%;
     width: 100%;
-    // justify-content: center;
 }
 
 .buttonAndImageContainer{
-    // border: solid;
     width: 90vw;
     justify-content: space-between;
 }
 
 .buttonContainer{
-    // border: solid yellow;
     width: 50%;
 }
 
@@ -232,16 +227,5 @@ button:hover {
     height: 17vh;
     margin-top: -5vh;
 }
-// .buttonContainer{
-//     padding-top: 5%;
-// }
-
-// .button{
-//     padding: 2% 6%;
-// }
-
-
-
-
 
 }
