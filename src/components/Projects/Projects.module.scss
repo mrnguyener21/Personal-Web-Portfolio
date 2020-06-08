@@ -25,24 +25,6 @@
         cursor: default;
     }
 }
-// this is for the animated underline for title
-// .title::before {
-//     content: "";
-//     position: absolute;
-//     width: 53%;
-//     height: 3px;
-//     bottom: 3%;
-//     // left: 44.5%;
-//     background-color: white;
-//     visibility: hidden;
-//     transform: scaleX(0);
-//     transition: all 0.3s ease-in-out 0s;
-//   }
-
-//   .title:hover::before {
-//     visibility: visible;
-//     transform: scaleX(1);
-//   }
 
 .intro{
     // border:solid;
@@ -56,7 +38,8 @@
 
 .projectContainer{
     display: flex;
-    // border: 5px solid green;
+    // border: solid green;
+    flex-direction: column;
     width: 95%;
     margin-left: 3%;
     // justify-content: space-between;
@@ -67,58 +50,27 @@
     // border: solid;
     width: 100%;
     display:flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 1% 0;
 
 }
 
-.project {
-    position: relative;
-    width: 95%;
+.projectImage {
+border-radius: 25px;
+width: 30vw;
+}
 
-    &:hover {
-        cursor: pointer;
-        .content {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            visibility: visible;
-            opacity: 0.8; 
-            // padding: 0 20%;
-            border-radius: 25px;
-
-            .description {
-                text-align: center;
-            }
-        }
-    }
-
-    .projectImage {
-        border-radius: 25px;
-        width: 100%;
-    
-        // &:hover {
-            // filter: brightness(20%);
-            // cursor: pointer;
-        // }
-    }
-
-    .content {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background: #02203c;
-        color: white;
-        height: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: visibility 0s, opacity 0.25s linear;
-    }
+.buttonAndDescriptionContainer{
+    // border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%;
 }
 
 .description{
-    border: solid;
-    width: 95%;
+    text-align: center;
 }
 
 .buttonContainer{
@@ -134,11 +86,12 @@
     border:0;
     background-color: #6868d1;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     margin:1%;
-    padding: 2% 3%;
+    padding: 1% 3%;
     margin-top: 5%;
     margin-right: 2%;
+    font-size: 20px;
 
 }
 
@@ -150,60 +103,109 @@ button:hover {
 
 @media only screen and (max-width: 400px) {/*iphoneX*/
     .container{
-        width: 96vh;
+        // border: solid green; 
+        font-size: 17px;
+        width: 208%;
     }
-
     .title{
-        margin-top: 25%;
+        // border: solid purple;
+        margin-top: 10%;
+        padding-top: 20%;
+        padding-bottom: 10%;
     }
 
     .intro{
         display: none;
+        // width: 80%;
     }
 
     .projectContainer{
+        // border: solid yellow;
+        flex-direction: column;
+    }
+    .content{
+        // border: solid red;
+        align-items: center;
+        margin-bottom: 10%;
         flex-direction: column;
     }
 
-    .content{
-        // border: solid red;
-        margin-bottom: 5%;
+    .projectImage{
+        // border: solid;
+        margin-top: -5vh;
+        width: 45%;
     }
 
+    .buttonAndDescriptionContainer{
+        // border: solid orange;
+        padding: 0;
+
+    }
     .button{
         padding: 2% 3%;
-
+        font-size: 20px;
+        width: 25%;
     }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 750px) {/*plus size phone*/
     .container{
-        width: 96vh;
+        // border: solid green; 
+        font-size: 17px;
+        width: 171%;
     }
     .title{
-        margin-top: 25%;
+        // border: solid purple;
+        margin-top: 10%;
+        padding-top: 20%;
+        padding-bottom: 10%;
     }
 
     .intro{
         display: none;
+        // width: 80%;
     }
 
     .projectContainer{
+        // border: solid yellow;
+        flex-direction: column;
+    }
+    .content{
+        // border: solid red;
+        align-items: center;
+        margin-bottom: 10%;
         flex-direction: column;
     }
 
-    .button{
-        width: 25%;
-        padding: 2% 3%;
+    .projectImage{
+        // border: solid;
+        margin-top: -5vh;
+        width: 45%;
     }
+
+    .buttonAndDescriptionContainer{
+        // border: solid orange;
+        padding: 0;
+
+    }
+    .button{
+        padding: 2% 3%;
+        font-size: 20px;
+    }
+
 }
 @media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
+    .container{
+        // border: solid green; 
+        font-size: 17px;
+    }
     .title{
         margin-top: 10%;
     }
 
     .intro{
-        display: none;
+        // display: none;
+        width: 80%;
     }
 
     .projectContainer{
@@ -211,23 +213,39 @@ button:hover {
     }
     .content{
         // border: solid red;
+        align-items: center;
         margin-bottom: 5%;
     }
 
+    .projectImage{
+        // border: solid;
+        margin-top: -5vh;
+        width: 45%;
+    }
+
+    .buttonAndDescriptionContainer{
+        // border: solid orange;
+        padding: 0 5%;
+
+    }
     .button{
         padding: 2% 3%;
-
+        font-size: 17px;
     }
 }
 
 
 @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
+    .container{
+        // border: solid green; 
+    }
     .title{
         margin-top: 10%;
     }
 
     .intro{
-        display: none;
+        // display: none;
+        width: 80%;
     }
 
     .projectContainer{
@@ -235,11 +253,23 @@ button:hover {
     }
     .content{
         // border: solid red;
+        align-items: center;
         margin-bottom: 5%;
     }
 
+    .projectImage{
+        // border: solid;
+        margin-top: -5vh;
+        width: 45%;
+    }
+
+    .buttonAndDescriptionContainer{
+        // border: solid orange;
+        padding: 0 5%;
+
+    }
     .button{
         padding: 2% 3%;
-
+        font-size: 17px;
     }
 }

@@ -7,6 +7,7 @@
     background-color: #02203c;
     color: white;
     height: 100vh;
+    width: 94%;
     padding: 0 3%;
 }
 
@@ -55,7 +56,6 @@
     margin-top: 2%;
 }
 .buttonContainer{
-
     width: 18vw;
 
 }
@@ -105,7 +105,7 @@ button:hover {
 
 }
 
-@media only screen and (max-width: 400px) {/*iphoneX*/
+@media only screen and (max-width: 498px) {/*iphoneX*/
     .container{
         // border: solid red;
         align-items: center;
@@ -140,7 +140,7 @@ button:hover {
     }
 }
   
-@media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
+@media only screen and (min-width: 401px) and (max-width: 498px) {/*plus size phone*/
     .container{
         // border: solid red;
         align-items: center;
@@ -175,10 +175,47 @@ button:hover {
     }
 }
 
-@media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
+@media only screen and (min-width:500px) and (max-width:747px){
+    .container{
+        // border: solid red;
+        align-items: center;
+        height: 171vh;
+        width: 171vw;
+        padding: 0;
+    
+    }
+    
+    .introContainer{
+        // border: solid;
+        margin-top: -50vh;
+        width: 100%;
+    }
+    
+    .buttonAndImageContainer{
+        // border: solid;
+        width: 140vw;
+        justify-content: space-between;
+    }
+    
+    .buttonContainer{
+        // border: solid;
+        width: 100%;
+    }
+    
+    .button{
+        width: 31%;
+    }
+    .image{
+        display: none;
+    }
+  }
+  
+@media only screen and (min-width: 748px) and (max-width: 799px) {/*ipad*/
     .container{
         margin-top: 9.75%;
         padding-left: 0;
+        width: 97%;
+        // border: solid red;
     
     }
     
@@ -195,6 +232,10 @@ button:hover {
         width: 50%;
     }
     
+    .button{
+        font-size: 15px;
+    }
+
     .image{
         height: 17vh;
         margin-top: -5vh;
@@ -202,39 +243,12 @@ button:hover {
     
 }
 
-@media only screen and (min-width: 800px) and (max-width: 900px){ /*iphone x vertical view*/
-    .container{
-        margin-top: 0;
-        padding-top: 0;
-    
-    }
-    
-    .introContainer{
-        width: 100%;
-    }
-    
-    .buttonAndImageContainer{
-        width: 90vw;
-        justify-content: space-between;
-    }
-    
-    .buttonContainer{
-        width: 50%;
-    }
-    
-    .image{
-        height: 17vh;
-        margin-top: -5vh;
-    }
-    
-  }
-
-
 @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
 .container{
+    // border: solid red;
     margin-top: 9.75%;
     padding-left: 0;
-
+    width: 97%;
 }
 
 .introContainer{
@@ -257,8 +271,4 @@ button:hover {
 
 }
 
-//below are responsiveness when having different window sizes
-@media only screen and (min-width: 500px) and (max-width: 600px) and (min-height: 1080) {
 
-
-}

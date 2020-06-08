@@ -1,11 +1,12 @@
 .container{
     color:#15314b;  
-    padding-top: 5%;
-    padding-bottom: 13%;
+    // padding-top: 5%;
+    // padding-bottom: 13%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    // padding-top: 3vh;
 
 }
 
@@ -20,43 +21,6 @@
 
 }
 
-.contentContainer{
-    // border:2px solid black;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardContainer{
-    // border: 2px solid black;
-    display: flex;
-    align-items: flex-end;
-    width: 30%;
-    height: 75%;
-    margin-left: 10%;
-    margin-right: 2%;
-    // margin-top: 5%;
-}
-
-
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 5%;
-    width: 80%;
-    height: 90%;
-    border-top: 10px solid #6868d1;
-
-}
-
-.picture{
-    border-radius: 90%;
-}
-
 .infoContainer{
     width: 50%;
     display: flex;
@@ -68,14 +32,15 @@
 .info{
     text-align: center;
     color:#02203c;  
-
+    line-height: 200%;
 }
 
 .buttonContainer{
     // border: 2px solid black; 
-    width: 100%;
+    width: 50vw;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 2%;
 }
 
@@ -84,9 +49,11 @@
     border:none;
     background-color: #6868d1;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     margin:1%;
-    padding: 1% 3%;
+    padding: 1% 2%;
+    width: 9vw;
+    font-size: 17px;
 }
 
 .cardButtonContainer{
@@ -112,218 +79,96 @@ button:hover {
 
 @media only screen and (max-width: 400px) {/*iphoneX*/
     .container{
-        width:95vh;
-        height: 211vh;
-        border: solid;
-
+        // border: solid red;
+        width: 206vw;
+        height: 165vh;
+        padding-top: 25%;
     }
-    
-    .cardContainer{
-        display: none;
-    }
-
-
     .infoContainer{
-        width: 80%;
-        margin-top: 15%;
-        // padding: 0;
+        width: 90%;
+    }
+    .info{
+        // border: solid red;
+        line-height: 150%;
         font-size: 20px;
     }
-
-    .button{
-        width: 25%;
-        padding: 2% 0;
+    .buttonContainer{
+        // border: solid;
+        width: 180vw;
     }
-
-    // .container{
-    //     padding-top: 50%;
-    //     padding-bottom: 50%;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     flex-direction: column;
-    // }
-    // .cardContainer{
-    //     // border: solid;
-    //     width: 100%;
-    // }
-
-    // .card{
-    //     padding: 7%;
-    //     width: 100%;
-    //     margin-left: 30%;
-    // }
-
-    // .cardButtonContainer{
-    //     // border: solid;
-    //     width: 90%;
-    //     padding: 2%;
-    //     margin: 10% 0 0 40%;
-    //     display: flex;
-    //     justify-content: center;
-    // }
-
-    // .button{
-    //     padding: 6%;
-    //     margin-bottom: 10%;
-
-    // }
-
-    // .infoContainer{
-    //     display: none;
-    // }
+    .button{
+        width: 50vw;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
 }
   
 @media only screen and (min-width: 401px) and (max-width: 750px) {/*plus size phone*/
     .container{
-        width:95vh;
-        height: 173vh;
-
+        // border: solid red;
+        width: 169vw;
+        height: 165vh;
+        padding-top: 25%;
     }
-    
-    .cardContainer{
-        display: none;
-    }
-
-
     .infoContainer{
-        width: 80%;
-        margin-top: 15%;
-        // padding: 0;
-        font-size: 18px;
+        width: 90%;
     }
-
+    .info{
+        // border: solid red;
+        line-height: 125%;
+        font-size: 20px;
+    }
+    .buttonContainer{
+        // border: solid;
+        width: 150vw;
+    }
     .button{
-        width: 25%;
-        padding: 2% 0;
+        width: 45vw;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
-    
-    // .cardContainer{
-    //     display: none;
-    // }
-
-    // .container{
-    //     padding-top: 50%;
-    //     padding-bottom: 50%;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     flex-direction: column;
-    // }
-    // .cardContainer{
-    //     // border: solid;
-    //     width: 100%;
-    // }
-
-    // .card{
-    //     padding: 7%;
-    //     width: 100%;
-    //     margin-left: 30%;
-    // }
-
-    // .cardButtonContainer{
-    //     // border: solid;
-    //     width: 90%;
-    //     padding: 2%;
-    //     margin: 10% 0 0 40%;
-    //     display: flex;
-    //     justify-content: center;
-    // }
-
-    // .button{
-    //     padding: 5%;
-    //     margin-bottom: 10%;
-
-    // }
-
-    // .infoContainer{
-    //     display: none;
-    // }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
-    .cardContainer{
-        display: none;
-    }
-
     .infoContainer{
         width: 90%;
-        margin-top: 10%;
-        font-size: 15px;
     }
-    // .container{
-    //     padding-top: 18%;
-    //     display: flex;
-    //     align-items: center;
-    //     flex-direction: column;
-    // }
-    // .cardContainer{
-    //     width: 50%;
-    // }
-
-    // .card{
-    //     padding: 7%;
-    // }
-
-    // .cardButtonContainer{
-    //     // border: solid;
-    //     width: 90%;
-    //     padding: 3%;
-    //     display: flex;
-    //     justify-content: center;
-    // }
-
+    
+    .info{
+        // border: solid red;
+        line-height: 123%;
+        font-size: 18px;
+    }
+    .buttonContainer{
+        // border: solid;
+        width: 90vw;
+    }
     .button{
-        width: 25%;
-        padding: 2% 0;
+        width: 25vw;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
-
-    // }
-
-    // .infoContainer{
-    //     display: none;
-    // }
-
 }
 
 
 @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
-    .cardContainer{
-        display: none;
+    .container{
+        // border: solid yellow
     }
-
     .infoContainer{
         width: 80%;
-        margin-top: 5%;
     }
-    // .container{
-    //     padding-top: 15%;
-    //     margin-bottom: 10%;
-    //     display: flex;
-    //     align-items: center;
-    //     flex-direction: column;
-    // }
-    // .contentContainer{
-    //     margin
-    // }
-    // .card{
-    //     padding: 7%;
-    // }
-
-    // .cardButtonContainer{
-    //     width: 90%;
-    //     padding: 5% 2% 2% 2%;
-    //     display: flex;
-    //     justify-content: center;
-    // }
-
-    // .button{
-    //     padding: 3% 6%;
-
-    // }
-
-
-    // .modal{
-        
-    // }
+    
+    .info{
+        // border: solid red;
+        line-height: 133%;
+    }
+    .buttonContainer{
+        width: 80vw;
+    }
+    .button{
+        width: 20vw;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
 }
