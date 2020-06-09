@@ -77,7 +77,7 @@
 }
   
 
-@media only screen and (max-width: 498px){/*iphoneX*/
+@media only screen and (max-width: 499px){/*iphoneX*/
   .container{
     border: solid green;
     flex-direction: column;
@@ -115,78 +115,78 @@
 
 }
 
-@media only screen and (max-width: 449px){
-  .container{
-    // border: solid red;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // padding: 5%;
-    height: 20vh;
-    font-size: 50px;
-    width: 100%;
-  }
+// @media only screen and (max-width: 449px){
+//   .container{
+//     // border: solid red;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     // padding: 5%;
+//     height: 20vh;
+//     font-size: 50px;
+//     width: 100%;
+//   }
 
-   .categoryContainer{
-     width: 100%;
-     margin:0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-
-
-  .logoContainer{
-    // border: solid;
-    margin-bottom: 5%;
-    margin-right: 5% ;
-  }
-
-  .logo{
-    width: 130px;
-  }
-   .category{
-     margin: 0 5%;
-  }
-}
+//    .categoryContainer{
+//      width: 100%;
+//      margin:0;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//    }
 
 
-@media only screen and (min-width: 450px) and (max-width: 498px){/*plus size phone*/
-  .container{
-    // border: solid red;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // padding: 5%;
-    height: 20vh;
-    font-size: 30px;
-    width: 94%;
-  }
+//   .logoContainer{
+//     // border: solid;
+//     margin-bottom: 5%;
+//     margin-right: 5% ;
+//   }
 
-   .categoryContainer{
-     width: 100%;
-     margin:0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
+//   .logo{
+//     width: 130px;
+//   }
+//    .category{
+//      margin: 0 5%;
+//   }
+// }
 
 
-  .logoContainer{
-    // border: solid;
-    margin-bottom: 5%;
-    margin-right: 5% ;
-  }
+// @media only screen and (min-width: 450px) and (max-width: 498px){/*plus size phone*/
+//   .container{
+//     // border: solid red;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     // padding: 5%;
+//     height: 20vh;
+//     font-size: 30px;
+//     width: 94%;
+//   }
 
-  .logo{
-    width: 130px;
-  }
-   .category{
-     margin: 0 5%;
-  }
-}
+//    .categoryContainer{
+//      width: 100%;
+//      margin:0;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//    }
 
-@media only screen and (min-width: 499px) and (max-width:799px){
+
+//   .logoContainer{
+//     // border: solid;
+//     margin-bottom: 5%;
+//     margin-right: 5% ;
+//   }
+
+//   .logo{
+//     width: 130px;
+//   }
+//    .category{
+//      margin: 0 5%;
+//   }
+// }
+
+@media only screen and (min-width: 500px) and (max-width:799px){
   .container{
     // border: solid red;
     flex-direction: column;
