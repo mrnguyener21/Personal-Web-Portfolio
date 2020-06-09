@@ -105,23 +105,23 @@ button:hover {
   
 @media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
     .container{
-        border: solid green;
+        // border: solid green;
         width: 169vw;
         // height: 120vh;
         align-items: flex-start;
         padding-top: 35%;
     }
     .infoContainer{
-        border: solid yellow;
+        // border: solid yellow;
         width: 90%;
     }
     .info{
-        border: solid orange;
+        // border: solid orange;
         line-height: 125%;
         font-size: 20px;
     }
     .buttonContainer{
-        border: solid purple;
+        // border: solid purple;
         width: 150vw;
     }
     .button{

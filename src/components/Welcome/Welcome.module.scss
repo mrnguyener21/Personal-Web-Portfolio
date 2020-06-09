@@ -108,7 +108,7 @@ button:hover {
 
 @media only screen and (max-width: 498px) {/*iphoneX*/
     .container{
-        border: solid red;
+        // border: solid red;
         align-items: center;
         height: 208vh;
         width: 208vw;
@@ -117,20 +117,20 @@ button:hover {
     }
     
     .introContainer{
-        border: solid green;
+        // border: solid green;
         margin-top: -50vh;
         width: 100%;
         text-align: center;
     }
     
     .buttonAndImageContainer{
-        border: solid yellow;
+        // border: solid yellow;
         width: 180vw;
         justify-content: space-between;
     }
     
     .buttonContainer{
-        border: solid orange;
+        // border: solid orange;
         width: 100%;
     }
     
