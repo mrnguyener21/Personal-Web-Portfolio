@@ -107,8 +107,9 @@ button:hover {
     .container{
         // border: solid green;
         width: 169vw;
-        height: 165vh;
-        padding-top: 25%;
+        // height: 120vh;
+        align-items: flex-start;
+        padding-top: 35%;
     }
     .infoContainer{
         // border: solid yellow;
