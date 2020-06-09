@@ -150,13 +150,13 @@ button:hover {
 
 @media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
     .container{
-        // border: solid green; 
+        border: solid green; 
         font-size: 17px;
         width: 171%;
         padding-top: 35%;
     }
     .title{
-        // border: solid purple;
+        border: solid purple;
         margin-top: 10%;
         padding-bottom: 10%;
     }
@@ -167,7 +167,7 @@ button:hover {
     }
 
     .projectContainer{
-        // border: solid yellow;
+        border: solid yellow;
         flex-direction: column;
     }
     .content{
@@ -178,13 +178,13 @@ button:hover {
     }
 
     .projectImage{
-        // border: solid;
+        border: solid;
         margin-top: -5vh;
         width: 45%;
     }
 
     .buttonAndDescriptionContainer{
-        // border: solid orange;
+        border: solid orange;
         padding: 0;
 
     }

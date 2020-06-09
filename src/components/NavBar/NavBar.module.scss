@@ -79,7 +79,7 @@
 
 @media only screen and (max-width: 498px){/*iphoneX*/
   .container{
-    // border: solid red;
+    border: solid green;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,7 @@
   }
 
    .categoryContainer{
-    //  border: solid yellow;
+     border: solid yellow;
      width: 100%;
      margin:0;
      display: flex;
@@ -101,7 +101,7 @@
 
 
   .logoContainer{
-    // border: solid;
+    border: solid red;
     margin-bottom: 5%;
     margin-right: 5% ;
   }
