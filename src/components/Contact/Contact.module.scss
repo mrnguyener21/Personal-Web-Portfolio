@@ -135,7 +135,7 @@
 }
 
 
-@media only screen and (max-width: 449px){
+@media only screen and (max-width: 499px){
     .container{
         border: solid red;
         width: 160%;
@@ -153,23 +153,23 @@
     }
 }
 
-@media only screen and (min-width:450px) and (max-width: 499px) {/*iphoneX*/
-    .container{
-        // border: solid red;
-        width: 90vh;
-    }
-    .contactContainer{
-        // border: solid green;
-        width: 80%;
-        // margin-left: 10%;
-    }
+// @media only screen and (min-width:450px) and (max-width: 499px) {/*iphoneX*/
+//     .container{
+//         // border: solid red;
+//         width: 90vh;
+//     }
+//     .contactContainer{
+//         // border: solid green;
+//         width: 80%;
+//         // margin-left: 10%;
+//     }
     
-    .myInformationContainer{
-        // border: solid green;
-        width: 100%;
-        // margin-left: 12%;
-    }
-}
+//     .myInformationContainer{
+//         // border: solid green;
+//         width: 100%;
+//         // margin-left: 12%;
+//     }
+// }
 
 // @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
 // }
