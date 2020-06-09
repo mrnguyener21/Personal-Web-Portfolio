@@ -148,7 +148,7 @@ button:hover {
     }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 750px) {/*plus size phone*/
+@media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
     .container{
         // border: solid green; 
         font-size: 17px;
@@ -194,27 +194,30 @@ button:hover {
     }
 
 }
-@media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
+@media only screen and (min-width: 500px) and (max-width: 999px) {/*ipad*/
     .container{
-        // border: solid green; 
+        border: solid green; 
         font-size: 17px;
     }
     .title{
         margin-top: 10%;
+        margin-bottom: 15%;
     }
 
     .intro{
-        // display: none;
-        width: 80%;
+        display: none;
+        // width: 80%;
     }
 
     .projectContainer{
+        // border: solid;
         flex-direction: column;
     }
     .content{
         // border: solid red;
         align-items: center;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
+        flex-direction: column;
     }
 
     .projectImage{
@@ -235,7 +238,7 @@ button:hover {
 }
 
 
-@media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
+@media only screen and (min-width: 1000px) and (max-width: 2000px) { /*ipad pro*/
     .container{
         // border: solid green; 
     }

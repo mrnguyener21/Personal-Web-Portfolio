@@ -7,7 +7,7 @@ const App = () => (
   <>
     <NavBar />
     <Welcome />
-      <About/>
+    <About/>
     <Projects/>
     <Contact /> 
     <HomeButton/>

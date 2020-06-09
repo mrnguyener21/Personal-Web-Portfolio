@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 const HomeButton = () => {
     return (
-        <Link to="welcome" activeClass="active" spy={true} smooth={true} duration={500} >
+        <Link to="welcome" smooth='true' activeClass="active" spy={true} smooth={true} duration={500} >
             <button className={styles.button}>
                 <FontAwesomeIcon size="2x" icon={faArrowUp} />
             </button>

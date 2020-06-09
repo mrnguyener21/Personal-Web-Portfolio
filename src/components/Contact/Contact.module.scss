@@ -1,7 +1,11 @@
 .container{
     color:#15314b;  
     padding: 3% 5% 5% 5%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .title{
@@ -11,39 +15,22 @@
     position: relative;
     text-decoration: none;
     padding-bottom: 2%;
-
+    
     &:hover {
         color:#02203c;  
         cursor: default;
     }
-
+    
 }
-
-// .title::before {
-//     content: "";
-//     position: absolute;
-//     width: 15%;
-//     height: 3px;
-//     bottom: 37%;
-//     // left: 44%;
-//     background-color: #02203c;
-//     visibility: hidden;
-//     transform: scaleX(0);
-//     transition: all 0.3s ease-in-out 0s;
-//   }
-
-//   .title:hover::before {
-//     visibility: visible;
-//     transform: scaleX(1);
-//   }
-
-
+ 
 .contactContainer{
     display: flex;
     width: 50%;
-    margin-left: 25%;
+    // margin-left: 25%;
     justify-content: center;
+    // align-items: center;
     flex-direction: column;
+    // border: solid;
 }
 
 
@@ -85,14 +72,22 @@
     width: 100%;
 }
 
+.buttonContainer{
+    // border: solid;
+    display: flex;
+    justify-content: center;
+}
+
 .button{
     outline: none;
     border:none;
     background-color: #6868d1;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 15%;
-    margin:1% 1% 1% 43%;
+    // margin:1% 1% 1% 1%;
+    // display: flex;
+    // justify-content: center;
     padding: 1% 0.5%;
     font-size: 18px;
 }
@@ -105,17 +100,20 @@
 
 .myInformationContainer{
     // border: solid
+    // border: solid red;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     // margin-right: 2%;
     align-items: center;
-    width: 30%;
-    margin-left: 32%;
+    width: 100%;
+    // margin-left: 32%;
     margin-top: 5%;
 }
 
 .phone{
+    margin-right: 2%;
+
     &:hover{
         cursor: default;
     }
@@ -124,6 +122,7 @@
 .link{
     outline: none;
     border: none;
+    margin-right: 2%;
     background-color:#295e8f ;
     &:hover{
         background-color: #0b4174;
@@ -135,7 +134,7 @@
     padding: 8%;
 }
 
-@media only screen and (max-width: 500px) {/*iphoneX*/
+@media only screen and (max-width: 499px) {/*iphoneX*/
     .container{
         // border: solid red;
         width: 90vh;
@@ -143,29 +142,37 @@
     .contactContainer{
         // border: solid green;
         width: 80%;
-        margin-left: 10%;
+        // margin-left: 10%;
     }
     
     .myInformationContainer{
         // border: solid green;
-        width: 70%;
-        margin-left: 12%;
+        width: 100%;
+        // margin-left: 12%;
     }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
-}
-@media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
+// @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
+// }
+@media only screen and (min-width: 500px) and (max-width: 799px) {/*ipad*/
+    .container{
+        border: solid green;
+    }
     .contactContainer{
         // border: solid green;
+        padding: 0;
         width: 80%;
-        margin-left: 10%;
+        // margin-left: 10%;
     }
 
     .myInformationContainer{
         // border: solid green;
-        width: 50%;
-        margin-left: 22%;
+        width: 100%;
+        // margin-left: 22%;
+    }
+
+    .button{
+        width: 105px;
     }
 }
 
@@ -174,13 +181,13 @@
     .contactContainer{
         // border: solid green;
         width: 80%;
-        margin-left: 10%;
+        // margin-left: 10%;
     }
 
     .myInformationContainer{
         // border: solid green;
-        width: 50%;
-        margin-left: 22%;
+        width: 100%;
+        // margin-left: 22%;
     }
 
     

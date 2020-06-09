@@ -103,23 +103,24 @@ button:hover {
     }
 }
   
-@media only screen and (min-width: 401px) and (max-width: 750px) {/*plus size phone*/
+@media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
     .container{
-        // border: solid red;
+        // border: solid green;
         width: 169vw;
         height: 165vh;
         padding-top: 25%;
     }
     .infoContainer{
+        // border: solid yellow;
         width: 90%;
     }
     .info{
-        // border: solid red;
+        // border: solid orange;
         line-height: 125%;
         font-size: 20px;
     }
     .buttonContainer{
-        // border: solid;
+        // border: solid purple;
         width: 150vw;
     }
     .button{
@@ -129,46 +130,166 @@ button:hover {
     }
 }
 
-@media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
-    .infoContainer{
-        width: 90%;
-    }
-    
-    .info{
+
+@media only screen and (min-width:500px) and (max-width:700px){
+    .container{
         // border: solid red;
-        line-height: 123%;
+        width: 100%;
+        height: 100vh;
+        // height: 165vh;
+        // padding-top: 25%;
+    }
+    .infoContainer{
+        // border: solid green;
+        width: 90%;
+        align-items: center;
+    }
+    .info{
+        // border: solid blue;
+        line-height: 125%;
         font-size: 18px;
     }
     .buttonContainer{
-        // border: solid;
-        width: 90vw;
+        // border: solid orange;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     .button{
-        width: 25vw;
+        width: 45vw;
         padding-top: 2%;
         padding-bottom: 2%;
     }
 }
 
-
-@media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
+@media only screen and (min-width:701px) and (max-width:900px){
     .container{
-        // border: solid yellow
+        // border: solid red;
+        width: 100%;
+        height: 100vh;
+        // height: 165vh;
+        // padding-top: 25%;
     }
     .infoContainer{
-        width: 80%;
+        // border: solid green;
+        width: 90%;
     }
-    
     .info{
-        // border: solid red;
-        line-height: 133%;
+        // border: solid blue;
+        line-height: 150%;
+        font-size: 20px;
     }
     .buttonContainer{
-        width: 80vw;
+        // border: solid orange;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     .button{
-        width: 20vw;
+        width: 285px;
         padding-top: 2%;
         padding-bottom: 2%;
     }
 }
+
+@media only screen and (min-width:900px) and (max-width:999px){
+    .container{
+        // border: solid red;
+        width: 100%;
+        height: 100vh;
+        // height: 165vh;
+        // padding-top: 25%;
+    }
+    .infoContainer{
+        // border: solid green;
+        width: 90%;
+    }
+    .info{
+        // border: solid blue;
+        line-height: 180%;
+        font-size: 20px;
+    }
+    .buttonContainer{
+        // border: solid orange;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .button{
+        width: 285px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1600px) { /*ipad pro*/
+
+    .container{
+        // border: solid red;
+        width: 100%;
+        height: 100vh;
+        // height: 165vh;
+        // padding-top: 25%;
+    }
+    .infoContainer{
+        // border: solid green;
+        width: 90%;
+    }
+    .info{
+        // border: solid blue;
+        line-height: 190%;
+        font-size: 20px;
+    }
+    .buttonContainer{
+        // border: solid orange;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .button{
+        width: 285px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2000px) { /*ipad pro*/
+
+    .container{
+        // border: solid red;
+        width: 100%;
+        height: 100vh;
+        // height: 165vh;
+        // padding-top: 25%;
+    }
+    .infoContainer{
+        // border: solid green;
+        width: 90%;
+    }
+    .info{
+        // border: solid blue;
+        line-height: 300%;
+        font-size: 20px;
+    }
+    .buttonContainer{
+        // border: solid orange;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .button{
+        width: 285px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+    }
+}
+
+

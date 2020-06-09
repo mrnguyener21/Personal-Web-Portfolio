@@ -120,6 +120,7 @@ button:hover {
         // border: solid;
         margin-top: -50vh;
         width: 100%;
+        text-align: center;
     }
     
     .buttonAndImageContainer{
@@ -155,6 +156,7 @@ button:hover {
         // border: solid;
         margin-top: -50vh;
         width: 100%;
+        text-align: center;
     }
     
     .buttonAndImageContainer{
@@ -188,7 +190,7 @@ button:hover {
     }
     
     .introContainer{
-        // border: solid green;
+        // border: solid orange;
         align-items: center;
         text-align: center;
         // margin-top: -70vh;
@@ -197,8 +199,7 @@ button:hover {
     }
 
     #myName{
-        // border: solid red;
-        // width: 100%;
+ 
         margin-bottom: 0;
     }
     .intro {
@@ -225,67 +226,6 @@ button:hover {
     }
   }
   
-// @media only screen and (min-width: 748px) and (max-width: 799px) {/*ipad*/
-//     .container{
-//         margin-top: 9.75%;
-//         padding-left: 0;
-//         width: 97%;
-//         // border: solid red;
-    
-//     }
-    
-//     .introContainer{
-//         width: 100%;
-//     }
-    
-//     .buttonAndImageContainer{
-//         width: 90vw;
-//         justify-content: space-between;
-//     }
-    
-//     .buttonContainer{
-//         width: 50%;
-//     }
-    
-//     .button{
-//         font-size: 15px;
-//     }
-
-//     .image{
-//         height: 17vh;
-//         margin-top: -5vh;
-//     }
-    
-// }
-
-// @media only screen and (min-width: 1000px) and (max-width: 1109px) { /*ipad pro*/
-// .container{
-//     // border: solid red;
-//     margin-top: 9.75%;
-//     padding-left: 0;
-//     width: 97%;
-// }
-
-// .introContainer{
-//     width: 100%;
-// }
-
-// .buttonAndImageContainer{
-//     width: 90vw;
-//     // justify-content: space-between;
-// }
-
-// .buttonContainer{
-//     width: 50%;
-// }
-
-// .image{
-//     height: 17vh;
-//     margin-top: -5vh;
-// }
-
-// }
-
 @media only screen and (min-width: 1601px) and (max-width:2350px){
     .container{
         // border: solid red;

@@ -17,7 +17,7 @@ const About = () => {
     
 
     return (
-        <div id='about' className={styles.container} data-aos="fade-up" data-aos-duration="1500">
+        <div name='about' className={styles.container} data-aos="fade-down" data-aos-duration="1500">
             <div className={styles.infoContainer}>
                 <h1 className={styles.title}>ABOUT ME</h1>
                 <h3 className={styles.info}>
@@ -35,13 +35,13 @@ const About = () => {
                         <AboutMeModal handleClose={() => setIsAboutMeOpen(false)} />
                     </Modal>
 
-                    <button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>TECHNICAL SKILLS</button>
+                    <button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>SKILL SET</button>
                     <Modal className={styles.modal} open={isSkillModalOpen} onClose={() => setIsSkillModalOpen(false)}>
                         <Skills handleClose={() => setIsSkillModalOpen(false)} />
                     </Modal>
                 </div>
             </div>
-        </div> 
+        </div>
     )
 }
 
