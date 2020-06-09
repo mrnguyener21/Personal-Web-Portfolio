@@ -46,38 +46,3 @@ const About = () => {
 }
 
 export default About;
-
-
-{/* <div className={styles.contentContainer}> */}
-{/* <div className={styles.cardContainer}>
-<Card className={styles.card}>
-<CardMedia
-className={styles.picture}
-src={profilePic}
-component="img"
-/>
-<CardContent>
-<Typography gutterBottom variant="h5" align='center'>
-Victor Nguyen
-</Typography>
-<Typography className={styles.cardContentInfo} variant="body1" align='center'>
-<span role='img' aria-label="phone">📱:562-277-4337 </span>  
-</Typography>
-<Typography className={styles.cardContentInfo} variant="body1" align='center'>
-<span role='img' aria-label="email">✉️: victortnguyen.workemail@gmail.com</span> 
-</Typography>
-</CardContent>
-</Card>
-<div className={styles.cardButtonContainer}>
-<button type="button" onClick={() => setIsAboutMeOpen(true)} className={styles.button} id={styles.aboutMeButton}>ABOUT ME</button>
-<Modal className={styles.modal} open={isAboutMeOpen} onClose={() => setIsAboutMeOpen(false)}>
-<AboutMeModal handleClose={() => setIsAboutMeOpen(false)} />
-</Modal>
-
-<button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>TECHNICAL SKILLS</button>
-<Modal className={styles.modal} open={isSkillModalOpen} onClose={() => setIsSkillModalOpen(false)}>
-<Skills handleClose={() => setIsSkillModalOpen(false)} />
-</Modal>
-</div>
-</div> */}
-{/* </div> */}
