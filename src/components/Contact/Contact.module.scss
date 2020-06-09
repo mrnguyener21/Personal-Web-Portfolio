@@ -134,7 +134,26 @@
     padding: 8%;
 }
 
-@media only screen and (max-width: 499px) {/*iphoneX*/
+
+@media only screen and (max-width: 449px){
+    .container{
+        // border: solid red;
+        width: 160%;
+    }
+    .contactContainer{
+        // border: solid green;
+        width: 80%;
+        // margin-left: 10%;
+    }
+    
+    .myInformationContainer{
+        // border: solid green;
+        width: 100%;
+        // margin-left: 12%;
+    }
+}
+
+@media only screen and (min-width:450px) and (max-width: 499px) {/*iphoneX*/
     .container{
         // border: solid red;
         width: 90vh;
@@ -156,7 +175,7 @@
 // }
 @media only screen and (min-width: 500px) and (max-width: 799px) {/*ipad*/
     .container{
-        border: solid green;
+        // border: solid green;
     }
     .contactContainer{
         // border: solid green;
