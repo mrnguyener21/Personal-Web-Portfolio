@@ -30,10 +30,10 @@ const About = () => {
                     Now I want to give value to others with not only my logical knowledge and mindset from the accounting and financial field, but to also provide value by giving others one of the best tools someone can have in the modern day. I want to provide others with amazing websites that fits their needs and criteria. In doing so, the value that person can now give will have a greater reach and in turn give an even better experience as well. Below is a button you can click to see the tools I will be using to make what I say happen. <span role='img' aria-label="smiley face">😄</span>
                 </h3>
                 <div className={styles.buttonContainer}>
-                    <button type="button" onClick={() => setIsAboutMeOpen(true)} className={styles.button}>ABOUT ME</button>
+                    {/* <button type="button" onClick={() => setIsAboutMeOpen(true)} className={styles.button}>ABOUT ME</button>
                     <Modal className={styles.modal} open={isAboutMeOpen} onClose={() => setIsAboutMeOpen(false)}>
                         <AboutMeModal handleClose={() => setIsAboutMeOpen(false)} />
-                    </Modal>
+                    </Modal> */}
 
                     <button type="button" onClick={() => setIsSkillModalOpen(true)} className={styles.button}>SKILL SET</button>
                     <Modal className={styles.modal} open={isSkillModalOpen} onClose={() => setIsSkillModalOpen(false)}>
