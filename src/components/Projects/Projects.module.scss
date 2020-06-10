@@ -1,12 +1,17 @@
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
+
 .container{
-    // border: solid red;
     background-color: #02203c;
     color: white;
+    align-items: center;
+    flex-direction: column;
+    // border: solid red;
     // display: none;
     // padding-top: 2%;
     // padding-bottom: 18%;
-    flex-direction: column;
-    align-items: center;
     // border: solid red;
 
 }
@@ -19,7 +24,7 @@
     padding:3%;
     position: relative;
     text-decoration: none;
-    font-size: 40px;
+    // font-size: 40px;
 }
 
 .intro{
@@ -50,7 +55,7 @@
 
 .projectImage {
     // border: solid;
-    border-radius: 25px;
+    border-radius: 5px;
     width: 30vw;
 }
 
@@ -78,16 +83,6 @@
 }
 
 .button{
-    // outline: none;
-    // border:0;
-    // background-color: #6868d1;
-    // color: white;
-    // border-radius: 5px;
-    // margin:1%;
-    // padding: 1% 3%;
-    // margin-top: 5%;
-    // margin-right: 2%;
-    // font-size: 20px;
     outline: none;
     border:none;
     background-color: #6868d1;
@@ -95,7 +90,7 @@
     border-radius: 5px;
     margin:1%;
     padding: 2% 3%;
-    width: 150px;
+    // width: 5vw;
 }
 
 button:hover {
@@ -104,180 +99,178 @@ button:hover {
     cursor: pointer
 }
 
-@media only screen and (max-width: 400px) {/*iphoneX*/
+@media only screen and (max-width: $phone) {/*iphoneX*/
     .container{
-
         // border: solid green; 
-        font-size: 17px;
-        width: 208%;
-    }
-    .title{
-        // border: solid purple;
-        margin-top: 10%;
-        padding-top: 20%;
-        padding-bottom: 10%;
-    }
-
-    .intro{
-        display: none;
-        // width: 80%;
-    }
-
-    .projectContainer{
-        // border: solid yellow;
-        flex-direction: column;
-    }
-    .content{
-        // border: solid red;
-        align-items: center;
-        margin-bottom: 10%;
-        flex-direction: column;
-    }
-
-    .projectImage{
-        // border: solid;
-        margin-top: -5vh;
-        width: 45%;
-    }
-
-    .buttonAndDescriptionContainer{
-        // border: solid orange;
-        padding: 0;
-
-    }
-    .button{
-        padding: 2% 3%;
-        font-size: 20px;
-        width: 25%;
+        // font-size: 17px;
+        // width: 100%;
+        .title{
+            // border: solid purple;
+            // margin-top: 10%;
+            // padding-top: 20%;
+            padding-bottom: 10%;
+        }
+    
+        .intro{
+            display: none;
+        }
+    
+        .projectContainer{
+            // border: solid yellow;
+            flex-direction: column;
+            .content{
+                // border: solid red;
+                align-items: center;
+                margin-bottom: 10%;
+                flex-direction: column;
+            }
+        
+            .projectImage{
+                // border: solid;
+                // margin-top: -5vh;
+                width: 80vw;
+            }
+        
+            .buttonAndDescriptionContainer{
+                // border: solid orange;
+                width: 80%;
+        
+            }
+            .button{
+                padding: 2% 3%;
+                // font-size: 20px;
+                // width: 25%;
+            }
+        }
     }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
-    .container{
+// @media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
+//     .container{
 
-        // border: solid green; 
-        font-size: 17px;
-        width: 171%;
-        padding-top: 35%;
-    }
-    .title{
-        // border: solid purple;
-        margin-top: 10%;
-        padding-bottom: 10%;
-    }
+//         // border: solid green; 
+//         font-size: 17px;
+//         width: 171%;
+//         padding-top: 35%;
+//     }
+//     .title{
+//         // border: solid purple;
+//         margin-top: 10%;
+//         padding-bottom: 10%;
+//     }
 
-    .intro{
-        display: none;
-        // width: 80%;
-    }
+//     .intro{
+//         display: none;
+//         // width: 80%;
+//     }
 
-    .projectContainer{
-        // border: solid yellow;
-        flex-direction: column;
-    }
-    .content{
-        // border: solid red;
-        align-items: center;
-        margin-bottom: 10%;
-        flex-direction: column;
-    }
+//     .projectContainer{
+//         // border: solid yellow;
+//         flex-direction: column;
+//     }
+//     .content{
+//         // border: solid red;
+//         align-items: center;
+//         margin-bottom: 10%;
+//         flex-direction: column;
+//     }
 
-    .projectImage{
-        // border: solid;
-        margin-top: -5vh;
-        width: 45%;
-    }
+//     .projectImage{
+//         // border: solid;
+//         margin-top: -5vh;
+//         width: 45%;
+//     }
 
-    .buttonAndDescriptionContainer{
-        // border: solid orange;
-        padding: 0;
+//     .buttonAndDescriptionContainer{
+//         // border: solid orange;
+//         padding: 0;
 
-    }
-    .button{
-        padding: 2% 3%;
-        font-size: 20px;
-    }
+//     }
+//     .button{
+//         padding: 2% 3%;
+//         font-size: 20px;
+//     }
 
-}
-@media only screen and (min-width: 500px) and (max-width: 999px) {/*ipad*/
-    .container{
-        // border: solid green; 
-        font-size: 17px;
-    }
-    .title{
-        margin-top: 10%;
-        margin-bottom: 15%;
-    }
+// }
+// @media only screen and (min-width: 500px) and (max-width: 999px) {/*ipad*/
+//     .container{
+//         // border: solid green; 
+//         font-size: 17px;
+//     }
+//     .title{
+//         margin-top: 10%;
+//         margin-bottom: 15%;
+//     }
 
-    .intro{
-        display: none;
-        // width: 80%;
-    }
+//     .intro{
+//         display: none;
+//         // width: 80%;
+//     }
 
-    .projectContainer{
-        // border: solid;
-        flex-direction: column;
-    }
-    .content{
-        // border: solid red;
-        align-items: center;
-        margin-bottom: 15%;
-        flex-direction: column;
-    }
+//     .projectContainer{
+//         // border: solid;
+//         flex-direction: column;
+//     }
+//     .content{
+//         // border: solid red;
+//         align-items: center;
+//         margin-bottom: 15%;
+//         flex-direction: column;
+//     }
 
-    .projectImage{
-        // border: solid;
-        margin-top: -5vh;
-        width: 45%;
-    }
+//     .projectImage{
+//         // border: solid;
+//         margin-top: -5vh;
+//         width: 45%;
+//     }
 
-    .buttonAndDescriptionContainer{
-        // border: solid orange;
-        padding: 0 5%;
+//     .buttonAndDescriptionContainer{
+//         // border: solid orange;
+//         padding: 0 5%;
 
-    }
-    .button{
-        padding: 2% 3%;
-        font-size: 17px;
-    }
-}
+//     }
+//     .button{
+//         padding: 2% 3%;
+//         font-size: 17px;
+//     }
+// }
 
 
-@media only screen and (min-width: 1000px) and (max-width: 2000px) { /*ipad pro*/
-    .container{
-        // border: solid green; 
-    }
-    .title{
-        margin-top: 10%;
-    }
+// @media only screen and (min-width: 1000px) and (max-width: 2000px) { /*ipad pro*/
+//     .container{
+//         // border: solid green; 
+//     }
+//     .title{
+//         margin-top: 10%;
+//     }
 
-    .intro{
-        // display: none;
-        width: 80%;
-    }
+//     .intro{
+//         // display: none;
+//         width: 80%;
+//     }
 
-    .projectContainer{
-        flex-direction: column;
-    }
-    .content{
-        // border: solid red;
-        align-items: center;
-        margin-bottom: 5%;
-    }
+//     .projectContainer{
+//         flex-direction: column;
+//     }
+//     .content{
+//         // border: solid red;
+//         align-items: center;
+//         margin-bottom: 5%;
+//     }
 
-    .projectImage{
-        // border: solid;
-        margin-top: -5vh;
-        width: 45%;
-    }
+//     .projectImage{
+//         // border: solid;
+//         margin-top: -5vh;
+//         width: 45%;
+//     }
 
-    .buttonAndDescriptionContainer{
-        // border: solid orange;
-        padding: 0 5%;
+//     .buttonAndDescriptionContainer{
+//         // border: solid orange;
+//         padding: 0 5%;
 
-    }
-    .button{
-        padding: 2% 3%;
-        font-size: 17px;
-    }
-}
+//     }
+//     .button{
+//         padding: 2% 3%;
+//         font-size: 17px;
+//     }
+// }
