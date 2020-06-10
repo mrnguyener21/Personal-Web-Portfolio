@@ -35,9 +35,16 @@ $desktop: 1200px;
 }
 
 
-// @media screen and (min-width: $phone) and (max-width: $tablet){
-
-// }
+@media screen and (min-width: $phone) and (max-width: $tablet){
+    .container{
+        width: 100%;
+        margin: 0;
+        
+        .info {
+            padding: 0 10%;
+        }
+    }
+}
 
 // @media screen and (min-width: $tablet) and (max-width: $laptop){
 

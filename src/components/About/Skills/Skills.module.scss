@@ -58,9 +58,26 @@ $desktop: 1200px;
 }
 
 
-// @media screen and (min-width: $phone) and (max-width: $tablet){
+@media screen and (min-width: $phone) and (max-width: $tablet){
+    .container{
+        margin: 0;
+        align-items: center; 
+        width: 100%;       
 
-// }
+        .contentContainer{
+            // border: solid;
+            margin-top: 5%;
+            width: 100%;
+
+            .content {
+                // border: solid;
+                width: 30%;
+                padding: 0;
+            }
+
+        }
+    }
+}
 
 // @media screen and (min-width: $tablet) and (max-width: $laptop){
 

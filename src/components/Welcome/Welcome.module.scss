@@ -13,107 +13,103 @@ $desktop: 1200px;
     color: white;
     height: 100vh;
     width: 100%;
-}
 
-.introContainer{
-    // border: solid yellow;
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    margin-top: -5%;
-    // margin: 0 20%;
-    width: 100%;
-
-    //animation
-    position: relative;
-    animation-name: introContainerAnimation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    left: -1000px;
-    opacity: 0;
-    
-    @keyframes introContainerAnimation{
-        100%{
-            left:0;
-            opacity:1;
-        };
-    }
-
-    .intro {
-        // border: solid green;
-        // width: 80%;
-        font-size: 30px;
-        padding: 1% 18% 0 15%;
-        margin: 0;
-    }
-    #myName{
+    .introContainer{
         // border: solid yellow;
-        font-size: 80px;
-        margin-bottom: 0;
-    }
-}
-
-
-
-
-.buttonAndImageContainer{
-    // border: solid pink;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    // width: 60vw;
-    margin-top: 1%;
-
-    .buttonContainer{
-        // border: solid cyan; 
-        width: 25%;
-
+        display: flex;
+        flex-direction: column;
+        margin-top: -5%;
+        width: 100%;
     
-        
-        
-    } 
-    .button{
-        outline: none;
-        border:none;
-        background-color: #6868d1;
-        color: white;
-        border-radius: 5px;
-        margin:1%;
-        padding: 2% 3%;
-        width: 150px;
-
-    }
-
-button:hover {
-    background-color: #3b3b7a;
-    transition: all 0.2s ease-in-out 0s;
-    cursor: pointer
-}
-    .image{
-        height: 500px;
-        border-radius: 10px;
-        // margin-top: -2vh;
-    
+        //animation
         position: relative;
-        animation-name: imageAnimation;
+        animation-name: introContainerAnimation;
         animation-duration: 1s;
-        animation-delay: 0.75s;
         animation-fill-mode: forwards;
+        left: -1000px;
         opacity: 0;
-        @keyframes imageAnimation{
-            0% {
-                opacity: 0;
-                transform: translateX(-20px);
-             }
-             100% {
-                opacity: 1;
-                transform: translateX(0);
-             }
+        
+        @keyframes introContainerAnimation{
+            100%{
+                left:0;
+                opacity:1;
+            };
+        }
+    
+        .intro {
+            // border: solid green;
+            // width: 80%;
+            font-size: 30px;
+            padding: 1% 18% 0 15%;
+            margin: 0;
+        }
+        #myName{
+            // border: solid yellow;
+            font-size: 80px;
+            margin-bottom: 0;
+        }
+    }
+    
+    
+    
+    
+    .buttonAndImageContainer{
+        // border: solid pink;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1%;
+    
+        .buttonContainer{
+            // border: solid cyan; 
+            width: 25%;
+    
+        
+            
+            
+        } 
+        .button{
+            outline: none;
+            border:none;
+            background-color: #6868d1;
+            color: white;
+            border-radius: 5px;
+            margin:1%;
+            padding: 2% 3%;
+            width: 150px;
+    
+        }
+    
+    button:hover {
+        background-color: #3b3b7a;
+        transition: all 0.2s ease-in-out 0s;
+        cursor: pointer
+    }
+        .image{
+            height: 500px;
+            border-radius: 10px;
+        
+            position: relative;
+            animation-name: imageAnimation;
+            animation-duration: 1s;
+            animation-delay: 0.75s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            @keyframes imageAnimation{
+                0% {
+                    opacity: 0;
+                    transform: translateX(-20px);
+                 }
+                 100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                 }
+            }
+         }
     }
 }
-}
+
 //Responsive design below
 
 
@@ -151,14 +147,43 @@ button:hover {
 }
 
 @media screen and (min-width: $phone) and (max-width: $tablet){
+    .container{
+        // height: 102vh;
+    }
 
+    .introContainer{
+        // border: solid;
+        width: 80%;
+    }
+    .intro {
+        font-size: 20px !important;
+        padding: 0 !important;
+        text-align: center;
+        line-height:200%;
+    }
+    #myName{
+        font-size: 45px !important;
+    }
+    .image{
+        display: none;
+    }
+    .buttonContainer{
+        // border: solid red;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+    }
+    .button{
+        width: 100px !important;
+    }
 }
 
-@media screen and (min-width: $tablet) and (max-width: $laptop){
+// @media screen and (min-width: $tablet) and (max-width: $laptop){
 
-}
+// }
 
-@media screen and (min-width: $laptop) and (max-width: $tablet){
+// @media screen and (min-width: $laptop) and (max-width: $tablet){
 
-}
+// }
 

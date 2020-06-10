@@ -46,7 +46,7 @@
         cursor: pointer
     }
 }
-//The two .category below are for the underline animation
+//The two .category below are for the underline animati
 .category::before {
     content: "";
     position: absolute;
@@ -84,42 +84,31 @@ $phone: 480px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    // padding: 10% 5% 5% 5%;
-    // height: 100px;
-    // width: 10%;
-  }
 
-   .categoryContainer{
+    .logoContainer{
+      width: 20%;
+  
+      .logo{
+        width: 100%;
+      }
+    }
+
+    .categoryContainer{
     //  border: solid yellow;
-     width: 100%;
-    //  padding-left: 10%;
-     justify-content: space-evenly;
-
-    //  width: 56% !important;
-    //  margin-right: 5% !important;
-    //  display: flex;
-    //  justify-content: space-evenly;
-    //  font-size: 5vw;
-    //  padding-left: 10%;
-     
-   }
-
-
-  .logoContainer{
-    width: 20%;
-    // border: solid red;
-    // width: 100%;
-    // margin-bottom: 5%;
-    // margin-right: 5% ;
-    // display: flex;
-    // justify-content: space-evenly;
+      width: 100%;
+      justify-content: space-evenly;     
+    }
   }
-
-  .logo{
-    width: 100%;
-  }
-   .category{
-    //  margin: 0 2%;
-   }
-
 }
+
+@media screen and (min-width: $phone) and (max-width: $tablet){
+  .logoContainer{
+      // border: solid red;
+      width: 20%;
+
+      .logo{
+        width: 50%;
+      }
+  }
+}
+

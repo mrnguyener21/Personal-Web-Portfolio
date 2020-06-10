@@ -17,11 +17,12 @@ $desktop: 1200px;
     }
 }
 
-// @media screen and (min-width: $phone) and (max-width: $tablet){
-//    container{
+@media screen and (min-width: $phone) and (max-width: $tablet){
+   .container{
+    flex-direction: column;
 
-//    }
-// }
+   }
+}
 
 // @media screen and (min-width: $tablet) and (max-width: $laptop){
 

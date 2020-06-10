@@ -136,132 +136,40 @@ button:hover {
     }
 }
 
-// @media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
-//     .container{
+@media screen and (min-width: $phone) and (max-width: $tablet){
+    .container{
 
-//         // border: solid green; 
-//         font-size: 17px;
-//         width: 171%;
-//         padding-top: 35%;
-//     }
-//     .title{
-//         // border: solid purple;
-//         margin-top: 10%;
-//         padding-bottom: 10%;
-//     }
+        .title{
+            // padding-bottom: 10%;
+        }
+    
+        .intro{
+            display: none;
+        }
+    
+        .projectContainer{
+            flex-direction: column;
+            .content{
+                // border: solid red;
+                align-items: center;
+                margin-bottom: 10%;
+                flex-direction: column;
+            }
+        
+            .projectImage{
 
-//     .intro{
-//         display: none;
-//         // width: 80%;
-//     }
+                width: 80vw;
+            }
+        
+            .buttonAndDescriptionContainer{
+                width: 80%;
+        
+            }
+            .button{
+                padding: 2% 3%;
 
-//     .projectContainer{
-//         // border: solid yellow;
-//         flex-direction: column;
-//     }
-//     .content{
-//         // border: solid red;
-//         align-items: center;
-//         margin-bottom: 10%;
-//         flex-direction: column;
-//     }
-
-//     .projectImage{
-//         // border: solid;
-//         margin-top: -5vh;
-//         width: 45%;
-//     }
-
-//     .buttonAndDescriptionContainer{
-//         // border: solid orange;
-//         padding: 0;
-
-//     }
-//     .button{
-//         padding: 2% 3%;
-//         font-size: 20px;
-//     }
-
-// }
-// @media only screen and (min-width: 500px) and (max-width: 999px) {/*ipad*/
-//     .container{
-//         // border: solid green; 
-//         font-size: 17px;
-//     }
-//     .title{
-//         margin-top: 10%;
-//         margin-bottom: 15%;
-//     }
-
-//     .intro{
-//         display: none;
-//         // width: 80%;
-//     }
-
-//     .projectContainer{
-//         // border: solid;
-//         flex-direction: column;
-//     }
-//     .content{
-//         // border: solid red;
-//         align-items: center;
-//         margin-bottom: 15%;
-//         flex-direction: column;
-//     }
-
-//     .projectImage{
-//         // border: solid;
-//         margin-top: -5vh;
-//         width: 45%;
-//     }
-
-//     .buttonAndDescriptionContainer{
-//         // border: solid orange;
-//         padding: 0 5%;
-
-//     }
-//     .button{
-//         padding: 2% 3%;
-//         font-size: 17px;
-//     }
-// }
-
-
-// @media only screen and (min-width: 1000px) and (max-width: 2000px) { /*ipad pro*/
-//     .container{
-//         // border: solid green; 
-//     }
-//     .title{
-//         margin-top: 10%;
-//     }
-
-//     .intro{
-//         // display: none;
-//         width: 80%;
-//     }
-
-//     .projectContainer{
-//         flex-direction: column;
-//     }
-//     .content{
-//         // border: solid red;
-//         align-items: center;
-//         margin-bottom: 5%;
-//     }
-
-//     .projectImage{
-//         // border: solid;
-//         margin-top: -5vh;
-//         width: 45%;
-//     }
-
-//     .buttonAndDescriptionContainer{
-//         // border: solid orange;
-//         padding: 0 5%;
-
-//     }
-//     .button{
-//         padding: 2% 3%;
-//         font-size: 17px;
-//     }
-// }
+            }
+        }
+    }
+  }
+  
