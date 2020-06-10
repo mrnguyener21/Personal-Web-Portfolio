@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 const Skills = () =>  (
-    <div className={styles.container} data-aos='slide-left' data-aos-duration='1000'> 
+    <div className={styles.container} data-aos='fade-up' data-aos-duration='1000'> 
         <h1 className={styles.title}>TECHNICAL SKILLS</h1>
         <div className={styles.contentContainer}>
         {rowOne.map((skillData) => (

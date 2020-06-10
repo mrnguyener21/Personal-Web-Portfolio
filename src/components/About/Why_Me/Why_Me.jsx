@@ -9,7 +9,7 @@ AOS.init();
 
 const AboutMeModal = () => {
     return (
-        <div className={styles.container} data-aos='slide-right' data-aos-duration='1000'>
+        <div name='about' className={styles.container} data-aos='fade-up' data-aos-duration='1000'>
             <h1 className={styles.title}>WHY ME</h1>
             <h3 className={styles.info}>
                     Even though I am a Front-End Developer who inspires to be the best of the very best, it wasn't always that way. I actually started off in the accounting and finance field when I first entered the real world. There I went about the day to day tasks of bringing value to others by making sure that not only were their statements correct, but being able to efficiently and effectively create reports along with visual representations of their data so that we can strategically plan and execute for the future. 

@@ -7,7 +7,7 @@ const Welcome = () => {
     return (
         <div id="welcome" className={styles.container}>
             <div className={styles.introContainer}>
-                <h1 className={styles.intro} id={styles.myName}>Hi, I'm Victor <span role='img' aria-label='wave'>👋</span> </h1>
+                <h1 className={styles.intro} id={styles.myName}>HI, I'M VICTOR <span role='img' aria-label='wave'>👋</span> </h1>
                 <h2 className={styles.intro}> I'm a Self-Taught Front-End Developer and the newest member of your team! Welcome to my portfolio and let me know if you see anything you like.</h2>
                 <div className={styles.buttonAndImageContainer}>
                     <div className={styles.buttonContainer}>

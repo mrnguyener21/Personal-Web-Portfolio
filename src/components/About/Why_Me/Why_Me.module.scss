@@ -4,13 +4,14 @@
     color:#15314b;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 1000px;
-    height: 800px;
-    border-radius: 15px;
+    height: 600px;
+    // border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: center;
-    line-height: 300%;
+    line-height: 200%;
     margin: 5%;
 }
 
@@ -21,42 +22,37 @@
     font-size: 40px;
 }
 
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+@media screen and (max-width: $phone){
+    .container{
+        // display: none;
+        height: auto;
+        margin: 5% 0 0 0;
+        width: 100vw !important;
+        font-size: 12px;
+        .title{
+            font-size: 45px;
+        }
+        .info{
+            width: 80%;
+        }
+    }
+}
 
 
-// animation-name: containerAnimation;
-// animation-duration: 0.5s;
-// animation-fill-mode: forwards;
-// transform:scale(0);
+@media screen and (min-width: $phone) and (max-width: $tablet){
 
-// @keyframes containerAnimation{
-//     100%{transform:scale(1)}
-// }
+}
 
-// @media only screen and (max-width: 500px) {/*iphoneX*/
-//     .container{
-//         width: 100%;
-//         margin: 0 10% 0 -15%;
-//     }
-// }
-  
-// @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
-//     .container{
-//         width: 100%;
-//         margin: 0 10% 0 -15%;
-//     }
-// }
+@media screen and (min-width: $tablet) and (max-width: $laptop){
 
-// @media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
-//     .container{
-//         width: 100%;
-//         margin: 0 10% 0 -15%;
-//     }
-// }
+}
 
+@media screen and (min-width: $laptop) and (max-width: $tablet){
 
-// @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
-//     .container{
-//         width: 100%;
-//         margin-right: 20%;
-//     }
-// }
+}
+

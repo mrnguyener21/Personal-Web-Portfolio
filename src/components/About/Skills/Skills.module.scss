@@ -1,3 +1,4 @@
+
 .container{
     // border: solid green;
     color:#15314b;
@@ -7,12 +8,11 @@
     // justify-content: center;
     width: 1000px;
     height: 600px;
-    border-radius: 15px;
+    // border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 15px;
     margin: 5%;
-    
 }
 
 .title{
@@ -54,66 +54,44 @@
 
 }
 
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+@media screen and (max-width: $phone){
+    .container{
+        // display: none;
+        // border: solid orange;
+        height: auto;
+        margin: 0;
+        width: auto !important;
+        font-size: 12px;
+        align-items: center;
+        
+        .title{
+            font-size: 45px;
+        }
+        .contentContainer{
+            // border: solid red;
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+
+@media screen and (min-width: $tablet) and (max-width: $laptop){
+
+}
+
+@media screen and (min-width: $laptop) and (max-width: $tablet){
+
+}
 
 
 
 
-
-
-// animation-name: containerAnimation;
-// animation-duration: 0.5s;
-// animation-fill-mode: forwards;
-// transform:scale(0);
-
-// @keyframes containerAnimation{
-//     100%{transform:scale(1)}
-// }
-// @media only screen and (max-width: 500px) {/*iphoneX*/
-//     .container{
-//         width: 100%;
-//         padding: 6%;
-//         margin: 0 10% 0 -15%;
-
-//     }
-
-//     .content{
-//         padding: 20px 15px 20px 15px;
-
-//     }
-
-//     .image{
-//         width: 65px;
-//     }
-
-//     .description{
-//         font-size: 13px;
-//     }
-// }
-  
-// @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
-//     .container{
-//         width: 100%;
-//         margin: 0 10% 0 -15%;
-//     }
-// }
-
-// @media only screen and (min-width: 750px) and (max-width: 799px) {/*ipad*/
-//     .container{
-//         width: 110%;
-//         margin: 0 10% 0 -15%;
-
-//     }
-
-//     .image{
-//         width: 80px;
-//     }
-// }
-
-
-// @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
-//     .container{
-//         width: 100%;
-//         margin-right: 20%;
-//     }
-
-// }

@@ -1,9 +1,9 @@
 .container{
     color:#15314b;  
     // height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    // justify-content: center;
     width: 100%;
     // align-items: center;
     // justify-content: space-between;
@@ -11,21 +11,33 @@
 
 }
 
-$desktop: 1200px;
-$laptop: 1024px;
-$tablet: 768px;
 $phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
 
 @media screen and (max-width: $phone){
     .container{
         flex-direction: column;
-        display: none;
+        // border: solid red;
+
     }
 }
 
 
+@media screen and (min-width: $phone) and (max-width: $tablet){
+   container{
 
+   }
+}
 
+@media screen and (min-width: $tablet) and (max-width: $laptop){
+
+}
+
+@media screen and (min-width: $laptop) and (max-width: $tablet){
+
+}
 
 
 
