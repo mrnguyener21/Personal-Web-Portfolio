@@ -8,8 +8,6 @@
     top: 0;
     width: 100%;
     z-index: 100;
-    // padding-top: 2%;
-    // margin: 0 4%;
     &:hover{
       cursor: default;
     }
@@ -24,7 +22,7 @@
 }
 
 .logo{
-  width: 100px;
+  width: 100%;
 }
 
 .categoryContainer{
@@ -76,121 +74,49 @@
     justify-content: flex-end;
 }
   
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
 
-@media only screen and (max-width: 498px){
+@media only screen and (max-width: $phone){
   .container{
+
     // border: solid green;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10% 5% 5% 5%;
+    // padding: 10% 5% 5% 5%;
     height: 20vh;
     // width: 10%;
   }
 
    .categoryContainer{
     //  border: solid yellow;
-     width: 100%;
-     margin:0;
+    //  width: 56% !important;
+    //  margin-right: 5% !important;
      display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 40px;
+     justify-content: space-evenly;
+     font-size: 5vw;
+    //  padding-left: 10%;
      
    }
 
 
   .logoContainer{
     // border: solid red;
+    width: 100%;
     margin-bottom: 5%;
-    margin-right: 5% ;
+    // margin-right: 5% ;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .logo{
-    width: 200px;
+    width: 30%;
   }
    .category{
      margin: 0 2%;
    }
 
 }
-
-@media only screen and (min-width: 499px) and (max-width:799px){
-  .container{
-    // border: solid red;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // padding: 5%;
-    height: 20vh;
-    font-size: 25px;
-    width: 100%;
-  }
-
-   .categoryContainer{
-     width: 100%;
-     margin:0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-
-
-  .logoContainer{
-    // border: solid;
-    margin-bottom: 5%;
-    margin-right: 5% ;
-  }
-
-  .logo{
-    width: 130px;
-  }
-   .category{
-     margin: 0 3.5%;
-   }
-
-}
-
-// @media only screen and (min-width: 748px) and (max-width: 799px) {/*ipad*/
-//   .logoContainer{
-//     // width: 10%;
-//   }
-
-
-//   .logoContainer{
-//     width: 7%;
-//     margin-left: 2%;
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: center;
-//   }
-  
-//   .logo{
-//   width: 100%;
-//   }
-
-// }
-
-
-@media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
-  .container{
-    // border: solid green;
-    // width: 61%;
-  }
-
-
-  .logoContainer{
-    // border: solid white;
-    width: 7%;
-    margin-left: 2%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;;
-  }
-  
-  .logo{
-  width: 100%;
-  }
-  
-}
-

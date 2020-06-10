@@ -1,296 +1,337 @@
 .container{
     color:#15314b;  
-    // padding-top: 5%;
-    // padding-bottom: 13%;
-    height: 100vh;
-    display: flex;
+    // height: 100vh;
+    display: none;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    // padding-top: 3vh;
+    width: 100%;
+    // align-items: center;
+    // justify-content: space-between;
+    // margin:5%;
 
 }
 
-.title{
-    display: flex;
-    justify-content: center;
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
 
-    &:hover {
-        color:#02203c;  
-        cursor: default;
-    }
-
-}
-
-.infoContainer{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 3%;
-}
-
-.info{
-    text-align: center;
-    color:#02203c;  
-    line-height: 200%;
-}
-
-.buttonContainer{
-    // border: 2px solid black; 
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2%;
-}
-
-.button{
-    outline: none;
-    border:none;
-    background-color: #6868d1;
-    color: white;
-    border-radius: 5px;
-    margin:1%;
-    padding: 1% 2%;
-    width: 9vw;
-    font-size: 17px;
-}
-
-.cardButtonContainer{
+@media screen and (max-width: $phone){
+    .container{
+        flex-direction: column;
         display: none;
-}
-
-button:hover {
-    background-color: #3b3b7a;
-    transition: all 0.2s ease-in-out 0s;
-    cursor: pointer
-}
-
-.modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // width: 70%;
-    margin:0 0 15% 20%;
-    // margin-bottom:
-
-    outline: none !important; 
-}
-
-@media only screen and (max-width: 400px) {/*iphoneX*/
-    .container{
-        // border: solid red;
-        width: 206vw;
-        height: 165vh;
-        padding-top: 25%;
-    }
-    .infoContainer{
-        width: 90%;
-    }
-    .info{
-        // border: solid red;
-        line-height: 150%;
-        font-size: 20px;
-    }
-    .buttonContainer{
-        // border: solid;
-        width: 180vw;
-    }
-    .button{
-        width: 50vw;
-        padding-top: 3%;
-        padding-bottom: 3%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .title{
+//     display: flex;
+//     justify-content: center;
+
+//     &:hover {
+//         color:#02203c;  
+//         cursor: default;
+//     }
+
+// }
+
+// .infoContainer{
+//     width: 50%;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     padding-bottom: 3%;
+// }
+
+// .info{
+//     text-align: center;
+//     color:#02203c;  
+//     line-height: 200%;
+// }
+
+// .buttonContainer{
+//     // border: 2px solid black; 
+//     width: 50vw;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding-top: 2%;
+// }
+
+// .button{
+//     outline: none;
+//     border:none;
+//     background-color: #6868d1;
+//     color: white;
+//     border-radius: 5px;
+//     margin:1%;
+//     padding: 1% 2%;
+//     width: 9vw;
+//     font-size: 17px;
+// }
+
+// .cardButtonContainer{
+//         display: none;
+// }
+
+// button:hover {
+//     background-color: #3b3b7a;
+//     transition: all 0.2s ease-in-out 0s;
+//     cursor: pointer
+// }
+
+// .modal{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     // width: 70%;
+//     margin:0 0 15% 20%;
+//     // margin-bottom:
+
+//     outline: none !important; 
+// }
+
+// @media only screen and (max-width: 400px) {/*iphoneX*/
+//     .container{
+//         // border: solid red;
+//         width: 206vw;
+//         height: 165vh;
+//         padding-top: 25%;
+//     }
+//     .infoContainer{
+//         width: 90%;
+//     }
+//     .info{
+//         // border: solid red;
+//         line-height: 150%;
+//         font-size: 20px;
+//     }
+//     .buttonContainer{
+//         // border: solid;
+//         width: 180vw;
+//     }
+//     .button{
+//         width: 50vw;
+//         padding-top: 3%;
+//         padding-bottom: 3%;
+//     }
+// }
   
-@media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
-    .container{
-        // border: solid green;
-        width: 169vw;
-        // height: 120vh;
-        align-items: flex-start;
-        padding-top: 35%;
-    }
-    .infoContainer{
-        // border: solid yellow;
-        width: 90%;
-    }
-    .info{
-        // border: solid orange;
-        line-height: 125%;
-        font-size: 20px;
-    }
-    .buttonContainer{
-        // border: solid purple;
-        width: 150vw;
-    }
-    .button{
-        width: 45vw;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
+// @media only screen and (min-width: 401px) and (max-width: 499px) {/*plus size phone*/
+//     .container{
+//         // border: solid green;
+//         width: 169vw;
+//         // height: 120vh;
+//         align-items: flex-start;
+//         padding-top: 35%;
+//     }
+//     .infoContainer{
+//         // border: solid yellow;
+//         width: 90%;
+//     }
+//     .info{
+//         // border: solid orange;
+//         line-height: 125%;
+//         font-size: 20px;
+//     }
+//     .buttonContainer{
+//         // border: solid purple;
+//         width: 150vw;
+//     }
+//     .button{
+//         width: 45vw;
+//         padding-top: 2%;
+//         padding-bottom: 2%;
+//     }
+// }
 
 
-@media only screen and (min-width:500px) and (max-width:700px){
-    .container{
-        // border: solid red;
-        width: 100%;
-        height: 100vh;
-        // height: 165vh;
-        // padding-top: 25%;
-    }
-    .infoContainer{
-        // border: solid green;
-        width: 90%;
-        align-items: center;
-    }
-    .info{
-        // border: solid blue;
-        line-height: 125%;
-        font-size: 18px;
-    }
-    .buttonContainer{
-        // border: solid orange;
-        width: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .button{
-        width: 150px;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
+// @media only screen and (min-width:500px) and (max-width:700px){
+//     .container{
+//         // border: solid red;
+//         width: 100%;
+//         height: 100vh;
+//         // height: 165vh;
+//         // padding-top: 25%;
+//     }
+//     .infoContainer{
+//         // border: solid green;
+//         width: 90%;
+//         align-items: center;
+//     }
+//     .info{
+//         // border: solid blue;
+//         line-height: 125%;
+//         font-size: 18px;
+//     }
+//     .buttonContainer{
+//         // border: solid orange;
+//         width: 400px;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//     }
+//     .button{
+//         width: 150px;
+//         padding-top: 2%;
+//         padding-bottom: 2%;
+//     }
+// }
 
-@media only screen and (min-width:701px) and (max-width:900px){
-    .container{
-        // border: solid red;
-        width: 100%;
-        height: 100vh;
-        // height: 165vh;
-        // padding-top: 25%;
-    }
-    .infoContainer{
-        // border: solid green;
-        width: 90%;
-    }
-    .info{
-        // border: solid blue;
-        line-height: 150%;
-        font-size: 20px;
-    }
-    .buttonContainer{
-        // border: solid orange;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .button{
-        width: 150px;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
+// @media only screen and (min-width:701px) and (max-width:900px){
+//     .container{
+//         // border: solid red;
+//         width: 100%;
+//         height: 100vh;
+//         // height: 165vh;
+//         // padding-top: 25%;
+//     }
+//     .infoContainer{
+//         // border: solid green;
+//         width: 90%;
+//     }
+//     .info{
+//         // border: solid blue;
+//         line-height: 150%;
+//         font-size: 20px;
+//     }
+//     .buttonContainer{
+//         // border: solid orange;
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//     }
+//     .button{
+//         width: 150px;
+//         padding-top: 2%;
+//         padding-bottom: 2%;
+//     }
+// }
 
-@media only screen and (min-width:900px) and (max-width:999px){
-    .container{
-        // border: solid red;
-        width: 100%;
-        height: 100vh;
-        // height: 165vh;
-        // padding-top: 25%;
-    }
-    .infoContainer{
-        // border: solid green;
-        width: 90%;
-    }
-    .info{
-        // border: solid blue;
-        line-height: 180%;
-        font-size: 20px;
-    }
-    .buttonContainer{
-        // border: solid orange;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .button{
-        width: 150px;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
+// @media only screen and (min-width:900px) and (max-width:999px){
+//     .container{
+//         // border: solid red;
+//         width: 100%;
+//         height: 100vh;
+//         // height: 165vh;
+//         // padding-top: 25%;
+//     }
+//     .infoContainer{
+//         // border: solid green;
+//         width: 90%;
+//     }
+//     .info{
+//         // border: solid blue;
+//         line-height: 180%;
+//         font-size: 20px;
+//     }
+//     .buttonContainer{
+//         // border: solid orange;
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//     }
+//     .button{
+//         width: 150px;
+//         padding-top: 2%;
+//         padding-bottom: 2%;
+//     }
+// }
 
 
-@media only screen and (min-width: 1000px) and (max-width: 1600px) { /*ipad pro*/
+// @media only screen and (min-width: 1000px) and (max-width: 1600px) { /*ipad pro*/
 
-    .container{
-        // border: solid red;
-        width: 100%;
-        height: 100vh;
-        // height: 165vh;
-        // padding-top: 25%;
-    }
-    .infoContainer{
-        // border: solid green;
-        width: 70%;
-    }
-    .info{
-        // border: solid blue;
-        line-height: 190%;
-        font-size: 20px;
-    }
-    .buttonContainer{
-        // border: solid orange;
-        width:100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .button{
-        width: 150px;
-        padding-top: 1%;
-        padding-bottom: 1%;
+//     .container{
+//         // border: solid red;
+//         width: 100%;
+//         height: 100vh;
+//         // height: 165vh;
+//         // padding-top: 25%;
+//     }
+//     .infoContainer{
+//         // border: solid green;
+//         width: 70%;
+//     }
+//     .info{
+//         // border: solid blue;
+//         line-height: 190%;
+//         font-size: 20px;
+//     }
+//     .buttonContainer{
+//         // border: solid orange;
+//         width:100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//     }
+//     .button{
+//         width: 150px;
+//         padding-top: 1%;
+//         padding-bottom: 1%;
 
-    }
-}
+//     }
+// }
 
-@media only screen and (min-width: 1600px) and (max-width: 2000px) { /*ipad pro*/
+// @media only screen and (min-width: 1600px) and (max-width: 2000px) { /*ipad pro*/
 
-    .container{
-        // border: solid red;
-        width: 100%;
-        height: 100vh;
-        // height: 165vh;
-        // padding-top: 25%;
-    }
-    .infoContainer{
-        border: solid green;
-        width: 70%;
-    }
-    .info{
-        // border: solid blue;
-        line-height: 300%;
-        font-size: 20px;
-    }
-    .buttonContainer{
-        // border: solid orange;
-        width:100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .button{
-        width: 150px;
-        padding-top: 1%;
-        padding-bottom: 1%;
+//     .container{
+//         // border: solid red;
+//         width: 100%;
+//         height: 100vh;
+//         // height: 165vh;
+//         // padding-top: 25%;
+//     }
+//     .infoContainer{
+//         border: solid green;
+//         width: 70%;
+//     }
+//     .info{
+//         // border: solid blue;
+//         line-height: 300%;
+//         font-size: 20px;
+//     }
+//     .buttonContainer{
+//         // border: solid orange;
+//         width:100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//     }
+//     .button{
+//         width: 150px;
+//         padding-top: 1%;
+//         padding-bottom: 1%;
 
-    }
-}
+//     }
+// }
 
 

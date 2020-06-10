@@ -13,7 +13,7 @@ const NavBar = () => {
                 <img className={styles.logo} src={logo}  alt="logo" />
             </div>
             <div className={styles.categoryContainer}>
-                <Link activeClass="active" className={styles.category} to="about" spy={true} smooth={true} duration={500} >About Me</Link>  
+                <Link activeClass="active" className={styles.category} to="about" spy={true} smooth={true} duration={500} >Why Me</Link>  
                 <Link activeClass="active" className={styles.category} to="project" spy={true} smooth={true} duration={500} >Projects</Link>  
                 <Link activeClass="active" className={styles.category} to="contact" spy={true} smooth={true} duration={500} >Contact Me</Link>  
             </div>

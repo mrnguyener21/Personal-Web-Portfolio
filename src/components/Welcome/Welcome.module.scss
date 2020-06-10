@@ -1,46 +1,34 @@
 
 .container{
-    // border: solid yellow;
-    // margin-top: 4.2%;
+    // border: solid red;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: #02203c;
     color: white;
     height: 100vh;
-    width: 94%;
-    padding: 0 3%;
+    width: 100%;
 }
 
 .introContainer{
-    // border: solid;
+    // border: solid yellow;
     display: flex;
     flex-direction: column;
-    // align-items: flex-start;
-    // justify-content: flex-start;
-    // text-align: center;
-    width: 50vw;
-    height: 50vh;
-    padding: 6% 0 0 10%;
-    // margin-right: 2%;
-    // z-index: 2;
-    // padding: 0 5%;
-    
+    // align-items: center;
+    // justify-content: center;
+    margin-top: -5%;
+    // margin: 0 20%;
+    width: 100%;
+
+    //animation
     position: relative;
     animation-name: introContainerAnimation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     left: -1000px;
     opacity: 0;
-
-    #myName{
-        font-size: 50px;
-        margin-bottom: 0;
-    }
-    .intro {
-        font-size: 30px;
-    }
-}
-
+    
     @keyframes introContainerAnimation{
         100%{
             left:0;
@@ -48,215 +36,129 @@
         };
     }
 
+    .intro {
+        // border: solid green;
+        // width: 80%;
+        font-size: 30px;
+        padding: 1% 0 0 21%;
+        margin: 0;
+    }
+    #myName{
+        // border: solid yellow;
+        font-size: 80px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
 
 .buttonAndImageContainer{
+    // border: solid pink;
     display: flex;
     flex-direction: row;
-    width: 60vw;
-    margin-top: 2%;
-}
-.buttonContainer{
-    width: 30vw;
-    // border: solid; 
+    width: 100%;
+    justify-content: center;
+    // width: 60vw;
+    margin-top: 1%;
 
-}
+    .buttonContainer{
+        // border: solid cyan; 
+        width: 20%;
 
+    
+        
+        
+    } 
+    .button{
+        outline: none;
+        border:none;
+        background-color: #6868d1;
+        color: white;
+        border-radius: 5px;
+        margin:1%;
+        padding: 2% 3%;
+        width: 150px;
 
-.button{
-    outline: none;
-    border:none;
-    background-color: #6868d1;
-    color: white;
-    border-radius: 5px;
-    margin:1%;
-    padding: 2% 3%;
-    width: 8vw;
-    font-size: 20px;
-}
+    }
 
 button:hover {
     background-color: #3b3b7a;
     transition: all 0.2s ease-in-out 0s;
     cursor: pointer
 }
-
-
-.image{
-    height: 30vh;
-    border-radius: 10px;
-    margin-top: -2vh;
-
-    position: relative;
-    animation-name: imageAnimation;
-    animation-duration: 1s;
-    animation-delay: 0.75s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-@keyframes imageAnimation{
-    0% {
+    .image{
+        height: 500px;
+        border-radius: 10px;
+        // margin-top: -2vh;
+    
+        position: relative;
+        animation-name: imageAnimation;
+        animation-duration: 1s;
+        animation-delay: 0.75s;
+        animation-fill-mode: forwards;
         opacity: 0;
-        transform: translateX(-20px);
-     }
-     100% {
-        opacity: 1;
-        transform: translateX(0);
-     }
-
-}
-
-@media only screen and (max-width: 498px) {/*iphoneX*/
-    .container{
-        // border: solid red;
-        align-items: center;
-        height: 208vh;
-        width: 208vw;
-        padding: 0;
-    
-    }
-    
-    .introContainer{
-        // border: solid green;
-        margin-top: -50vh;
-        width: 100%;
-        line-height: 400%;
-        text-align: center;
-    }
-    
-    .buttonAndImageContainer{
-        // border: solid yellow;
-        width: 180vw;
-        justify-content: space-between;
-    }
-    
-    .buttonContainer{
-        // border: solid orange;
-        width: 100%;
-    }
-    
-    .button{
-        width: 31%;
-    }
-    .image{
-        display: none;
+        @keyframes imageAnimation{
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+             }
+             100% {
+                opacity: 1;
+                transform: translateX(0);
+             }
     }
 }
-  
-@media only screen and (min-width: 401px) and (max-width: 498px) {/*plus size phone*/
-    .container{
-        // border: solid red;
-        align-items: center;
-        height: 171vh;
-        width: 171vw;
-        padding: 0;
-    
-    }
-    
-    .introContainer{
-        // border: solid;
-        margin-top: -50vh;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .buttonAndImageContainer{
-        // border: solid;
-        width: 140vw;
-        justify-content: space-between;
-    }
-    
-    .buttonContainer{
-        // border: solid;
-        width: 100%;
-    }
-    
-    .button{
-        width: 31%;
-    }
-    .image{
-        display: none;
-    }
 }
+//Responsive design below
 
-@media only screen and (min-width:499px) and (max-width:1600px){
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+@media screen and (max-width: $phone){
     .container{
-        // border: solid yellow;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
-        padding: 0;
-        
     }
-    
+
     .introContainer{
-        // border: solid orange;
-        align-items: center;
-        text-align: center;
-        // margin-top: -70vh;
+        // border: solid;
         width: 80%;
-        // text-align: center;
-    }
-
-    #myName{
- 
-        margin-bottom: 0;
     }
     .intro {
-        // border: solid pink;
-        font-size: 20px;
+        font-size: 20px !important;
+        padding: 0 !important;
+        text-align: center;
+        line-height:200%;
     }
-    
-    .buttonAndImageContainer{
-        // border: solid orange;
-        width: 400px;
-        justify-content: space-between;
-    }
-    
-    .buttonContainer{
-        // border: solid yellow;
-        width: 100%;
-    }
-    
-    .button{
-        width: 120px;
+    #myName{
+        font-size: 45px !important;
     }
     .image{
         display: none;
     }
-  }
-  
-@media only screen and (min-width: 1601px) and (max-width:2350px){
-    .container{
-        // border: solid red;
-        // margin-top: 9.75%;
-        padding-left: 0;
-        width: 97%;
-    }
-
-    
-    .introContainer{
-        // border: solid red;
-        // width: 100%;
-    }
-    
-    .buttonAndImageContainer{
-        // border: solid yellow;
-        width: 90vw;
-        // justify-content: space-between;
-    }
-    
     .buttonContainer{
-        // border: solid;
-        width: 30%;
-        height: 10%;
+        // border: solid red;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
     }
-    
-    .image{
-        // border: solid green;
-        height: 30%;
-        // margin-top: -3%;
+    .button{
+        width: 100px !important;
     }
-    
 }
+
+@media screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+
+@media screen and (min-width: $tablet) and (max-width: $laptop){
+
+}
+
+@media screen and (min-width: $laptop) and (max-width: $tablet){
+
+}
+

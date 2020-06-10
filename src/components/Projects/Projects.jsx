@@ -42,7 +42,7 @@ const Projects = () => {
     return(
         <div name='project' className={styles.container}>
             <h1 className={styles.title} data-aos='fade-down' >PROJECTS</h1>
-                <h3 className={styles.intro} data-aos='fade-down' >Below are some of the projects that I have worked on and created. You can hover over them for a description of wha t the project and if you're interested you can check out the source code or even see a live project itself out. <span role='img' aria-label='pointing down'>👇</span></h3>
+                {/* <h3 className={styles.intro} data-aos='fade-down' >Below are some of the projects that I have worked on and created. You can hover over them for a description of wha t the project and if you're interested you can check out the source code or even see a live project itself out. <span role='img' aria-label='pointing down'>👇</span></h3> */}
             <div className={styles.projectContainer}>
                 {projects.map(({ image, name, description, technologies, sourceCode, liveDemo }) => (
                     <div  key={name} className={styles.content} data-aos='slide-right' data-aos-duration="1000" >

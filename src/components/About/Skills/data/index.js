@@ -26,7 +26,7 @@ import react from '../../../../image/react.png'
 export const rowOne = [
     {image:html , description:'HTML 5'},
     {image:css , description:'CSS'},
-    {image:javaScript , description:'JAVASCRIPT(ES5/3S6)'},
+    {image:javaScript , description:'JAVASCRIPT'},
     {image:bootStrap , description:'BOOTSTRAP'},
     {image:sass , description:'SASS'},
 ];

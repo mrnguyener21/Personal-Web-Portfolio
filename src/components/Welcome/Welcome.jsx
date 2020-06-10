@@ -16,7 +16,7 @@ const Welcome = () => {
                         <button className={styles.button} id={styles.button3} onClick={()=> btnClick(1)}>GITHUB</button>
                     </div>
                     <img className={styles.image} src={codeSnippet} alt="code snippet" />   
-                    </div>
+                </div>
             </div>
         </div>
     )
