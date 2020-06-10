@@ -1,7 +1,8 @@
 $phone: 480px;
 $tablet: 768px;
 $laptop: 1024px;
-$desktop: 1200px;
+$largeLaptop:1440px;
+
 .container{
     color:#15314b;  
     // padding: 3% 5% 5% 5%;
@@ -139,4 +140,14 @@ $desktop: 1200px;
     }
 }
 
+@media screen and (min-width: $tablet) and (max-width: $laptop){
+    .info{
+        // border: solid green;
+        width: 30vw  !important;
+    }
 
+    .message{
+        width: 80vw !important;
+        margin-bottom:1%;
+    }
+}

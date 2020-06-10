@@ -87,7 +87,7 @@ $desktop: 1200px;
         cursor: pointer
     }
         .image{
-            height: 500px;
+            width: 45vw;
             border-radius: 10px;
         
             position: relative;
@@ -147,22 +147,20 @@ $desktop: 1200px;
 }
 
 @media screen and (min-width: $phone) and (max-width: $tablet){
-    .container{
-        // height: 102vh;
-    }
 
     .introContainer{
         // border: solid;
         width: 80%;
-    }
-    .intro {
-        font-size: 20px !important;
-        padding: 0 !important;
-        text-align: center;
-        line-height:200%;
-    }
-    #myName{
-        font-size: 45px !important;
+
+        .intro {
+            font-size: 20px !important;
+            padding: 0 !important;
+            text-align: center;
+            line-height:200%;
+        }
+        #myName{
+            font-size: 45px !important;
+        }
     }
     .image{
         display: none;
@@ -173,17 +171,35 @@ $desktop: 1200px;
         display: flex;
         justify-content: center;
         margin-top: 3%;
-    }
-    .button{
-        width: 100px !important;
+        
+        .button{
+            width: 100px !important;
+        }
     }
 }
 
-// @media screen and (min-width: $tablet) and (max-width: $laptop){
+@media screen and (min-width: $tablet) and (max-width: $laptop){
+    .container{
+        .introContainer{
+            // border: solid red;
 
-// }
+            .intro{
+                text-align: center;
+                padding: 2% 3%; 
+            }
+        }
+        .buttonAndImageContainer{
+            .buttonContainer{
+                // border: solid orange;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            .image{
+                display: none;
+            }
+        }
+    }
+}
 
-// @media screen and (min-width: $laptop) and (max-width: $tablet){
-
-// }
 

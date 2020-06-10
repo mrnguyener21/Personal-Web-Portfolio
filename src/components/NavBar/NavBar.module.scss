@@ -112,3 +112,13 @@ $phone: 480px;
   }
 }
 
+@media screen and (min-width: $tablet) and (max-width: $laptop){
+  .logoContainer{
+    // border: solid red;
+    width: 20%;
+
+    .logo{
+      width: 50%;
+    }
+}
+}
