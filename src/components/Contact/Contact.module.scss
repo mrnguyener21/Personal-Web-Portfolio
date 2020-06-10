@@ -1,158 +1,141 @@
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
 .container{
     color:#15314b;  
-    padding: 3% 5% 5% 5%;
+    // padding: 3% 5% 5% 5%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
-}
-
-.title{
-    display: flex;
-    margin:0;
-    justify-content: center;
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 2%;
-    
-    &:hover {
-        color:#02203c;  
-        cursor: default;
+    .title{
+        display: flex;
+        justify-content: center;        
     }
     
+    .contactContainer{
+        // border: solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: 50%;
+        // margin-left: 25%;
+
+        .infoContainer{
+            // border: solid green;
+            display: flex;
+            justify-content: space-evenly;
+            // align-items: center;
+            padding-bottom: 1%;
+            padding-left: 2%;
+            // width: 40vw;
+            // flex-direction: row;
+
+            .info{
+                margin-right: 2%;
+                margin-top: 0;
+                text-align: center;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                background-color: initial;
+                border-bottom: solid #295e8f; 
+                outline: none;
+                width: 10vw;
+                // width: 40vw;
+                // height: 50px;
+                // position: relative;
+            }
+            
+        }
+        .message{
+            outline: none;
+            border-radius: 5px;
+            border: solid #295e8f;
+            width: 40vw;
+            padding-bottom: 10vh;
+            // margin: 2% 0;
+            // width: 100%;
+        }
+        
+        .buttonContainer{
+            // border: solid;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .button{
+            outline: none;
+            border:none;
+            background-color: #6868d1;
+            color: white;
+            border-radius: 5px;
+            margin:1%;
+            padding: 1.5% 3%;
+            width: 150px;
+        }
+        
+        .button:hover {
+            background-color: #3b3b7a;
+            transition: all 0.2s ease-in-out 0s;
+            cursor: pointer
+        }
+        .myInformationContainer{
+            // border: solid orange;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            // margin-top: 5%;
+            // margin-right: 2%;
+            // margin-left: 32%;
+
+            .phone{
+                margin-right: 2%;
+            
+            }
+            
+            .link{
+                outline: none;
+                border: none;
+                margin-right: 2%;
+                background-color:#295e8f ;
+                &:hover{
+                    background-color: #0b4174;
+                }
+            }
+            
+            .icon{
+                // border: solid red;
+                padding: 8%;
+            }
+        }
+    }
 }
  
-.contactContainer{
-    display: flex;
-    width: 50%;
-    // margin-left: 25%;
-    justify-content: center;
-    // align-items: center;
-    flex-direction: column;
-    // border: solid;
-}
-
-
-.infoContainer{
-    display: flex;
-    // flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1%;
-    padding-left: 2%;
-}
-
-.info{
-    width: 25%;
-    margin-right: 2%;
-    margin-top: 0;
-    width: 50%;
-    height: 50px;
-    position: relative;
-    text-align: center;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background-color: initial;
-    border-bottom: solid #295e8f; 
-    outline: none;
-    &:hover{
-        color:#02203c;  
-        cursor: default;
-    }
-}
-
-.message{
-    outline: none;
-    border-radius: 10px;
-    border: solid #295e8f;
-    padding: 10px 0 200px 0;
-    margin: 2% 0;
-    width: 100%;
-}
-
-.buttonContainer{
-    // border: solid;
-    display: flex;
-    justify-content: center;
-}
-
-.button{
-    outline: none;
-    border:none;
-    background-color: #6868d1;
-    color: white;
-    border-radius: 5px;
-    margin:1%;
-    padding: 1.5% 3%;
-    width: 150px;
-}
-
-.button:hover {
-    background-color: #3b3b7a;
-    transition: all 0.2s ease-in-out 0s;
-    cursor: pointer
-}
-
-.myInformationContainer{
-    // border: solid
-    // border: solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    // margin-right: 2%;
-    align-items: center;
-    width: 100%;
-    // margin-left: 32%;
-    margin-top: 5%;
-}
-
-.phone{
-    margin-right: 2%;
-
-    &:hover{
-        cursor: default;
-    }
-}
-
-.link{
-    outline: none;
-    border: none;
-    margin-right: 2%;
-    background-color:#295e8f ;
-    &:hover{
-        background-color: #0b4174;
-    }
-}
-
-.icon{
-    // border: solid red;
-    padding: 8%;
-}
-
-
-@media only screen and (max-width: 499px){
-    .container{
-        // border: solid red;
-        width: 160%;
-    }
-    .contactContainer{
+@media screen and (max-width:$phone){
+    .info{
         // border: solid green;
-        width: 80%;
-        // margin-left: 10%;
+        width: 30vw  !important;
     }
-    
-    .myInformationContainer{
-        // border: solid green;
-        width: 100%;
-        // margin-left: 12%;
+
+    .message{
+        width: 80vw !important;
+        margin-bottom:1%;
     }
 }
 
-// @media only screen and (min-width:450px) and (max-width: 499px) {/*iphoneX*/
+
+
+
+
+
+// @media only screen and (max-width: 499px){
 //     .container{
 //         // border: solid red;
-//         width: 90vh;
+//         width: 160%;
 //     }
 //     .contactContainer{
 //         // border: solid green;
@@ -167,43 +150,61 @@
 //     }
 // }
 
-// @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
+// // @media only screen and (min-width:450px) and (max-width: 499px) {/*iphoneX*/
+// //     .container{
+// //         // border: solid red;
+// //         width: 90vh;
+// //     }
+// //     .contactContainer{
+// //         // border: solid green;
+// //         width: 80%;
+// //         // margin-left: 10%;
+// //     }
+    
+// //     .myInformationContainer{
+// //         // border: solid green;
+// //         width: 100%;
+// //         // margin-left: 12%;
+// //     }
+// // }
+
+// // @media only screen and (min-width: 400px) and (max-width: 750px) {/*plus size phone*/
+// // }
+// @media only screen and (min-width: 500px) and (max-width: 799px) {/*ipad*/
+//     .container{
+//         // border: solid green;
+//     }
+//     .contactContainer{
+//         // border: solid green;
+//         padding: 0;
+//         width: 80%;
+//         // margin-left: 10%;
+//     }
+
+//     .myInformationContainer{
+//         // border: solid green;
+//         width: 100%;
+//         // margin-left: 22%;
+//     }
+
+//     .button{
+//         width: 105px;
+//     }
 // }
-@media only screen and (min-width: 500px) and (max-width: 799px) {/*ipad*/
-    .container{
-        // border: solid green;
-    }
-    .contactContainer{
-        // border: solid green;
-        padding: 0;
-        width: 80%;
-        // margin-left: 10%;
-    }
-
-    .myInformationContainer{
-        // border: solid green;
-        width: 100%;
-        // margin-left: 22%;
-    }
-
-    .button{
-        width: 105px;
-    }
-}
 
 
-@media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
-    .contactContainer{
-        // border: solid green;
-        width: 80%;
-        // margin-left: 10%;
-    }
+// @media only screen and (min-width: 800px) and (max-width: 1100px) { /*ipad pro*/
+//     .contactContainer{
+//         // border: solid green;
+//         width: 80%;
+//         // margin-left: 10%;
+//     }
 
-    .myInformationContainer{
-        // border: solid green;
-        width: 100%;
-        // margin-left: 22%;
-    }
+//     .myInformationContainer{
+//         // border: solid green;
+//         width: 100%;
+//         // margin-left: 22%;
+//     }
 
     
-}
+// }

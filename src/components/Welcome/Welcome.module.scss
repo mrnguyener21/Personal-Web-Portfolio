@@ -1,3 +1,7 @@
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
 
 .container{
     // border: solid red;
@@ -49,7 +53,6 @@
         margin-bottom: 0;
     }
 }
-
 
 
 
@@ -113,10 +116,6 @@ button:hover {
 }
 //Responsive design below
 
-$phone: 480px;
-$tablet: 768px;
-$laptop: 1024px;
-$desktop: 1200px;
 
 @media screen and (max-width: $phone){
     .container{

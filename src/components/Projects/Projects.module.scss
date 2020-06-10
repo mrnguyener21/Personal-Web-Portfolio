@@ -99,15 +99,10 @@ button:hover {
     cursor: pointer
 }
 
-@media only screen and (max-width: $phone) {/*iphoneX*/
+@media only screen and (max-width: $phone) {
     .container{
-        // border: solid green; 
-        // font-size: 17px;
-        // width: 100%;
+
         .title{
-            // border: solid purple;
-            // margin-top: 10%;
-            // padding-top: 20%;
             padding-bottom: 10%;
         }
     
@@ -116,7 +111,6 @@ button:hover {
         }
     
         .projectContainer{
-            // border: solid yellow;
             flex-direction: column;
             .content{
                 // border: solid red;
@@ -126,20 +120,17 @@ button:hover {
             }
         
             .projectImage{
-                // border: solid;
-                // margin-top: -5vh;
+
                 width: 80vw;
             }
         
             .buttonAndDescriptionContainer{
-                // border: solid orange;
                 width: 80%;
         
             }
             .button{
                 padding: 2% 3%;
-                // font-size: 20px;
-                // width: 25%;
+
             }
         }
     }

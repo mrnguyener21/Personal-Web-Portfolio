@@ -13,7 +13,7 @@ const Skills = () =>  (
         <h2 className={styles.title} data-aos='fade-up' data-aos-duration='1000'>TECHNICAL SKILLS</h2>
         <div className={styles.contentContainer}>
         {rowOne.map((skillData) => (
-            <div className={styles.content} data-aos='fade-up' data-aos-duration='1000'>
+            <div className={styles.content} data-aos='zoom-in' data-aos-duration='1000'>
                 <img alt="Skill" src={skillData.image} className={styles.image} />
                 <h5 className={styles.description}>{skillData.description}</h5>
             </div>

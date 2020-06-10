@@ -29,9 +29,9 @@ const Contact = () => {
       }
     
     return (
-        <div id='contact' className={styles.container} data-aos='fade-down' data-aos-duration="1500" >
+        <div id='contact' className={styles.container} data-aos='fade-down' data-aos-duration="1000">
             <div className={styles.topContainer}>
-                <h1 className={styles.title}>CONTACT ME</h1>
+                <h2 className={styles.title}  >CONTACT ME</h2>
             </div>
                 <div className={styles.contactContainer} >
                     <form className="contact-form" onSubmit={sendEmail}>
@@ -49,7 +49,7 @@ const Contact = () => {
                     </form>
 
                     <div className={styles.myInformationContainer}>
-                        <h3 className={styles.phone}> <span role="img" aria-label='phone number'>📱</span>:562-277-4337</h3>
+                        <h5 className={styles.phone}> <span role="img" aria-label='phone number'>📱</span>:562-277-4337</h5>
                         <button className={styles.link} onClick={()=> btnClick(0)}>
                             <FontAwesomeIcon size='2x' icon={faLinkedinIn} color='white' className={styles.icon} />                    
                         </button>
