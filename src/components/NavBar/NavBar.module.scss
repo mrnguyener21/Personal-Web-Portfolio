@@ -1,9 +1,8 @@
 .container {
-    // border: solid white;
     display: flex;
     justify-content: space-between;
     background-color: #02203c;
-    height: 8vh;
+    height: 100px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -14,7 +13,6 @@
 }
 
 .logoContainer{
-  // border: solid white;
   margin-left: 3%;
   display: flex;
   // justify-content: flex-end;
@@ -84,39 +82,44 @@ $phone: 480px;
 
     // border: solid green;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     // padding: 10% 5% 5% 5%;
-    height: 20vh;
+    // height: 100px;
     // width: 10%;
   }
 
    .categoryContainer{
     //  border: solid yellow;
+     width: 100%;
+    //  padding-left: 10%;
+     justify-content: space-evenly;
+
     //  width: 56% !important;
     //  margin-right: 5% !important;
-     display: flex;
-     justify-content: space-evenly;
-     font-size: 5vw;
+    //  display: flex;
+    //  justify-content: space-evenly;
+    //  font-size: 5vw;
     //  padding-left: 10%;
      
    }
 
 
   .logoContainer{
+    width: 15%;
     // border: solid red;
-    width: 100%;
-    margin-bottom: 5%;
+    // width: 100%;
+    // margin-bottom: 5%;
     // margin-right: 5% ;
-    display: flex;
-    justify-content: space-evenly;
+    // display: flex;
+    // justify-content: space-evenly;
   }
 
   .logo{
-    width: 30%;
+    width: 100%;
   }
    .category{
-     margin: 0 2%;
+    //  margin: 0 2%;
    }
 
 }

@@ -10,21 +10,12 @@ AOS.init();
 
 const Skills = () =>  (
     <div className={styles.container} data-aos='fade-up' data-aos-duration='1000'> 
-        <h1 className={styles.title}>TECHNICAL SKILLS</h1>
+        <h2 className={styles.title}>TECHNICAL SKILLS</h2>
         <div className={styles.contentContainer}>
         {rowOne.map((skillData) => (
             <div className={styles.content}>
                 <img alt="Skill" src={skillData.image} className={styles.image} />
-                <h1 className={styles.description}>{skillData.description}</h1>
-            </div>
-        ))}
-        </div>
-        
-        <div className={styles.contentContainer}>
-        {rowTwo.map((skillData) => (
-            <div className={styles.content}>
-                <img alt="Skill" src={skillData.image} className={styles.image} />
-                <h1 className={styles.description}>{skillData.description}</h1>
+                <h5 className={styles.description}>{skillData.description}</h5>
             </div>
         ))}
         </div>

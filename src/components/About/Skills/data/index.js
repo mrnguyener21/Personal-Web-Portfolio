@@ -29,6 +29,11 @@ export const rowOne = [
     {image:javaScript , description:'JAVASCRIPT'},
     {image:bootStrap , description:'BOOTSTRAP'},
     {image:sass , description:'SASS'},
+    {image:react , description:'REACT'},
+    {image:materialUi , description:'MATERIAL-UI'},
+    {image:npm , description:'NPM'},
+    {image:git , description:'GIT'},
+    {image:gitHub , description:'GITHUB'},
 ];
 
 export const rowTwo = [

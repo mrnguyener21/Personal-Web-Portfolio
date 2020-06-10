@@ -1,14 +1,8 @@
 .container{
     color:#15314b;  
-    // height: 100vh;
     display: flex;
     flex-direction: row;
-    // justify-content: center;
     width: 100%;
-    // align-items: center;
-    // justify-content: space-between;
-    // margin:5%;
-
 }
 
 $phone: 480px;
@@ -18,26 +12,24 @@ $desktop: 1200px;
 
 @media screen and (max-width: $phone){
     .container{
-        flex-direction: column;
         // border: solid red;
-
+        flex-direction: column;
     }
 }
 
+// @media screen and (min-width: $phone) and (max-width: $tablet){
+//    container{
 
-@media screen and (min-width: $phone) and (max-width: $tablet){
-   container{
+//    }
+// }
 
-   }
-}
+// @media screen and (min-width: $tablet) and (max-width: $laptop){
 
-@media screen and (min-width: $tablet) and (max-width: $laptop){
+// }
 
-}
+// @media screen and (min-width: $laptop) and (max-width: $tablet){
 
-@media screen and (min-width: $laptop) and (max-width: $tablet){
-
-}
+// }
 
 
 
