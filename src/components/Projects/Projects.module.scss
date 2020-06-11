@@ -1,7 +1,7 @@
 $phone: 480px;
 $tablet: 768px;
 $laptop: 1024px;
-$largeLaptop:1440px;
+$largeLaptop:1950px;
 
 .container{
     background-color: #02203c;
@@ -191,6 +191,36 @@ button:hover {
         }
         .button{
             padding: 2% 3%;
+
+        }
+    }  
+}
+  
+@media screen and (min-width: $laptop) and (max-width: $largeLaptop){
+    .intro{
+        display: none;
+    }
+
+    .projectContainer{
+        flex-direction: column;
+        .content{
+            // border: solid red;
+            align-items: center;
+            margin-bottom: 10%;
+            flex-direction: column;
+        }
+    
+        .projectImage{
+
+            width: 80vw;
+        }
+    
+        .buttonAndDescriptionContainer{
+            width: 80%;
+    
+        }
+        .button{
+            padding: 1% 2%;
 
         }
     }  

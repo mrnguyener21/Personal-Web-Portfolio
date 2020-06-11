@@ -1,7 +1,9 @@
 $phone: 480px;
 $tablet: 768px;
-$laptop: 1024px;
-$desktop: 1200px;
+$laptop: 1099px;
+$largeLaptop:1450px;
+$desktop: 1950px;
+
 
 .container{
     // border: solid red;
@@ -202,4 +204,39 @@ $desktop: 1200px;
     }
 }
 
+@media screen and (min-width: $laptop) and (max-width: $largeLaptop){
+    .intro{
+        // border: solid red;
+        padding-left:5% !important;
+    }
+
+    .buttonAndImageContainer{
+        // border: solid;
+    }
+    .buttonContainer{
+        // border: solid;
+        width: 45vw !important;
+        .button{
+            width: 150px !important;
+        }
+    }
+}
+
+@media screen and (min-width: $largeLaptop) and (max-width:$desktop){
+    .intro{
+        // border: solid red;
+        padding-left:10% !important;
+    }
+
+    .buttonAndImageContainer{
+        // border: solid;
+    }
+    .buttonContainer{
+        // border: solid;
+        width: 35vw !important;
+        .button{
+            width: 150px !important;
+        }
+    }
+}
 
