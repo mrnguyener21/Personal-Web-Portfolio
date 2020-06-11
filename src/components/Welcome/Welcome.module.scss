@@ -148,6 +148,20 @@ $desktop: 1950px;
     }
 }
 
+@media screen and (max-width:850px) and (orientation: landscape){
+    .container{
+        // align-items: flex-end;
+        justify-content: flex-end;;
+    }
+    .intro{
+        // border: solid green;
+        font-size: 1em !important;
+    }
+    #myName{
+        font-size: 2em !important;
+    }
+}
+
 @media screen and (min-width: $phone) and (max-width: $tablet){
 
     .introContainer{
