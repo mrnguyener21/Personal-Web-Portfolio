@@ -4,7 +4,7 @@ import styles from './Welcome.module.scss'
 const Welcome = () => {
     const btnClick = (value) => {
         if(value === 0) {
-            window.open("https://docs.google.com/document/d/1V2JcbedVLD-YL_ZJ2PzJ-20eDbRH_cBln5nrlhOixQo/view?usp=sharing")
+            window.open("https://drive.google.com/file/d/1Pm7L1kHhQhL6vjPmrL8H9MEn3MResFgS/view?usp=sharing")
         } else if(value === 1){
             window.open("https://www.linkedin.com/in/victortnguyen/")
         } else if (value === 2){
