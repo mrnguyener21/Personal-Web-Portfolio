@@ -10,36 +10,15 @@ import materialUi from '../../../../image/materialUi.png'
 import npm from '../../../../image/npm.png'
 import react from '../../../../image/react.png'
 
-// export default [
-//         {image:html , description:'HTML 5'},
-//         {image:css , description:'CSS'},
-//         {image:javaScript , description:'JAVASCRIPT(ES5/3S6)'},
-//         {image:bootStrap , description:'BOOTSTRAP'},
-//         {image:sass , description:'SASS'},
-//         {image:react , description:'REACT'},
-//         {image:materialUi , description:'MATERIAL-UI'},
-//         {image:npm , description:'NPM'},
-//         {image:git , description:'GIT'},
-//         {image:gitHub , description:'GITHUB'},
-//     ]
-
-export const rowOne = [
+export const data = [
+    {image:react , description:'REACT'},
+    {image:javaScript , description:'JAVASCRIPT'},
+    {image:materialUi , description:'MATERIAL-UI'},
+    {image:sass , description:'SASS'},
+    {image:bootStrap , description:'BOOTSTRAP'},
     {image:html , description:'HTML 5'},
     {image:css , description:'CSS'},
-    {image:javaScript , description:'JAVASCRIPT'},
-    {image:bootStrap , description:'BOOTSTRAP'},
-    {image:sass , description:'SASS'},
-    {image:react , description:'REACT'},
-    {image:materialUi , description:'MATERIAL-UI'},
     {image:npm , description:'NPM'},
     {image:git , description:'GIT'},
     {image:gitHub , description:'GITHUB'},
 ];
-
-export const rowTwo = [
-    {image:react , description:'REACT'},
-    {image:materialUi , description:'MATERIAL-UI'},
-    {image:npm , description:'NPM'},
-    {image:git , description:'GIT'},
-    {image:gitHub , description:'GITHUB'},
-]

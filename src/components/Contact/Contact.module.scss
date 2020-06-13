@@ -7,8 +7,9 @@ $largeLaptop:1950px;
     color:#15314b;  
     // padding: 3% 5% 5% 5%;
     flex-direction: column;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    height: 50vh;
     
     .title{
         display: flex;
@@ -20,8 +21,6 @@ $largeLaptop:1950px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // width: 50%;
-        // margin-left: 25%;
 
         .infoContainer{
             // border: solid green;
@@ -30,8 +29,6 @@ $largeLaptop:1950px;
             // align-items: center;
             padding-bottom: 1%;
             padding-left: 2%;
-            // width: 40vw;
-            // flex-direction: row;
 
             .info{
                 margin-right: 2%;
@@ -44,9 +41,6 @@ $largeLaptop:1950px;
                 border-bottom: solid #295e8f; 
                 outline: none;
                 width: 10vw;
-                // width: 40vw;
-                // height: 50px;
-                // position: relative;
             }
             
         }
@@ -55,7 +49,7 @@ $largeLaptop:1950px;
             border-radius: 5px;
             border: solid #295e8f;
             width: 40vw;
-            padding-bottom: 10vh;
+            padding-bottom: 20vh;
             // margin: 2% 0;
             // width: 100%;
         }
@@ -89,9 +83,6 @@ $largeLaptop:1950px;
             justify-content: center;
             align-items: center;
             width: 100%;
-            // margin-top: 5%;
-            // margin-right: 2%;
-            // margin-left: 32%;
 
             .phone{
                 margin-right: 2%;

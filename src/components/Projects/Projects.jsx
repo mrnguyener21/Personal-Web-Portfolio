@@ -15,17 +15,9 @@ const projects = [
         image: yugioh,
         name: 'YUGIOH CARD GALLERY',
         description: 'A Yu-Gi-Oh Trading Card Game gallery that uses an API containining over 10,000 cards and is up to date with the current state of the game. I came up with the idea to create this project as a way to go from learning about React to being able to use React while at the same time being able to give back to a community from my childhood with a more up to date resource.',
-        technologies: 'Created With: JAVASCRIPT(ES6) | HTML5 | CSS 3| REACT|',
+        technologies: 'Created With: JAVASCRIPT(ES6) | HTML5 | CSS 3 | REACT',
         sourceCode:'https://github.com/mrnguyener21/yugioh-API',
         liveDemo:'https://yugioh-api.netlify.app/',
-    },
-    {
-        image: ticTacToe,
-        name: 'TIC-TAC-TOE',
-        description:' This is the classic game of Tic Tac Toe which I made with Vanilla Javascript(no frameworks or libraries). I decided to create this project as a way to measure my current programming abilities with Javascript during that time. This take on the game comes with a Start Page, the main page where players can play the game, a pop up modal announing the winner with the option to start a new game and real-time score keeping.',
-        technologies: 'Created With: HTML5 | CSS3 | JAVASCRIPT(ES6)',
-        sourceCode:'https://github.com/mrnguyener21/tic-tac-toe-game',
-        liveDemo:'https://classictictactoegame.netlify.app/',
     },
     {
         image: financialWebApp,
@@ -34,6 +26,14 @@ const projects = [
         technologies: 'Created With: HTML5 | SASS | JAVASCRIPT | REACT',
         sourceCode: 'https://github.com/mrnguyener21/FInancial_Tool_Web_App',
         liveDemo: 'https://vnfinancial.netlify.app/'
+    },
+    {
+        image: ticTacToe,
+        name: 'TIC-TAC-TOE',
+        description:' This is the classic game of Tic Tac Toe which I made with Vanilla Javascript(no frameworks or libraries). I decided to create this project as a way to measure my current programming abilities with Javascript during that time. This take on the game comes with a Start Page, the main page where players can play the game, a pop up modal announing the winner with the option to start a new game and real-time score keeping.',
+        technologies: 'Created With: JAVASCRIPT(ES6) | HTML5 | CSS 3',
+        sourceCode:'https://github.com/mrnguyener21/tic-tac-toe-game',
+        liveDemo:'https://classictictactoegame.netlify.app/',
     }
 ]
 
@@ -50,7 +50,7 @@ const Projects = () => {
                             <img className={styles.projectImage} src={image}  />
                         {/* </div> */}
                         <div className={styles.buttonAndDescriptionContainer}>
-                            <p className={styles.description}>{name}</p>
+                            <p className={styles.description} id={styles.projecTitle}>{name}</p>
                             <p className={styles.description}>{description}</p>
                             <p className={styles.description}>{technologies}</p>
                             <div className={styles.buttonContainer} >
