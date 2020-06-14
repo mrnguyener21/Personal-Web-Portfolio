@@ -14,7 +14,7 @@ const projects = [
     {
         image: yugioh,
         name: 'YUGIOH CARD GALLERY',
-        description: 'A Yu-Gi-Oh Trading Card Game gallery that uses an API containining over 10,000 cards and is up to date with the current state of the game. I came up with the idea to create this project as a way to go from learning about React to being able to use React while at the same time being able to give back to a community from my childhood with a more up to date resource.',
+        description: 'A Yu-Gi-Oh Trading Card Game database that uses a rest API containining over 10,000 cards and is up to date with the current state of the game. I came up with the idea to create this project as a way to go from learning about React to being able to use React while at the same time being able to give back to a community from my childhood with a more up to date resource.',
         technologies: 'Created With: JAVASCRIPT(ES6) | HTML5 | CSS 3 | REACT',
         sourceCode:'https://github.com/mrnguyener21/yugioh-API',
         liveDemo:'https://yugioh-api.netlify.app/',
