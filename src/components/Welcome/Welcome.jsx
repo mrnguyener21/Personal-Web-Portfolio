@@ -4,7 +4,7 @@ import styles from './Welcome.module.scss'
 const Welcome = () => {
     const btnClick = (value) => {
         if(value === 0) {
-            window.open("https://drive.google.com/file/d/1IbOFbDahSvGKFSL6sRSWfBenQsmLoc4w/view?usp=sharing")
+            window.open("https://drive.google.com/file/d/1i7bjnu15-bKsfW7xrtzWHWVIjuKiJ8jQ/view?usp=sharing")
         } else if(value === 1){
             window.open("https://www.linkedin.com/in/victortnguyen/")
         } else if (value === 2){
@@ -18,7 +18,6 @@ const Welcome = () => {
                 <h2 className={styles.intro}> I'm a Self-Taught Front-End Developer and the newest member of your team! Welcome to my portfolio and let me know if you see anything you like.</h2>
                 <div className={styles.buttonAndImageContainer}>
                     <div className={styles.buttonContainer}>
-                        {/* <a href='https://docs.google.com/document/d/1V2JcbedVLD-YL_ZJ2PzJ-20eDbRH_cBln5nrlhOixQo/view?usp=sharing'> */}
                             <button className={styles.button} id={styles.button1} onClick={()=>btnClick(0)}>RESUME</button>
                         <button className={styles.button} id={styles.button2} onClick={()=> btnClick(1)}>LINKEDIN</button>
                         <button className={styles.button} id={styles.button3} onClick={()=> btnClick(2)}>GITHUB</button>
