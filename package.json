@@ -14,7 +14,7 @@
     "cra-template": "1.0.3",
     "devicon": "^2.2.0",
     "emailjs-com": "^2.4.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",
